@@ -5,10 +5,13 @@
 %
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: math-inc.tex,v 1.1 2003-08-09 11:59:33 ralf Exp $
+%% $Id: math-inc.tex,v 1.2 2003-10-26 20:31:22 ralf Exp $
 %%
 %% History:
 %% $Log: not supported by cvs2svn $
+%% Revision 1.1  2003/08/09 11:59:33  ralf
+%% Re-arranged files and contents
+%%
 %%
 
 
@@ -86,7 +89,9 @@
 
 
 %% Algebraic functions
-\DeclareMathOperator{\GF}{GF}   %% Galois field
+\DeclareMathOperator{\ord}{ord}         %% Order
+\DeclareMathOperator{\GF}{GF}           %% Galois field
+\newcommand{\res} [2] {{\left[ {#1} \right] }_{#2}} % residue class
 
 
 %% Chebyshev functions (polynomials)
@@ -180,3 +185,8 @@
 \newcommand{\zn} [3] [0] {\optsup{#1}{{#2}_{\! \scriptscriptstyle 0}}_{#3}}
 \newcommand{\pn} [3] [0] {\optsup{#1}{{#2}_{\! \scriptscriptstyle \infty}}_{#3}}
 
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
