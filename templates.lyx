@@ -41,7 +41,7 @@
 status Collapsed
 
 \layout Standard
-%% $Id: templates.lyx,v 1.1 2004-07-13 17:31:19 ralf Exp $
+%% $Id: templates.lyx,v 1.2 2005-03-27 09:34:19 ralf Exp $
 \end_inset 
 
 
@@ -321,18 +321,12 @@ Ralf Hoppe
 
 \layout Section
 
-
-\lang english
 Formeln
 \layout Subsection
 
-
-\lang english
-Zweispaltig
+Zweispaltig mit (x)xalignat
 \layout Standard
 
-
-\lang english
 Gleichmäßige links/rechts Verteilung mit 
 \family typewriter 
 
@@ -342,7 +336,6 @@ xalignat
 
 
 \family typewriter 
-\lang english
 
 \backslash 
 alignat
@@ -350,13 +343,9 @@ alignat
  Formelumgebung erzeugen
 \layout Enumerate
 
-
-\lang english
 Zwei Spalten anfügen
 \layout Enumerate
 
-
-\lang english
 Formeln eingeben
 \newline 
 
@@ -368,14 +357,11 @@ Formeln eingeben
 
 \layout Enumerate
 
-
-\lang english
 Datei speichern
 \layout Enumerate
 
 
 \family typewriter 
-\lang english
 
 \backslash 
 alignat
@@ -389,13 +375,26 @@ xalignat
  ersetzen
 \layout Subsection
 
+Multiplikationszeichen
+\layout Standard
 
-\lang english
-Layout
-\layout Subsubsection
+Das Multiplikationszeichen 
+\begin_inset Quotes eld
+\end_inset 
 
 
-\lang english
+\begin_inset Formula $\cdot$
+\end_inset 
+
+
+\begin_inset Quotes erd
+\end_inset 
+
+ (
+\backslash 
+cdot) wird außer für das Skalarprodukt fast niemals verwendet.
+\layout Subsection
+
 Symbol 
 \family typewriter 
 
@@ -403,8 +402,6 @@ Symbol
 prime
 \layout Standard
 
-
-\lang english
 Verwendung sollte hochgestellt erfolgen (ansonsten ist Apostroph gleichwertig),
  
 \begin_inset ERT
@@ -420,23 +417,291 @@ cf
 \layout Standard
 
 
-\lang english
-
 \begin_inset Formula \[
 f^{\prime}=f'\]
 
 \end_inset 
 
 
+\layout Subsection
+
+Wurzelzeichen in Inline-Math
+\layout Standard
+
+Wurzeln im Text sollten grundsätzlich nicht so tief reichen, deshalb TeX-Befehl
+ 
+\family typewriter 
+
+\backslash 
+smash
+\family default 
+ verwenden, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+eg
+\end_inset 
+
+ 
+\begin_inset Formula $\sqrt{\smash[b]{1/2}}$
+\end_inset 
+
+ im Gegensatz zu 
+\begin_inset Formula $\sqrt{1/2}$
+\end_inset 
+
+.
+\layout Subsection
+
+Exponentialfunktion
+\layout Standard
+
+Ist das Argument der Exponentialfunktion komplex 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+resp
+\end_inset 
+
+ unübersichtlich, dann sollte 
+\backslash 
+exp verwendet werden.
+ Bei einfachen Fällen ist die Schreibweise mit kleinem (aufrechten, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+ie
+\end_inset 
+
+ Textmode) 
+\begin_inset Quotes eld
+\end_inset 
+
+e
+\begin_inset Quotes erd
+\end_inset 
+
+ erlaubt.
+\layout Standard
+
+
+\begin_inset Formula \[
+\exp\left[-\frac{1}{2}\left(\frac{x-\mu_{i}}{\sigma_{i}}\right)^{2}\right]\qquad\qquad\qquad\textrm{e}^{-\mu_{i}}\]
+
+\end_inset 
+
+
+\layout Subsection
+
+Underbrace-Template
+\layout Standard
+
+
+\begin_inset Formula \[
+\underbrace{\underbrace{r^{0},r^{1},r^{2},\ldots,r^{k-1}}_{k\textrm{ Elemente}},\underbrace{r^{0},r^{1},r^{2},\ldots,r^{k-1}},\ldots,\underbrace{r^{0},r^{1},r^{2},\ldots,r^{k-1}}}_{q-1\textrm{ Elemente }(i\textrm{ Zyklen})}\]
+
+\end_inset 
+
+
+\layout Subsection
+
+Verwendung von 
+\backslash 
+cfrac mit latex2html
+\layout Standard
+
+Latex2html kann 
+\backslash 
+cfrac von AMS nicht richtig konvertieren (ist aber der bessere Stil).
+ Deshalb ist folgende Bedingung dann zu verwenden.
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+begin{htmlonly}
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula \[
+\coth x=\frac{1}{x}+\frac{1}{\mbig{\frac{3}{x}+\frac{1}{\frac{5}{x}+\frac{1}{\frac{7}{x}+\cdots}}}}\msp.\]
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+end{htmlonly}
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+begin{latexonly}
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula \[
+\coth x=\cfrac{1}{x}+\cfrac{1}{\cfrac{3}{x}+\cfrac{1}{\cfrac{5}{x}+\cfrac{1}{\cfrac[r]{7}{x}+\cdots}}}\]
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+end{latexonly}
+\end_inset 
+
+
+\layout Subsection
+
+Differentiale/Integrale
+\layout Standard
+
+Der folgenden Stil sollte bei Integralen eingehalten werden
+\layout Standard
+
+
+\begin_inset Formula \[
+\int\limits _{-\infty}^{\infty}p(x)\,\tdc x\msp.\]
+
+\end_inset 
+
+
+\layout Standard
+
+Der kleine Abstand zwischen 
+\begin_inset Formula $p(x)$
+\end_inset 
+
+ und 
+\begin_inset Formula $\tdc x$
+\end_inset 
+
+ kann durch Eingabe von 
+\begin_inset Quotes eld
+\end_inset 
+
+
+\backslash 
+,
+\begin_inset Quotes erd
+\end_inset 
+
+ erzeugt werden.
+\layout Subsection
+
+Substack --- Limits übereinander
+\layout Enumerate
+
+In Start-Limit (Tiefstellung) den Befehl 
+\emph on 
+
+\backslash 
+substack
+\emph default 
+ eingeben (Achtung: keine sichtbare Reaktion)
+\layout Enumerate
+
+Erste Zeile schreiben
+\layout Enumerate
+
+Ctrl+Enter drücken
+\layout Enumerate
+
+Zweite Zeile schreiben
+\layout Standard
+
+
+\begin_inset Formula \[
+\prod_{\substack{i=0\\
+i\neq k}
+}^{n}a_{i}\]
+
+\end_inset 
+
+
+\layout Subsection
+
+Rahmen (Box) um Formeln
+\layout Standard
+
+Wird eingeleitet durch die Eingabe von 
+\begin_inset Quotes eld
+\end_inset 
+
+
+\backslash 
+boxed{}
+\begin_inset Quotes erd
+\end_inset 
+
+.
+ Eventuelle Satzendezeichen werden außerhalb der Box platziert, siehe 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+ie
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula \[
+\boxed{p_{Y}(y)=\int\limits _{-\infty}^{\infty}\frac{p_{X}(z,y/z)}{z}\,\tdc z}\msp.\]
+
+\end_inset 
+
+
 \layout Section
 
-
-\lang english
 Abbildungen
 \layout Subsection
 
-
-\lang english
 Unterabbildungen
 \layout Standard
 
@@ -449,7 +714,7 @@ collapsed false
 
 
 \begin_inset Graphics
-	filename figures/cauer_odd.eps
+	filename cauer_odd.eps
 	lyxscale 75
 	width 45col%
 	keepAspectRatio
@@ -462,7 +727,7 @@ collapsed false
 \hfill 
 
 \begin_inset Graphics
-	filename figures/cauer_even.eps
+	filename cauer_even.eps
 	lyxscale 75
 	width 45col%
 	keepAspectRatio
@@ -480,18 +745,114 @@ Gesamt-Abbildung
 
 \layout Section
 
-
-\lang english
 Formatierungen
+\layout Subsection
+
+Adjektivische Ableitungen von Eigennamen
+\layout Standard
+
+Adjektivische Ableitungen von Eigennamen auf -isch oder -sch schreibt man
+ klein, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+eg
+\end_inset 
+
+
+\layout Quote
+
+das ohmesche Gesetz
+\layout Quote
+
+die bernoullischen Gleichungen
+\layout Standard
+
+Wahlweise kann auch mit Apostroph geschrieben werden - dann schreibt man
+ mit großem Anfangsbuchstaben\SpecialChar ~
+
+\begin_inset LatexCommand \cite[\S~62]{ndr}
+
+\end_inset 
+
+, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+eg
+\end_inset 
+
+
+\layout Quote
+
+das 
+\noun on 
+Ohm
+\noun default 
+'sche Gesetz
+\layout Quote
+
+die 
+\noun on 
+Bernoulli
+\noun default 
+'schen Gleichungen
+\layout Subsection
+
+Suffixe in Zusammensetzungen
+\layout Enumerate
+
+Vor Suffixen setzt man nur dann einen Bindestrich, wenn sie mit einem Einzelbuch
+staben verbunden werden\SpecialChar ~
+
+\begin_inset LatexCommand \cite[\S~41]{ndr}
+
+\end_inset 
+
+, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+eg
+\end_inset 
+
+ 
+\begin_inset Formula $n$
+\end_inset 
+
+-te oder 
+\begin_inset Formula $x$
+\end_inset 
+
+-te.
+\layout Enumerate
+
+Bilden Verbindungen aus Ziffern und Suffixen den vorderen Teil einer Zusammenset
+zung, so setzt man nach dem Suffix einen Bindestrich, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+eg
+\end_inset 
+
+ 61er-Bildröhre, 80er-Jahre, 100stel-Millimeter.
 \layout Section
 
-
-\lang english
 Index
 \layout Enumerate
 
-
-\lang english
 Gruppierung von Stichworten ist in bis zu 3 Ebenen möglich, 
 \begin_inset ERT
 status Collapsed
@@ -507,18 +868,29 @@ eg
 Filter!Elliptisches!gerader Ordnung
 \layout Enumerate
 
-
-\lang english
-Eigennamen in Index-Einträgen können folgendermaßen eingegeben werden: 
+Eigennamen in Index-Einträgen können folgendermaßen eingegeben werden:
 \family typewriter 
+
+\newline 
 Filter!Butterworth@
 \backslash 
 noun{Butterworth}
 \family default 
 .
- Die Sortierung wird an Hand des Eintrages vor dem 
+ Die Sortierung wird von BibTeX dann anhand des Eintrages vor dem 
 \family typewriter 
 @
 \family default 
  vorgenommen.
+\layout Bibliography
+\bibitem [DtR]{ndr}
+
+
+\emph on 
+Zwischenstaatliche Kommission für deutsche Rechtschreibung
+\emph default 
+.
+ 
+\emph on 
+Deutsche Rechtschreibung --- Regeln und Wörterverzeichnis.
 \the_end
