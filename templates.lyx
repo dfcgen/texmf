@@ -1,0 +1,524 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass article
+\begin_preamble
+\input{text-inc.tex}
+\input{pdf-inc.tex}
+\input{math-inc.tex}
+\input{electr-inc.tex}
+
+\usepackage{html}
+\end_preamble
+\language german
+\inputencoding latin1
+\fontscheme times
+\graphics default
+\paperfontsize 10
+\spacing single 
+\papersize a4paper
+\paperpackage a4wide
+\use_geometry 0
+\use_amsmath 1
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+%% $Id: templates.lyx,v 1.1 2004-07-13 17:31:19 ralf Exp $
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Note
+collapsed true
+
+\layout Paragraph
+
+Style guidelines
+\layout Enumerate
+
+Figures should be less than 3.5 inch width (two column format) or max.
+ 7 1/6 inch width with 11pt text as recommended by IEEE.
+ Notice that the maximum text width for A4 paper with small margins is 5
+ inch, therefore use only 2.5 inch width (two column format) or 5 inch width
+ figures.
+\layout Enumerate
+
+In curve plots use around 100 sample points per inch
+\layout Enumerate
+
+Use the follwing wording for references
+\begin_deeper 
+\layout Itemize
+
+
+\backslash 
+part          -> "Teil"
+\layout Itemize
+
+
+\backslash 
+chapter       -> "Kapitel"
+\layout Itemize
+
+
+\backslash 
+section       -> "Abschnitt"
+\layout Itemize
+
+
+\backslash 
+subsection    -> "Abschnitt"
+\layout Itemize
+
+
+\backslash 
+subsubsection -> "Abschnitt"
+\layout Itemize
+
+
+\backslash 
+paragraph     -> "Absatz"
+\end_deeper 
+\layout Paragraph
+
+LaTeX Hints
+\layout Enumerate
+
+Use 
+\backslash 
+atop{} from 
+\backslash 
+TeX or 
+\backslash 
+substack from AMS for stackrel'd limits
+\layout Enumerate
+
+Because there is a problem in the hyperref-package the compile step may
+ fail sometimetimes.
+ In that case please delete all temporary files (.bbl, .blg, .aux, .toc, .
+ .
+ .
+ ) to bypass the problem.
+\layout Paragraph
+
+Environment
+\layout Enumerate
+
+Export BIBINPUTS="~/.TeX"
+\layout Paragraph
+
+LaTeX2HTML
+\layout Enumerate
+
+Provide "
+\backslash 
+usepackage[german]{babel}" in LaTeX preamle to ensure german wording.
+\layout Enumerate
+
+If math is used in captions put a 
+\backslash 
+protect command in front of fragile commands
+\layout Enumerate
+
+Do not place 
+\backslash 
+index commands into headlines because this results in 
+\begin_inset Quotes eld
+\end_inset 
+
+no title
+\begin_inset Quotes erd
+\end_inset 
+
+ references.
+\layout Enumerate
+
+To generate proper figures (with white background) export it with white
+ background from XFig.
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+%% PDF Setup (see file "preferences" in 
+\backslash 
+LyX Dir)
+\newline 
+%%
+\newline 
+%% dvips -Z -G0 -Ppdf
+\newline 
+%% ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true
+\newline 
+
+\newline 
+
+\backslash 
+hypersetup{
+\newline 
+    pdfauthor = {
+\backslash 
+textcopyright ~ Ralf Hoppe},
+\newline 
+    pdftitle = {LyX Tipps und Vorlagen},
+\newline 
+    pdfsubject = {LyX},
+\newline 
+    pdfkeywords = {LyX, LaTeX, Vorlagen}
+\newline 
+}
+\layout Standard
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+%% HTML Setup
+\layout Standard
+
+\backslash 
+begin{htmlonly}
+\newline 
+    
+\backslash 
+originalTeX %% Needed because "> in htmlmeta produces french guillemets in german
+\newline 
+    
+\backslash 
+htmlmeta{<META HTTP-EQUIV="content-language" CONTENT="de">}
+\newline 
+    
+\backslash 
+htmlmeta{<META NAME="robots" CONTENT="index, follow">}
+\newline 
+    
+\backslash 
+htmlmeta{<META NAME="author" CONTENT="Ralf Hoppe">}
+\newline 
+    
+\backslash 
+htmlmeta{<META NAME="description" LANG ="de" CONTENT="LyX Tipps und Vorlagen">}
+\newline 
+    
+\backslash 
+htmlmeta{<META NAME="keywords" LANG ="de" CONTENT="LyX, LaTeX, Vorlagen">}
+\newline 
+    
+\backslash 
+htmlmeta{<META NAME="classification" LANG ="de" CONTENT="Desktop Publishing">}
+\newline 
+    
+\backslash 
+germanTeX
+\newline 
+
+\newline 
+    
+\backslash 
+renewcommand{
+\backslash 
+qedsymbol}{
+\backslash 
+Box}
+\newline 
+
+\newline 
+    
+\backslash 
+renewenvironment{algorithm}[1][htbp] 
+\newline 
+    { 
+\backslash 
+begin{rawhtml} <hr> <em> Algorithmus </em> <hr> 
+\backslash 
+end{rawhtml} }
+\newline 
+    { 
+\backslash 
+begin{rawhtml} <br> <hr> <br> <br> 
+\backslash 
+end{rawhtml} }
+\newline 
+
+\newline 
+
+\backslash 
+end{htmlonly}
+\end_inset 
+
+
+\layout Title
+
+LyX Tipps und Vorlagen
+\layout Author
+
+Copyright 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+copyright
+\end_inset 
+
+\SpecialChar ~
+Ralf Hoppe
+\layout Standard
+
+
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset FloatList figure
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset FloatList table
+
+\end_inset 
+
+
+\layout Section
+
+
+\lang english
+Formeln
+\layout Subsection
+
+
+\lang english
+Zweispaltig
+\layout Standard
+
+
+\lang english
+Gleichmäßige links/rechts Verteilung mit 
+\family typewriter 
+
+\backslash 
+xalignat
+\layout Enumerate
+
+
+\family typewriter 
+\lang english
+
+\backslash 
+alignat
+\family default 
+ Formelumgebung erzeugen
+\layout Enumerate
+
+
+\lang english
+Zwei Spalten anfügen
+\layout Enumerate
+
+
+\lang english
+Formeln eingeben
+\newline 
+
+\begin_inset Formula \begin{xalignat}{2}
+\alpha & =\frac{1}{\sqrt{1+\delta^{2}}} & \delta & =\sqrt{\frac{1}{\alpha^{2}}-1}\end{xalignat}
+
+\end_inset 
+
+
+\layout Enumerate
+
+
+\lang english
+Datei speichern
+\layout Enumerate
+
+
+\family typewriter 
+\lang english
+
+\backslash 
+alignat
+\family default 
+ in Datei mit Texteditor zu 
+\family typewriter 
+
+\backslash 
+xalignat
+\family default 
+ ersetzen
+\layout Subsection
+
+
+\lang english
+Layout
+\layout Subsubsection
+
+
+\lang english
+Symbol 
+\family typewriter 
+
+\backslash 
+prime
+\layout Standard
+
+
+\lang english
+Verwendung sollte hochgestellt erfolgen (ansonsten ist Apostroph gleichwertig),
+ 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+cf
+\end_inset 
+
+ folgende Formel
+\layout Standard
+
+
+\lang english
+
+\begin_inset Formula \[
+f^{\prime}=f'\]
+
+\end_inset 
+
+
+\layout Section
+
+
+\lang english
+Abbildungen
+\layout Subsection
+
+
+\lang english
+Unterabbildungen
+\layout Standard
+
+
+\begin_inset Float figure
+wide false
+collapsed false
+
+\layout Standard
+
+
+\begin_inset Graphics
+	filename figures/cauer_odd.eps
+	lyxscale 75
+	width 45col%
+	keepAspectRatio
+	subcaption
+	subcaptionText "$n$ ungerade"
+
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Graphics
+	filename figures/cauer_even.eps
+	lyxscale 75
+	width 45col%
+	keepAspectRatio
+	subcaption
+	subcaptionText "$n$ gerade"
+
+\end_inset 
+
+
+\layout Caption
+
+Gesamt-Abbildung
+\end_inset 
+
+
+\layout Section
+
+
+\lang english
+Formatierungen
+\layout Section
+
+
+\lang english
+Index
+\layout Enumerate
+
+
+\lang english
+Gruppierung von Stichworten ist in bis zu 3 Ebenen möglich, 
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+eg
+\end_inset 
+
+ 
+\family typewriter 
+Filter!Elliptisches!gerader Ordnung
+\layout Enumerate
+
+
+\lang english
+Eigennamen in Index-Einträgen können folgendermaßen eingegeben werden: 
+\family typewriter 
+Filter!Butterworth@
+\backslash 
+noun{Butterworth}
+\family default 
+.
+ Die Sortierung wird an Hand des Eintrages vor dem 
+\family typewriter 
+@
+\family default 
+ vorgenommen.
+\the_end

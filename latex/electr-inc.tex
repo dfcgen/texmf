@@ -1,0 +1,26 @@
+%% -*- LaTeX -*-
+%%
+%% LaTeX include file for electrical engineering support macros (requires
+%% math-inc.tex)
+%% Copyright (c) Ralf Hoppe
+%%
+%% $Id: electr-inc.tex,v 1.1 2004-07-13 17:30:16 ralf Exp $
+%%
+%% History:
+%%
+%% $Log: not supported by cvs2svn $
+%%
+
+
+\newcommand{\ji} {j\,}
+\newcommand{\jw} {\ji \omega}
+\newcommand{\s} {p}             %% Laplace variable
+
+\DeclareMathOperator{\D} {D}    %% Characteristic function (Drosselung)
+\DeclareMathOperator{\TRF} {H}  %% Transfer function
+
+\DeclareMathOperator{\FT} {FT}  %% Fourier Transform
+\DeclareMathOperator{\ZT} {ZT}  %% Z - Transform
+
+\newcommand{\eD} [3] [0] {\epq{#1}{\D}{#2}{#3}} %%  for elliptic filters
+
