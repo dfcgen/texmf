@@ -1,0 +1,182 @@
+%% -*- LaTeX -*-
+%%
+%% LaTeX file for mathematical extensions and support macros
+%% Needs AMS-Math to work correct.
+%
+%% Copyright (c) Ralf Hoppe
+%%
+%% $Id: math-inc.tex,v 1.1 2003-08-09 11:59:33 ralf Exp $
+%%
+%% History:
+%% $Log: not supported by cvs2svn $
+%%
+
+
+
+%% Macros and Definitions
+%%
+
+\usepackage{array}
+\usepackage{ifthen}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{amsopn,amsthm,amsfonts}
+
+
+\addtolength{\extrarowheight}{2pt}      %% extra vertical space in array environment
+\addtolength{\jot}{2pt}                 %% extra vertical space in eqnarray environment
+
+
+\floatname{algorithm}{Algorithmus}      %% from algorithm package
+
+
+%%%%%%%%%%%%%%%%% New commands
+
+
+%% \newcommand{\tabvstretch} {\renewcommand{\arraystretch}{1.5}} % table/array vertical stretching
+%% \newcommand{\tabvnormal}  {\renewcommand{\arraystretch}{1.0}} % reset to default
+
+\newcommand{\mbig}[1]{\displaystyle{#1}}
+\newcommand{\mtab}[1]{                                        % math in tables
+        \setlength{\fboxrule}{0pt}                            %
+        \fbox{\ensuremath{\mbig{#1}}}}
+
+
+%% Optional superscript if exponent is unequal to zero
+%% Requires \usepackage{ifthen}
+%% Example: \optsup {0}{x} displays "x", \optsup {n}{x} displays "x^n"
+\newcommand{\optsup} [2] {{#2} \ifthenelse{\equal{#1}{0}}{\mbox{}}{^{#1}}}
+
+%% Assigns a value to variable (used in algorithms)
+\newcommand{\assign} [2] {\ensuremath{{#1} \Leftarrow {#2}}} % variable := value
+
+\newcommand{\incircle} [1] {\ensuremath{\mathbin{\settowidth{\dimen6}{\mbox{$\bigcirc$}}%
+              \makebox[0pt][l]{$\bigcirc$}\makebox[\dimen6]{\small{#1}}}}}
+
+\newcommand{\msp} {\ensuremath{\;}}     %% math space
+
+
+%%%%%%%%%%%%%%%%% Parameters of elliptic integrals and functions
+
+\newcommand{\tpar} [3] {#1; #2; #3}
+\newcommand{\epar} [2] {#1; #2}
+\newcommand{\spar} [1] {#1}
+
+
+%%%%%%%%%%%%%%%%% New functions
+
+
+\DeclareMathOperator{\ipart}{\Im} %% Imag
+\DeclareMathOperator{\rpart}{\Re} %% Real
+
+
+%% Simple Polynomial
+%% Example: \poly{a}{x}{n} defines a polynomial in x with coefficients a[i]
+%% from i=0 to i=n
+
+\newcommand {\poly} [3] {\ensuremath{{#1}_{#3}{#2}^{#3}+{#1}_{{#3}-1}{#2}^{{#3}-1}+\cdots +{#1}_2 {#2}^2+{#1}_1 {#2}+{#1}_0}}
+
+%% Basic functions
+
+\DeclareMathOperator{\sech}{sech} %% 1/cosh(x)
+\DeclareMathOperator{\arsinh}{arsinh}
+\DeclareMathOperator{\arcosh}{arcosh}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\gd}{gd} %% Guderman function gd(x) = arctan(sinh(x))
+
+
+%% Algebraic functions
+\DeclareMathOperator{\GF}{GF}   %% Galois field
+
+
+%% Chebyshev functions (polynomials)
+\DeclareMathOperator{\T}{T}
+\DeclareMathOperator{\U}{U}
+
+
+%% Arithmetic Geometric Mean (AGM)
+\DeclareMathOperator{\AGM}{M}
+
+%% Basic definition for abstract Jacobian elliptic function pq
+%% 1. arg: exponent
+%% 2. arg: name
+%% 3. arg: argument
+%% 4. arg: module (k)
+
+\newcommand{\epq} [4] { \optsup{#1}{#2} \left( \epar{#3}{#4} \right)}
+\newcommand{\exarg} [1] {\underset{{}^{\scriptscriptstyle{\star}}}{#1}}
+
+
+%% all jacobian elliptic functions
+
+\DeclareMathOperator{\jam}{am}
+\DeclareMathOperator{\jdelta}{\varDelta} % delta-amplitude
+\DeclareMathOperator{\jsn}{sn}
+\DeclareMathOperator{\jcn}{cn}
+\DeclareMathOperator{\jdn}{dn}
+\DeclareMathOperator{\jcd}{cd}
+\DeclareMathOperator{\jdc}{dc}
+\DeclareMathOperator{\jsc}{sc}
+\DeclareMathOperator{\jnc}{nc}
+\DeclareMathOperator{\jds}{ds}
+\DeclareMathOperator{\jcs}{cs}
+\DeclareMathOperator{\jsd}{sd}
+\DeclareMathOperator{\jns}{ns}
+\DeclareMathOperator{\jnd}{nd}
+
+%% Example \edc [2]{u}{k}
+%%         \edc {u}{k}
+
+\newcommand{\efunc} [4] [0] {\epq{#1}{#2}{#3}{#4}} % general elliptic function
+
+\newcommand{\esn} [3] [0] {\epq{#1}{\jsn}{#2}{#3}}
+\newcommand{\ecn} [3] [0] {\epq{#1}{\jcn}{#2}{#3}}
+\newcommand{\edn} [3] [0] {\epq{#1}{\jdn}{#2}{#3}}
+\newcommand{\ecd} [3] [0] {\epq{#1}{\jcd}{#2}{#3}}
+\newcommand{\edc} [3] [0] {\epq{#1}{\jdc}{#2}{#3}}
+\newcommand{\esc} [3] [0] {\epq{#1}{\jsc}{#2}{#3}}
+\newcommand{\enc} [3] [0] {\epq{#1}{\jnc}{#2}{#3}}
+\newcommand{\eds} [3] [0] {\epq{#1}{\jds}{#2}{#3}}
+\newcommand{\ecs} [3] [0] {\epq{#1}{\jcs}{#2}{#3}}
+\newcommand{\esd} [3] [0] {\epq{#1}{\jsd}{#2}{#3}}
+\newcommand{\ens} [3] [0] {\epq{#1}{\jns}{#2}{#3}}
+\newcommand{\ejnd} [3] [0] {\epq{#1}{\jnd}{#2}{#3}} % \end is reserved by LaTeX
+
+\newcommand{\eam} [3] [0] {\epq{#1}{\jam}{#2}{#3}}
+
+\newcommand{\edelta} [3] [0] {\epq{#1}{\jdelta}{#2}{#3}}
+\newcommand{\exdelta} [3] [0] {\epq{#1}{\exarg{\jdelta}}{#2}{#3}}
+
+
+%% Complete Elliptic Integral
+
+\DeclareMathOperator{\jK}{K}
+
+\newcommand{\eK} [2] [0] { \optsup{#1}{\jK} \left(\spar{#2}\right)}
+
+
+%% Incomplete Elliptic Integral
+
+\DeclareMathOperator{\F}{F}
+\DeclareMathOperator{\xF}{\exarg{\F}}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\jPi}{\Pi}
+
+\newcommand{\eF} [3] [0] {\epq{#1}{\F}{#2}{#3}}          %% Legendre form F(phi; k)
+\newcommand{\exF} [3] [0] {\epq{#1}{\xF}{#2}{#3}}        %% F(x; k)
+\newcommand{\eE} [3] [0] {\epq{#1}{\E}{#2}{#3}}          %% E(phi; k)
+\newcommand{\ePi} [3] {\jPi (\tpar{#1}{#2}{#3})}
+
+
+
+%% Zolotarev's function
+
+\DeclareMathOperator{\Z}{Z}
+
+\newcommand{\Zo} [3] [0] {\epq{#1}{\Z}{#2}{#3}}
+
+
+%% Zeroes and Poles
+\newcommand{\zn} [3] [0] {\optsup{#1}{{#2}_{\! \scriptscriptstyle 0}}_{#3}}
+\newcommand{\pn} [3] [0] {\optsup{#1}{{#2}_{\! \scriptscriptstyle \infty}}_{#3}}
+
