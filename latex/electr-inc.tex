@@ -4,17 +4,20 @@
 %% math-inc.tex)
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: electr-inc.tex,v 1.1 2004-07-13 17:30:16 ralf Exp $
+%% $Id: electr-inc.tex,v 1.2 2004-09-19 17:57:18 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.1  2004/07/13 17:30:16  ralf
+%% Initial revision
+%%
 %%
 
 
 \newcommand{\ji} {j\,}
 \newcommand{\jw} {\ji \omega}
-\newcommand{\s} {p}             %% Laplace variable
+\newcommand{\lps} {s}           %% Laplace variable s or p
 
 \DeclareMathOperator{\D} {D}    %% Characteristic function (Drosselung)
 \DeclareMathOperator{\TRF} {H}  %% Transfer function
@@ -22,5 +25,5 @@
 \DeclareMathOperator{\FT} {FT}  %% Fourier Transform
 \DeclareMathOperator{\ZT} {ZT}  %% Z - Transform
 
-\newcommand{\eD} [3] [0] {\epq{#1}{\D}{#2}{#3}} %%  for elliptic filters
+\newcommand{\eD} [3] [0] {\epq{#1}{\D}{#2}{#3}} %%  Characteristic function for elliptic filters
 
