@@ -5,10 +5,16 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.1 $",
+%%  version  = "$Revision: 1.2 $",
 %%  filename = "crypto.bib",
 %%  address  = "Gundelfinger Strasse 40, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
+
+
+
+
+%% Books
+%%%%%%%%%%%%%%%
 
 
 @Book{Menezes:1992,
@@ -27,5 +33,225 @@
   year =         {2001},
   address =      {Berlin, Heidelberg New York},
   edition =      {2.}
+}
+
+
+
+%% Standards
+%%%%%%%%%%%%%%%
+
+
+@Manual{FIPS:46-2,
+  organization = "National Bureau of Standards",
+  title     = "{FIPS PUB} 46-2: {D}ata {E}ncryption {S}tandard ({DES})", 
+  year      = "1993",
+  key       = "NBS",
+}
+
+
+@Manual{FIPS:81,
+  organization = "National Bureau of Standards",
+  title     = "{FIPS PUB} 81: {DES} Modes of Operation", 
+  year      = "1980",
+  key       = "NBS",
+}
+
+
+@Manual{FIPS:186,
+  organization = "National Institute of Standards and Technology",
+  title     = "{FIPS PUB} 186: {D}igitale {S}ignature {S}tandard", 
+  year      = "1994",
+  key       = "NIST",
+}
+
+
+@Manual{FIPS:188,
+  organization = "National Institute of Standards and Technology",
+  title     = "{FIPS PUB} 188: Standard Security Label for Information Transfer", 
+  year      = "1994",
+  key       = "NIST",
+}
+
+
+@Manual{ISO:10116:Draft,
+  title     = "ISO/IEC DIS 10116: IT - Security Techniques - Modes of Operation for an n-bit Block Cipher Algorithm", 
+  year      = "1996",
+  organization = "ISO/IEC",
+  note      = "(Draft 1996-12-03)",
+  key       = "ISO",
+}
+
+
+@Manual{ITU:X509,
+  title     = "Recommendation X.509: Information technology - Open Systems Interconnection - The Directory: Authentication framework",
+  organization = "ITU-T",
+  year      = "1997",
+  key       = "ITU",
+}
+
+
+
+@Manual{ANSI:T1:105,
+  title = "ANSI T1.105 - 1991: Digital Hierarchie - Optical Interfaces Rates and Formats Specifications ({SONET})",
+  organization = "ANSI",
+  year  = "1991",
+  key = 	 "ANSI",
+}
+
+
+@Manual{ANSI:X9:62,
+  organization = "{American National Standards Institute}",
+  title =        "{ANSI X9.62:1998}: Public Key Cryptography For The Financial Services Industry:
+                 The {E}lliptic {C}urve {D}igital {S}ignature {A}lgorithm ({ECDSA}){$^{\copyright}$}",
+  publisher =    "Accredited Standards Commitee X9",
+  address =      "Washington, DC, USA",
+  day =          "20",
+  month =        sep,
+  year =         "1998",
+  note =         "Working Draft {American National Standard}",
+  key = 	 "ANSI",
+}
+
+
+@Manual{IEEE:P1363,
+  organization = "{IEEE}",
+  title =        "{IEEE P1363}: Editorial Contribution to Standard for Public-Key Cryptography",
+  day =          "27",
+  month =        jul,
+  year =         "1998",
+  key = 	 "IEEE",
+}
+
+
+
+@Manual{PKCS:1993,
+  title = "RSA Encryption Standard",
+  key = "RSA",
+  organization = "RSA Laboratories",
+  month = nov,
+  year = "1993",
+  note = "(Version 1.5)",
+}
+
+
+
+%% RFC
+%%%%%%%%%%%%%%%%%%%%%%
+
+@Misc{IETF:RFC1422,
+  author =       "S. Kent",
+  title =        "{RFC 1422}: Privacy Enhancement for {Internet}
+                 Electronic Mail: Part {II}: Certificate-Based Key
+                 Management",
+  month =        feb,
+  year =         "1993",
+}
+
+
+@Misc{RFC1321,
+  author =       "R. Rivest",
+  title =        "{RFC 1321}: The {MD5} Message-Digest Algorithm",
+  month =        apr,
+  year =         "1992",
+  note =         "INFORMATIONAL",
+}
+
+
+@Misc{RFC2104,
+  author =       "H. Krawczyk and M. Bellare and R. Canetti",
+  title =        "{RFC 2104}: {HMAC}: Keyed-Hashing for Message Authentication",
+  month =        feb,
+  year =         "1997",
+  note =         "INFORMATIONAL",
+}
+
+
+@Misc{RFC2202,
+  author =       "P. Cheng and R. Glenn",
+  title =        "{RFC 2202}: Test Cases for {HMAC-MD5} and {HMAC-SHA}-1",
+  month =        sep,
+  year =         "1997",
+  note =         "INFORMATIONAL",
+}
+
+
+
+%% Proceedings
+%%%%%%%%%%%%%%%%%%%%%%
+
+@InProceedings{ruland:1997,
+  author = 	 "Christoph Ruland",
+  title = 	 "{B}reitbandverschl{\"u}sselung (155 {Mbit/s}) mit {S}elbstsynchronisation",
+  booktitle = 	 "Tagungsband 5. Deutscher IT-Sicherheitskongre{\ss} des BSI",
+  pages = 	 "289--301",
+  year = 	 "1997",
+  organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik - {BSI}",
+}
+
+
+@InProceedings{ruland:1999,
+  author = 	 "Christoph Ruland and Sven Kuhn and Kai Wollenweber",
+  title = 	 "{ATM}-{V}erschl{\"u}sselung mit 155 {Mbit/s}",
+  booktitle = 	 "IT-Sicherheit ohne Grenzen: Tagungsband 6. Deutscher IT-Sicherheitskongre{\ss} des BSI",
+  pages = 	 "287--295",
+  year = 	 "1999",
+  organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik - BSI",
+  publisher = "SecuMedia-Verlag",
+}
+
+
+
+
+@InProceedings{miyaguchi:1990,
+  author = 	 "Shoji Miyaguchi",
+  title = 	 "The {FEAL} Cipher Family",
+  booktitle = 	 "Advances in Cryptology - CRYPTO '90",
+  pages = 	 "627--638",
+  year = 	 "1991",
+  series = 	 "LNCS 537",
+  publisher = "Springer-Verlag",
+}
+
+
+@Article{okamoto:1990,
+  author = 	 "T. Okamoto",
+  title = 	 "A Fast Signature Scheme Based on Congruential Polynomial Operations",
+  journal = 	 "IEEE Transactions on Information Theory",
+  year = 	 1990,
+  volume = 	 "IT-36",
+  number = 	 "1",
+  pages = 	 "47--53",
+  month = 	 jan,
+}
+
+
+
+@article{RSA:1978,
+  author = 	 "R.L. Rivest and A. Shamir and L.M. Adleman",
+  title = 	 "A Method for Obtaining Digital Signatures and Public-Key Cryptosystems",
+  journal = 	 "Communications of the ACM",
+  year = 	 "1978",
+  volume = 	 "21",
+  number = 	 "2",
+  pages = 	 "120--126",
+  month = 	 feb,
+}
+
+
+@Book{schneier:1996,
+  author = 	 "Bruce Schneier",
+  title = 	 "Applied Cryptography",
+  publisher = 	 "John Wiley {\&} Sons, Inc.",
+  year = 	 "1996",
+  edition = 	 "2.",
+}
+
+
+@Book{Rosing:1999,
+  author = 	 "Michael Rosing",
+  title = 	 "Implementing Elliptic Curve Cryptography",
+  publisher = 	 "Manning Publications Co.",
+  year = 	 1999,
+  address = 	 "Greenwich",
 }
 
