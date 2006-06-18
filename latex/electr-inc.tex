@@ -4,26 +4,34 @@
 %% math-inc.tex)
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: electr-inc.tex,v 1.2 2004-09-19 17:57:18 ralf Exp $
+%% $Id: electr-inc.tex,v 1.3 2006-06-18 10:53:29 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.2  2004/09/19 17:57:18  ralf
+%% Abbreviation for Laplace variable p (resp. s) added
+%%
 %% Revision 1.1  2004/07/13 17:30:16  ralf
 %% Initial revision
 %%
 %%
 
 
-\newcommand{\ji} {j\,}
-\newcommand{\jw} {\ji \omega}
-\newcommand{\lps} {s}           %% Laplace variable s or p
+\newcommand{\lps} {s} %% Laplace variable s or p
 
-\DeclareMathOperator{\D} {D}    %% Characteristic function (Drosselung)
-\DeclareMathOperator{\TRF} {H}  %% Transfer function
+\newcommand{\acf} {\varphi} %% Auto (Cross) -correlation function
+\newcommand{\spd} {S} %% Spectral Power Density
+\newcommand{\drf} {D} %% Characteristic function (Drosselung)
+\newcommand{\trf} {H} %% Transfer function
+\newcommand{\atf} {A} %% Attenuation
+\newcommand{\phf} {B} %% Phase (neg. angle)
+\newcommand{\irf} {h} %% Impulse response function
 
-\DeclareMathOperator{\FT} {FT}  %% Fourier Transform
-\DeclareMathOperator{\ZT} {ZT}  %% Z - Transform
+\newcommand{\edrf} [3] [0] {\epq{#1}{\drf}{#2}{#3}} %%  elliptic \drf 
 
-\newcommand{\eD} [3] [0] {\epq{#1}{\D}{#2}{#3}} %%  Characteristic function for elliptic filters
+
+\DeclareMathOperator{\usf}   {s} %% Unit step function
+\DeclareMathOperator{\rect}  {r} %% Rectangular pulse
+\DeclareMathOperator{\dirac} {\delta} %% Dirac pulse
 
