@@ -35,7 +35,7 @@ collapsed false
 
 \layout Standard
 
-Version: $Id: allrefs.lyx,v 1.1 2004-09-27 17:19:56 ralf Exp $
+Version: $Id: allrefs.lyx,v 1.2 2006-06-18 10:54:39 ralf Exp $
 \end_inset 
 
 
@@ -84,13 +84,21 @@ math.bib
 \emph default 
 , 
 \emph on 
-computer.bib, crypto.bib
+computer.bib
 \emph default 
  und 
 \emph on 
 adsp.bib
 \emph default 
+ (ohne 
+\emph on 
+crypto.bib
+\emph default 
 , 
+\emph on 
+atm.bib
+\emph default 
+), 
 \begin_inset ERT
 status Collapsed
 
@@ -106,9 +114,18 @@ eg
 \end_inset 
 
 .
-\layout Comment
+\layout Standard
+
+
+\begin_inset Note
+collapsed false
+
+\layout Standard
 
 The reference in abstract forces LyX to call bibtex (do not change)
+\end_inset 
+
+
 \layout Standard
 
 
@@ -125,7 +142,7 @@ nocite{*}
 \layout Standard
 
 
-\begin_inset LatexCommand \BibTeX[geralpha]{math,adsp,computers,crypto}
+\begin_inset LatexCommand \BibTeX[geralpha]{math,adsp,computers,}
 
 \end_inset 
 
