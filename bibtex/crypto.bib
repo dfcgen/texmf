@@ -5,12 +5,17 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.3 $",
+%%  version  = "$Revision: 1.4 $",
 %%  filename = "crypto.bib",
 %%  address  = "Gundelfinger Strasse 40, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
 
 
+
+%% Some abbreviations taken from IEEEabrv.bib
+@STRING{IEEE_J_PROC       = "Proc. {IEEE}"}
+@STRING{IEEE_J_IT         = "{IEEE} Trans. Inform. Theory"}
+@STRING{IEEE_M_COM        = "{IEEE} Commun. Mag."}
 
 
 %% Books
@@ -18,7 +23,7 @@
 
 
 @Book{Menezes:1992,
-  author =       {Alfred J. Menezes, Paul {C. van} Oorschot, Scott A. Vanstone},
+  author =       {Alfred J. Menezes and P. C. {van Oorschot} and Scott A. Vanstone},
   title =        {Handbook of applied cryptography},
   publisher =    {CRC Press},
   year =         {1992},
@@ -180,7 +185,7 @@
 %%%%%%%%%%%%%%%%%%%%%%
 
 @InProceedings{ruland:1997,
-  author = 	 "Christoph Ruland",
+  author = 	 "C. Ruland",
   title = 	 "{B}reitbandverschl{\"u}sselung (155 {Mbit/s}) mit {S}elbstsynchronisation",
   booktitle = 	 "Tagungsband 5. Deutscher IT-Sicherheitskongre{\ss} des BSI",
   pages = 	 "289--301",
@@ -190,7 +195,7 @@
 
 
 @InProceedings{ruland:1999,
-  author = 	 "Christoph Ruland and Sven Kuhn and Kai Wollenweber",
+  author = 	 "C. Ruland and S. Kuhn and K. Wollenweber",
   title = 	 "{ATM}-{V}erschl{\"u}sselung mit 155 {Mbit/s}",
   booktitle = 	 "IT-Sicherheit ohne Grenzen: Tagungsband 6. Deutscher IT-Sicherheitskongre{\ss} des BSI",
   pages = 	 "287--295",
@@ -203,7 +208,7 @@
 
 
 @InProceedings{miyaguchi:1990,
-  author = 	 "Shoji Miyaguchi",
+  author = 	 "S. Miyaguchi",
   title = 	 "The {FEAL} Cipher Family",
   booktitle = 	 "Advances in Cryptology - CRYPTO '90",
   pages = 	 "627--638",
@@ -216,7 +221,7 @@
 @Article{okamoto:1990,
   author = 	 "T. Okamoto",
   title = 	 "A Fast Signature Scheme Based on Congruential Polynomial Operations",
-  journal = 	 "IEEE Transactions on Information Theory",
+  journal = 	 IEEE_J_IT,
   year = 	 1990,
   volume = 	 "IT-36",
   number = 	 "1",
@@ -224,7 +229,16 @@
   month = 	 jan,
 }
 
-
+@Article{Rivest:1978,
+  author =       {Leonard M. Adleman and Ronald L. Rivest},
+  title =        {The use of public key cryptography in communication system design},
+  journal =      IEEE_M_COM,
+  year =         {1978},
+  volume =       {16},
+  number =       {6},
+  pages =        {20--23},
+  month =        {Nov},
+}
 
 @article{RSA:1978,
   author = 	 "R. L. Rivest and A. Shamir and L. M. Adleman",
@@ -248,7 +262,7 @@
 
 
 @Book{Rosing:1999,
-  author = 	 "Michael Rosing",
+  author = 	 "M. Rosing",
   title = 	 "Implementing Elliptic Curve Cryptography",
   publisher = 	 "Manning Publications Co.",
   year = 	 1999,
