@@ -1,0 +1,52 @@
+%% -*- LaTeX -*-
+%%
+%% LaTeX include file for HTML support macros using TeX4ht
+%  Notice that this file is input typically from a private
+%% TeX4ht configuration file (and not from the documents
+%% LaTeX preamble).
+%%
+%% Copyright (c) Ralf Hoppe
+%%
+%% $Id: tex4ht-inc.tex,v 1.1 2007-07-29 12:17:02 ralf Exp $
+%%
+%% History:
+%% $Log: not supported by cvs2svn $
+%%
+
+%% \docsubj{title}{subject}{keywords}
+\newcommand{\htmlsubj} [3] {
+ \Configure{@HEAD}{\HCode{<meta name="description" content="#2">\Hnewline}}
+ \Configure{@HEAD}{\HCode{<meta name="keywords" content="#3">\Hnewline}}
+}
+
+
+\renewcommand{\docsubj} [3] {\htmlsubj{#1}{#2}{#3}}
+
+%% Inline math in headings/titles (no replacement needed for TeX4ht)
+%% Usage: \mhead{expr}{replacement}
+%% Example: \mhead{x^y}{x times y}
+\renewcommand{\mhead} [2] {\ensuremath{#1}}
+
+
+
+%% TeX4ht
+
+\Configure{@HEAD}{\HCode{<meta name="author" content="Ralf Hoppe">\Hnewline}}
+\Css{body {color:black; background-color:\#ffe8a0;}}
+\Css{.emphasized {color:black; background-color:\#ffd070;}}
+
+\ConfigureEnv{emphasized}{\HCode{<div class="emphasized">}}{\HCode{</div>}}{}{}  
+\Configure{crosslinks}{\HCode{&nbsp;[<b>}}{\HCode{</b>]&nbsp;}}{Vor}
+          {\HCode{Zur&uuml;ck}}{}{Anfang}{Ende}{Hoch}
+
+\Configure{frames}
+          {\HorFrames{*,3*}
+            \Frame[ name="tex4ht-menu" ]{tex4ht-toc}
+            \VerFrames[frameborder="no" border="0" framespacing="0"]{6*,*}
+            \Frame[ name="tex4ht-main" ]{tex4ht-body}
+            \Frame[ src="impressum.html" scrolling="no" ] {}
+            \EndFrames
+            \EndFrames
+          }
+          {\let\contentsname=\empty \tableofcontents}
+
