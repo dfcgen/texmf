@@ -5,10 +5,13 @@
 %
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: math-inc.tex,v 1.4 2006-11-18 08:14:44 ralf Exp $
+%% $Id: math-inc.tex,v 1.5 2007-07-29 16:48:58 ralf Exp $
 %%
 %% History:
 %% $Log: not supported by cvs2svn $
+%% Revision 1.4  2006/11/18 08:14:44  ralf
+%% Only comments changed
+%%
 %% Revision 1.3  2006/06/18 10:53:29  ralf
 %% New macros added (and some changed)
 %%
@@ -295,13 +298,7 @@
 \newcommand{\rlt} [1] [] {\allowbreak\;\Laplace{#1}\allowbreak\;}    %% Continuous Laplace transform (right time domain)
 
 
-%% Inline math in headings/titles (needs html and hyperref package)
+%% Inline math in headings/titles (no replacement per default)
 %% Usage: \mhead{expr}{replacement}
 %% Example: \mhead{x^y}{x times y}
-\newcommand{\mhead} [2] {%
-  \texorpdfstring{%
-    \mathversion{bold}\ensuremath{#1}\mathversion{normal}%
-  }{%
-    \latex{#2}%
-  }%
-}
+\providecommand{\mhead} [2] {\ensuremath{#1}}
