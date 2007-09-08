@@ -2,17 +2,26 @@
 %%
 %% LaTeX include file for pdf support.
 %%
+%% PDF Setup (see file "preferences" in \LyX Dir):
+%% dvips -Z -G0 -Ppdf
+%% ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.3 -dSubsetFonts=true -dEmbedAllFonts=true
+%%
+%%
+%%
 %% Forces Palatino font usage (in math too). Change this to Times if you
 %% want (using packages mathptmx and txfonts).
 %%
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: pdf-inc.tex,v 1.3 2006-06-18 10:53:02 ralf Exp $
+%% $Id: pdf-inc.tex,v 1.4 2007-09-08 16:43:24 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.3  2006/06/18 10:53:02  ralf
+%% New macro pdfsubj
+%%
 %% Revision 1.2  2003/10/26 20:31:22  ralf
 %% New macros
 %%
@@ -21,26 +30,29 @@
 %%
 %%
 
-%% Postscript font Times in text and math formulas (based on freely
-%% distributable fonts). Disadvantage: No support of bold in math
-%% formulas (normally needed in headings, see macro \mhead in file
-%% math-inc.tex)
-%%
-\usepackage{txfonts}
-\usepackage[slantedGreek]{mathptmx}
+\@ifpackageloaded{tex4ht}{}{    % do not confuse TeX4ht
+
+  %% Postscript font Times in text and math formulas (based on freely
+  %% distributable fonts). Disadvantage: No support of bold in math
+  %% formulas (normally needed in headings, see macro \mhead in file
+  %% math-inc.tex)
+  %%
+  \usepackage{txfonts}
+  \usepackage[slantedGreek]{mathptmx}
 
 
-%% Postscript font Palatino in text and math formulas (based on freely
-%% distributable fonts).
-%%
-%% \usepackage{pxfonts}                %% Declares \opentimes symbol)
-%% \usepackage[slantedGreek]{mathpazo} %% Palatino math
+  %% Postscript font Palatino in text and math formulas (based on freely
+  %% distributable fonts).
+  %%
+  %% \usepackage{pxfonts}                %% Declares \opentimes symbol)
+  %% \usepackage[slantedGreek]{mathpazo} %% Palatino math
 
 
-%% Math fonts from mathdesign package for usage with standard LaTeX
-%% fonts
-%%
-%% \usepackage[garamond]{mathdesign}
+  %% Math fonts from mathdesign package for usage with standard LaTeX
+  %% fonts
+  %%
+  %% \usepackage[garamond]{mathdesign}
+}
 
 
 \usepackage[usenames]{color}
@@ -68,19 +80,24 @@
 ] {hyperref}
 
 
-%% PDF Setup (see file "preferences" in \LyX Dir)
-%%
-%% dvips -Z -G0 -Ppdf
-%% ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.3 -dSubsetFonts=true -dEmbedAllFonts=true
-
-\usepackage{hyperref}
-
-%% \pdfsubj{title}{subject}{keywords}
-\newcommand{\pdfsubj} [3] {
+%% \docsubj{title}{subject}{keywords}
+\renewcommand{\docsubj} [3] {
   \hypersetup{
     pdfauthor = {\textcopyright ~ Ralf Hoppe},
     pdftitle = {#1},
     pdfsubject = {#2},
     pdfkeywords = {#3}
   }
+}
+
+
+%% Inline math in headings/titles
+%% Usage: \mhead{expr}{replacement}
+%% Example: \mhead{x^y}{x times y}
+\renewcommand{\mhead} [2] {%
+  \texorpdfstring{%
+    \mathversion{bold}\ensuremath{#1}\mathversion{normal}%
+  }{%
+    #2%
+  }%
 }
