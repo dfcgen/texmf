@@ -5,10 +5,13 @@
 %
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: math-inc.tex,v 1.5 2007-07-29 16:48:58 ralf Exp $
+%% $Id: math-inc.tex,v 1.6 2007-09-08 16:42:51 ralf Exp $
 %%
 %% History:
 %% $Log: not supported by cvs2svn $
+%% Revision 1.5  2007-07-29 16:48:58  ralf
+%% TeX4ht revision
+%%
 %% Revision 1.4  2006/11/18 08:14:44  ralf
 %% Only comments changed
 %%
@@ -50,15 +53,19 @@
 \newcommand{\mbig} [1] {\displaystyle{#1}}
 
 %% Fractions look extremely ugly in tables, because there is no space over
-%% under. The following macro writes a fbox without a rule but with the fboxsep.
-\newcommand{\mtab} [1] {                                      % math in tables
-        \setlength{\fboxrule}{0pt}                            %
-        \fbox{\ensuremath{\mbig{#1}}}}
+%% and under. The following macro writes a fbox without a frame but with the
+%% fboxsep. Bu this does not work on some HTML converters.
+\@ifpackageloaded{tex4ht}{      % math in tables
+  \newcommand{\mtab} [1] {      %
+    \ensuremath{\mbig{#1}}}}{
+  \newcommand{\mtab} [1] {      %
+    \setlength{\fboxrule}{0pt}  %
+    \fbox{\ensuremath{\mbig{#1}}}}}
 
 \newcommand{\mboxed} [1] {\boxed{#1}}
-\newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}}               % Bold matrix/vector
+\newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}} % Bold matrix/vector
 
-\newcommand{\ji} {\im}             %% j from package trfsigns
+\newcommand{\ji} {\im}               %% j from package trfsigns
 \newcommand{\vp} {\,\textup{V.\,P.}} %% Cauchy principal value
 
 
