@@ -1,64 +1,115 @@
-% BiBTeX File
-
-%% bibtexfile{
-%%  author   = "R. Hoppe",
-%%  version  = "$VERSION:$",
+%% -*-BibTeX-*-
+%%
+%% ATM
+%% ====================================================================
+%%
+%%  BibTeX-file{
+%%  author   = "Ralf Hoppe",
+%%  version  = "$Revision: 1.2 $",
 %%  filename = "atm.bib",
-%%  address  = "Wendenschlosstr. 168, 12557 Berlin",
-%%  email    = "Ralf.Hoppe at sit.rsd.de"}
+%%  address  = "Karl-Egon-Str. 22, 10318 Berlin, Germany",
+%%  email    = "ralf.hoppe at domain ieee.org" }
 
 
-
-%% ITU-T ATM Related Standards
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-@Manual{ITU:G702,
-  title  = 	 "Recommendation {G.702}: Digital Hierarchy Bit Rates",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year   = 	 "1988",
+@book{Kyas:1998,
+   author    = "Kyas, Othmar",
+   title     = "{ATM}-Netzwerke",
+   year      = "1998",
+   edition   = "4.",
+   publisher = "ITP",
+   address   = "Bonn",
 }
 
 
-@Manual{ITU:G703,
-  title = 	 "Recommendation {G.703}: Physical/electrical Characteristics of Hierarchical Digital Interfaces",
-  organization = "ITU-T",
-  key    =	 "ITU",
+@book{Sexton:1997,
+   author    = "M. Sexton and A. Reid",
+   title     = "Broadband Networking: ATM, SDH and SONET",
+   year      = "1997",
+   publisher = "{Artech House}",
+}
+
+
+@book{Hein:1998,
+   author    = "M. Hein and T. Vollmer",
+   title     = "Bay Networks ATM LAN Guide (dt)",
+   year      = "1998",
+   publisher = "{K{\"o}ln: FOSSIL-Verlag}",
+   key       = "Bay",
+}
+
+
+@book{Sellin:1997,
+   author    = "R. Sellin",
+   title     = "ATM {\&} ATM-Management",
+   year      = "1997",
+   publisher = "VDE Verlag",
+   address    = "Berlin, Offenbach",
+}
+
+
+
+@Book{Pan:1998,
+  author = 	 "Pan, Heng",
+  title = 	 "SNMP-based ATM network management",
+  publisher = 	 "{Artech House}",
   year = 	 "1998",
 }
 
 
-@Manual{ITU:G708,
-  organization = "ITU-T",
-  title     = "Recommendation {G.708}: Network Node Interface for the {S}ynchronous {D}igital {H}ierarchy (SDH)", 
-  key    =	 "ITU",
-  year      = "1991",
+
+
+@Book{Onvural:1997,
+  author = 	 "Raif O. Onvural and Rao Cheruki",
+  title = 	 "Signaling in {ATM} Networks",
+  publisher = 	 "{Artech House}",
+  year = 	 "1997",
 }
 
 
-@Manual{ITU:G707,
-  title     = "Recommendation {G.707}: Network Node Interface for the {S}ynchronous {D}igital {H}ierarchy (SDH) - Synchronous Digital Hierarchy Bit Rates",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1996",
+@Book{Siegmund:1993,
+  author = 	 "Siegmund, Gerd",
+  title = 	 "ATM --- Die Technik des Breitband-ISDN",
+  publisher = 	 "{R.v.Decker큦 Verlag, G. Schenck}",
+  address    =    "Heidelberg",
+  year = 	 "1993",
 }
 
 
-@Manual{ITU:G709,
-  title     = "Recommendation {G.709}: Synchronous Multiplexing Structure",
-  year      = "1991",
-  key    =	 "ITU",
-  organization = "ITU-T",
+%% manuals, datasheets
+%%
+
+@Manual{NEC:uPD98404,
+   organization = "{NEC Corporation}",
+   title     = "User큦 Manual {$\mu$}PD98404 - Advanced ATM Sonet Framer",
+   year      = "1996",
+   key       = "NEC",
 }
 
-@Manual{ITU:G783,
-  title     = "Recommendation {G.783}: Characteristics of {S}ynchronous {D}igital {H}ierarchy (SDH) Equipment Functional Blocks",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
+@Manual{TI:TNETA1500,
+   organization = "Texas Instruments, Inc.",
+   title     = "Datasheet TNETA1500 - 155.52-MBit/s Sonet/SDH ATM Receiver/Transmitter",
+   year      = "1998",
+   key       = "TI",
 }
 
+@Manual{IDT:77155,
+   organization = "Integrated Device Technology, Inc.",
+   title     = "Datasheet IDT77155 - 155Mbps ATM PHY (TC-PMD) User Network Interface",
+   year      = "1998",
+   key       = "IDT",
+}
+
+
+
+@Manual{MOTOROLA:MC92501UM,
+   organization = "Motorola, Inc.",
+   title     = "MC92501 ATM Cell Processor User's Manual",
+   year      = "1998",
+   key       = "MOT",
+}
+
+%% standards
+%%
 
 @Manual{ITU:I356,
   title     = "Recommendation {I.356}: B-ISDN ATM Layer Cell Transfer Performance",
@@ -114,30 +165,6 @@
   organization    = "ITU-T",
   key       = "ITU",
   year      = "1992",
-}
-
-
-@Manual{ITU:E164,
-   title     = "Recommendation {E.164/I.331}: The International Public Telecommunication Numbering Plan",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year      = "1997",
-}
-
-
-@Manual{ITU:G831,
-   title     = "Recommendation {G.831}: Management Capabilities of Transport Networks Based on the {S}ynchronous {D}igital {H}ierarchy (SDH)",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year      = "1996",
-}
-
-
-@Manual{ITU:M20,
-   title = 	 "Recommendation {M.20}: Maintenance Philosophy for Telecommunication Networks",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year = 	 "1992",
 }
 
 
@@ -217,56 +244,24 @@
   organization = "ITU-T",
 }
 
-
-
-@Manual{ITU:X680,
-  title     = "Recommendation {X.680}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Specification of Basic Notation",
-  organization = "ITU-T",
+@Manual{ITU:E164,
+   title     = "Recommendation {E.164/I.331}: The International Public Telecommunication Numbering Plan",
+   organization = "ITU-T",
   key    =	 "ITU",
-  year = "1997",
+   year      = "1997",
 }
 
 
-@Manual{ITU:X681,
-  title     = "Recommendation {X.681}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Information Object Specification",
-  organization = "ITU-T",
-  year      = "1997",
-}
 
 
-@Manual{ITU:X682,
-  title     = "Recommendation {X.682}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Constraint Specification",
-  organization = "ITU-T",
+@Manual{ITU:M20,
+   title = 	 "Recommendation {M.20}: Maintenance Philosophy for Telecommunication Networks",
+   organization = "ITU-T",
   key    =	 "ITU",
-  year      = "1997",
+   year = 	 "1992",
 }
 
 
-@Manual{ITU:X683,
-  title     = "Recommendation {X.683}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Parameterization of {ASN.1} Specifications",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
-}
-
-
-@Manual{ITU:X690,
-  title     = "Recommendation {X.690}: Information Technology - {ASN.1} Encoding Rules; Specification of Basic Encoding Rules ({BER}), Canonical Encoding Rules ({CER}) and Distinguished Encoding Rules ({DER})",
-  organization = "ITU-T",
-  year      = "1997",
-}
-
-
-@Manual{ITU:X691,
-  title     = "Recommendation {X.691}: Information Technology - {ASN.1} Encoding Rules - Specification of Packed Encoding Rules ({PER})",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
-}
-
-
-%% ETSI Standards
-%%%%%%%%%%%%%%%%%
 @Manual{ETSI:300216,
   title = 	 "{ETS 300 216}: Network Aspects ({NA}); Metropolitan Area Network ({MAN}) Physical layer convergence procedure for 155.520 {Mbit/s}",
   organization = "ETSI",
@@ -304,193 +299,7 @@
 }
 
 
-%% RFC큦
-%%%%%%%%
 
-@Misc{IETF:RFC1157,
-  author =       "J.D. Case and M. Fedor and M.L. Schoffstall and C. Davin",
-  title =        "{RFC 1157}: {S}imple {N}etwork {M}anagement {P}rotocol ({SNMP})",
-  day =          "1",
-  month =        may,
-  year =         "1990",
-}
-
-
-@Misc{IETF:RFC1155,
-  author =       "M.T. Rose and K. McCloghrie",
-  title =        "{RFC 1155}: Structure and Identification of Management
-                 Information for {TCP\slash IP}-based Internets",
-  day =          "1",
-  month =        may,
-  year =         "1990",
-}
-
-
-@Misc{IETF:RFC1213,
-  author =       "K. McCloghrie and M.T. Rose",
-  title =        "{RFC 1213}: Management Information Base for Network
-                 Management of {TCP\slash IP}-based Internets:{MIB-II}",
-  day =          "1",
-  month =        mar,
-  year =         "1991",
-}
-
-
-@Misc{IETF:RFC1695,
-  author =       "M. Ahmed and K. Tesink",
-  title =        "{RFC 1695}: Definitions of Managed Objects for {ATM}
-                 Management Version 8.0 using {SMIv2}",
-  month =        aug,
-  year =         "1994",
-}
-
-
-@Misc{IETF:RFC1902,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1902}: Structure of Management Information for
-                 Version 2 of the {Simple Network Management Protocol}
-                 ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-
-@Misc{IETF:RFC1903,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1903}: Textual Conventions for Version 2 of the
-                 {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1904,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1904}: Conformance Statements for Version 2 of
-                 the {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  bibdate =      "Thu Oct 16 09:34:09 MDT 1997",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1905,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1905}: Protocol Operations for Version 2 of the
-                 {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1906,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1906}: Transport Mappings for Version 2 of the
-                 {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1907,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1907}: Management Information Base for Version 2
-                 of the {Simple Network Management Protocol}
-                 ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1908,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1908}: Coexistence between Version 1 and Version
-                 2 of the {Internet-standard Network Management
-                 Framework}",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC2271,
-  author =       "D. Harrington and R. Presuhn and B. Wijnen",
-  title =        "{RFC 2271}: An Architecture for Describing {SNMP}
-                 Management Frameworks",
-  month =        jan,
-  year =         "1998",
-}
-
-@Misc{IETF:RFC2272,
-  author =       "J. Case and D. Harrington and R. Presuhn and B.
-                 Wijnen",
-  title =        "{RFC 2272}: Message Processing and Dispatching for the
-                 {Simple Network Management Protocol} ({SNMP})",
-  month =        jan,
-  year =         "1998",
-}
-
-@Misc{IETF:RFC2273,
-  author =       "D. Levi and P. Meyer and B. Stewart",
-  title =        "{RFC 2273}: {SNMPv3} Applications",
-  month =        jan,
-  year =         "1998",
-}
-
-@Misc{IETF:RFC2274,
-  author =       "U. Blumenthal and B. Wijnen",
-  title =        "{RFC 2274}: {User-based Security Model} ({USM}) for
-                 version 3 of the {Simple Network Management Protocol}
-                 ({SNMPv3})",
-  month =        jan,
-  year =         "1998",
-}
-
-@Misc{IETF:RFC2275,
-  author =       "B. Wijnen and R. Presuhn and K. McCloghrie",
-  title =        "{RFC 2275}: {View-based Access Control Model} ({VACM})
-                 for the {Simple Network Management Protocol} ({SNMP})",
-  month =        jan,
-  year =         "1998",
-}
-
-
-%% ANSI/Bell
-%%%%%%%%%%%%%%%%%%%%%%
-@Manual{Bell:TRNWT:253,
-  title =	"TR-NWT-000253: Synchronous Optical Network Transport Systems, Common Generic Criteria",
-  organization = "Bellcore, Inc.",
-  month =	dec,
-  year  = 	1991,
-  key = 	"Bell",
-}
-
-
-@Manual{ANSI:T1:105,
-  title = "{ANSI T1.105:1991}: Digital Hierarchy - Optical Interfaces Rates and Formats Specifications (SONET)",
-  organization = "{American National Standards Institute}",
-  address =      "Washington, DC, USA",
-  year  = "1991",
-  key = 	 "ANSI",
-}
-
-
-%% ATM Forum
-%%%%%%%%%%%%%%%%%%%%%%
 @Manual{ATMF:UniSpec:1994,
    title     = "ATM User-Network Interface Specification Version 3.1",
    organization    = "ATM Forum Technical Committee",
@@ -507,6 +316,17 @@
    year      = "1996",
    note      = "(af-sig-0061.000)",
   key = 	 "ATMF",
+}
+
+
+
+
+@Manual{ATMF:TrafficMgmt:1996,
+  title     = "Traffic Management Specification Version 4.0",
+  organization = "ATM Forum Technical Committee",
+  year      = "1996",
+  key       = "ATMF",
+  note = "(af-tm-0056.000)",
 }
 
 
@@ -529,163 +349,87 @@
 }
 
 
-@Manual{ATMF:SecurityFrame:1998,
-   title     = "ATM Security Framework 1.0",
-   organization = "ATM Forum Technical Committee",
-   year      = "1998",
-   note      = "(af-sec-0096.000)",
-   key        = "ATMF",
+@Misc{IETF:RFC1695,
+  author =       "M. Ahmed and K. Tesink",
+  title =        "{RFC 1695}: Definitions of Managed Objects for {ATM}
+                 Management Version 8.0 using {SMIv2}",
+  month =        aug,
+  year =         "1994",
 }
 
 
 
-@Manual{ATMF:SecuritySpec:1999,
-  title     = "ATM Security Specification Version 1.0",
-  organization = "ATM Forum Technical Committee",
-  year      = "1999",
-  month     = feb,
-  note      = "(af-sec-0100.000)",
-  key       = "ATMF",
+%%
+%% SONET/SDH standards
+%%
+
+@Manual{ITU:G702,
+  title  = 	 "Recommendation {G.702}: Digital Hierarchy Bit Rates",
+  organization = "ITU-T",
+  key    =	 "ITU",
+  year   = 	 "1988",
 }
 
 
-@Manual{ATMF:SecurityAddUNI:1999,
-  title     = "UNI Signaling 4.0 Security Addendum",
-  organization = "ATM Forum Technical Committee",
-  year      = "1999",
-  key       = "ATMF",
-  note = "(af-cs-0117.000)",
-}
-
-
-@Manual{ATMF:SecurityAddPNNI:1999,
-  title     = "PNNI Signaling 1.0 Security Addendum",
-  organization = "ATM Forum Technical Committee",
-  year      = "1999",
-  key       = "ATMF",
-  note = "(af-cs-0116.000)",
-}
-
-
-
-@Manual{ATMF:TrafficMgmt:1996,
-  title     = "Traffic Management Specification Version 4.0",
-  organization = "ATM Forum Technical Committee",
-  year      = "1996",
-  key       = "ATMF",
-  note = "(af-tm-0056.000)",
-}
-
-
-
-%% ISO
-%%%%%%%%%%%%
-
-@Manual{ISO:8824,
-  title     = "ISO 8824: Information processing systems - Open Systems Interconnection, Specification of Basic Encoding Rules for Abstract Syntax Notation One (ASN.1)",
-  organization = "ISO",
-  year      = "1987",
-  key       = "ISO",
-}
-
-
-
-%% ATM Books
-%%%%%%%%%%%%
-
-
-@book{Kyas:1998,
-   author    = "Kyas, Othmar",
-   title     = "{ATM}-Netzwerke",
-   year      = "1998",
-   edition   = "4.",
-   publisher = "ITP",
-   address   = "Bonn",
-}
-
-
-@book{Sexton:1997,
-   author    = "M. Sexton and A. Reid",
-   title     = "Broadband Networking: ATM, SDH and SONET",
-   year      = "1997",
-   publisher = "{Artech House, Inc.}",
-}
-
-
-@book{Hein:1998,
-   author    = "M. Hein and T. Vollmer",
-   title     = "Bay Networks ATM LAN Guide (dt)",
-   year      = "1998",
-   publisher = "{K{\"o}ln: FOSSIL-Verlag}",
-   key       = "Bay",
-}
-
-
-@book{Sellin:1997,
-   author    = "R. Sellin",
-   title     = "ATM {\&} ATM-Management",
-   year      = "1997",
-   publisher = "VDE Verlag GmbH",
-   address    = "Berlin, Offenbach",
-}
-
-
-
-@Book{Pan:1998,
-  author = 	 "Pan, Heng",
-  title = 	 "SNMP-based ATM network management",
-  publisher = 	 "{Artech House, Inc.}",
+@Manual{ITU:G703,
+  title = 	 "Recommendation {G.703}: Physical/electrical Characteristics of Hierarchical Digital Interfaces",
+  organization = "ITU-T",
+  key    =	 "ITU",
   year = 	 "1998",
 }
 
 
-
-
-@Book{Onvural:1997,
-  author = 	 "Raif O. Onvural and Rao Cheruki",
-  title = 	 "Signaling in {ATM} Networks",
-  publisher = 	 "{Artech House, Inc.}",
-  year = 	 "1997",
+@Manual{ITU:G708,
+  organization = "ITU-T",
+  title     = "Recommendation {G.708}: Network Node Interface for the {S}ynchronous {D}igital {H}ierarchy (SDH)", 
+  key    =	 "ITU",
+  year      = "1991",
 }
 
 
-@Book{Siegmund:1993,
-  author = 	 "Siegmund, Gerd",
-  title = 	 "ATM --- Die Technik des Breitband-ISDN",
-  publisher = 	 "{R.v.Decker큦 Verlag, G. Schenck}",
-  address    =    "Heidelberg",
-  year = 	 "1993",
+@Manual{ITU:G707,
+  title     = "Recommendation {G.707}: Network Node Interface for the {S}ynchronous {D}igital {H}ierarchy (SDH) - Synchronous Digital Hierarchy Bit Rates",
+  organization = "ITU-T",
+  key    =	 "ITU",
+  year      = "1996",
 }
 
 
-%% ATM Design (Hardware, Software)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@Manual{NEC:uPD98404,
-   organization = "{NEC Corporation}",
-   title     = "User큦 Manual {$\mu$}PD98404 - Advanced ATM Sonet Framer",
+@Manual{ITU:G709,
+  title     = "Recommendation {G.709}: Synchronous Multiplexing Structure",
+  year      = "1991",
+  key    =	 "ITU",
+  organization = "ITU-T",
+}
+
+@Manual{ITU:G783,
+  title     = "Recommendation {G.783}: Characteristics of {S}ynchronous {D}igital {H}ierarchy (SDH) Equipment Functional Blocks",
+  organization = "ITU-T",
+  key    =	 "ITU",
+  year      = "1997",
+}
+
+@Manual{ITU:G831,
+   title     = "Recommendation {G.831}: Management Capabilities of Transport Networks Based on the {S}ynchronous {D}igital {H}ierarchy (SDH)",
+   organization = "ITU-T",
+  key    =	 "ITU",
    year      = "1996",
-   key       = "NEC",
 }
 
-@Manual{TI:TNETA1500,
-   organization = "Texas Instruments, Inc.",
-   title     = "Datasheet TNETA1500 - 155.52-MBit/s Sonet/SDH ATM Receiver/Transmitter",
-   year      = "1998",
-   key       = "TI",
-}
-
-@Manual{IDT:77155,
-   organization = "Integrated Device Technology, Inc.",
-   title     = "Datasheet IDT77155 - 155Mbps ATM PHY (TC-PMD) User Network Interface",
-   year      = "1998",
-   key       = "IDT",
+@Manual{Bell:TRNWT:253,
+  title =	"TR-NWT-000253: Synchronous Optical Network Transport Systems, Common Generic Criteria",
+  organization = "Bellcore, Inc.",
+  month =	dec,
+  year  = 	1991,
+  key = 	"Bell",
 }
 
 
-
-@Manual{MOTOROLA:MC92501UM,
-   organization = "Motorola, Inc.",
-   title     = "MC92501 ATM Cell Processor User's Manual",
-   year      = "1998",
-   key       = "MOT",
+@Manual{ANSI:T1:105,
+  title = "{ANSI T1.105:1991}: Digital Hierarchy - Optical Interfaces Rates and Formats Specifications (SONET)",
+  organization = "{American National Standards Institute}",
+  address =      "Washington, DC, USA",
+  year  = "1991",
+  key = 	 "ANSI",
 }
+
