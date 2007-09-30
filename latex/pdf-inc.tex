@@ -14,11 +14,14 @@
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: pdf-inc.tex,v 1.5 2007-09-21 17:54:39 ralf Exp $
+%% $Id: pdf-inc.tex,v 1.6 2007-09-30 16:51:48 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.5  2007-09-21 17:54:39  ralf
+%% Option clash for mathptmx avoided
+%%
 %% Revision 1.4  2007-09-08 16:43:24  ralf
 %% Some changes wrt. tex4ht
 %%
@@ -94,9 +97,10 @@
 }
 
 
-%% Inline math in headings/titles
+%% Inline math in headings/titles (define/redefine it)
 %% Usage: \mhead{expr}{replacement}
 %% Example: \mhead{x^y}{x times y}
+\providecommand{\mhead} [2] {\ensuremath{#1}}
 \renewcommand{\mhead} [2] {%
   \texorpdfstring{%
     \mathversion{bold}\ensuremath{#1}\mathversion{normal}%
