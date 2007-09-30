@@ -1,0 +1,67 @@
+%% -*- LaTeX -*-
+%%
+%% LaTeX include file with base macros and packages
+%%
+%% Copyright (c) Ralf Hoppe
+%%
+%% $Id: base-inc.tex,v 1.1 2007-09-30 16:48:53 ralf Exp $
+%%
+%% History:
+%%
+%% $Log: not supported by cvs2svn $
+%%
+
+\usepackage{ifthen}
+\usepackage{newclude}
+\usepackage[german]{babel}
+\usepackage{bibgerm}
+\usepackage{textcomp}
+\usepackage{pifont}
+\usepackage{path}
+
+
+%% definition of \provideenvironment{name}[narg]{begdef}{enddef} command
+\def\provide@environment#1{%
+  \@ifundefined{#1}{\relax}{%
+  \expandafter\let\csname#1\endcsname\relax
+  \expandafter\let\csname end#1\endcsname\relax
+  \new@environment{#1}}}
+
+%% You can derive some  \ifisdefined{} ... \else...\fi construct from this
+\def\isdefined#1{\begingroup
+    \expandafter\endgroup\expandafter\ifx
+    \csname #1\endcsname\@undefined
+    undefined\else defined\fi}
+
+
+%%
+%% Checks if a TeX job is equal to (file) name. This is tricky because
+%% TeX macro \jobname expands to catcode 12 (other) characters.
+%%
+%% Example usage:
+%%   \if\thisjob{name}%
+%%   do this%
+%%   \else%
+%%   do that%
+%%   \fi%
+%% 
+\def\thisjob#1{..\fi\begingroup
+  \edef\jobA{\jobname}%
+% Convert an arbitrary string to "other" characters:
+% do \csname, \string, then \@gobble
+  \edef\jobB{\expandafter \expandafter \expandafter \@gobble
+   \expandafter \string \csname #1\endcsname}%
+  \expandafter \endgroup \ifx\jobA\jobB}
+
+
+
+\providecommand{\docsubj} [3] {}
+\setlength{\skip\footins}{10mm}
+
+
+%% Uncomment the following lines to suppress additional text added to a cite
+%% command as optional argument (normally specific part/chapter/section number
+%% links into the referenced work/paper
+%%
+%% \let\origcite\cite
+%% \renewcommand{\cite} [2] [ignored] {\protect\origcite{#2}}
