@@ -14,11 +14,14 @@
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: pdf-inc.tex,v 1.6 2007-09-30 16:51:48 ralf Exp $
+%% $Id: pdf-inc.tex,v 1.7 2008-04-20 14:27:15 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.6  2007-09-30 16:51:48  ralf
+%% Macro mhead will be redefined or defined (whether it was defined or not)
+%%
 %% Revision 1.5  2007-09-21 17:54:39  ralf
 %% Option clash for mathptmx avoided
 %%
@@ -36,7 +39,7 @@
 %%
 %%
 
-\@ifpackageloaded{tex4ht}{}{    % do not confuse TeX4ht
+\@ifpackageloaded{tex4ht.sty}{}{ % do not confuse TeX4ht
 
   %% Postscript font Times in text and math formulas (based on freely
   %% distributable fonts). Disadvantage: No support of bold in math
@@ -58,6 +61,17 @@
   %% fonts
   %%
   %% \usepackage[garamond]{mathdesign}
+
+  %% \docsubj{title}{subject}{keywords}
+  \providecommand{\docsubj} [3] {}
+  \renewcommand{\docsubj} [3] {
+    \hypersetup{
+      pdfauthor = {\textcopyright ~ Ralf Hoppe},
+      pdftitle = {#1},
+      pdfsubject = {#2},
+      pdfkeywords = {#3}
+    }
+  }
 }
 
 
@@ -86,15 +100,16 @@
 ] {hyperref}
 
 
-%% \docsubj{title}{subject}{keywords}
-\renewcommand{\docsubj} [3] {
-  \hypersetup{
-    pdfauthor = {\textcopyright ~ Ralf Hoppe},
-    pdftitle = {#1},
-    pdfsubject = {#2},
-    pdfkeywords = {#3}
-  }
-}
+%% If hyperref is loaded (after newfloat definition e.g. for algorithms,
+%% see LyX help file EmbeddedObjects.lyx for details) the following
+%% redefinitions are needed.
+\ifx\thealgorithm\undefined %% algorithm float defined?
+\else
+  \newfloat{Xalgorithm}{htbp}{loa}
+  \floatname{Xalgorithm}{Algorithmus}
+  \newcommand{\theHalgorithm}{\theHXalgorithm}
+  \renewenvironment{algorithm}[1][htbp]{\begin{Xalgorithm}[#1]}{\end{Xalgorithm}}
+\fi
 
 
 %% Inline math in headings/titles (define/redefine it)
