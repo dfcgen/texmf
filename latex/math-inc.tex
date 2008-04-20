@@ -5,10 +5,13 @@
 %
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: math-inc.tex,v 1.7 2007-09-30 16:52:22 ralf Exp $
+%% $Id: math-inc.tex,v 1.8 2008-04-20 14:26:42 ralf Exp $
 %%
 %% History:
 %% $Log: not supported by cvs2svn $
+%% Revision 1.7  2007-09-30 16:52:22  ralf
+%% Some macros moved to base-inc.tex
+%%
 %% Revision 1.6  2007-09-08 16:42:51  ralf
 %% Macro mtab changed (tex4ht adoption)
 %%
@@ -57,7 +60,7 @@
 %% Fractions look extremely ugly in tables, because there is no space over
 %% and under. The following macro writes a fbox without a frame but with the
 %% fboxsep. Bu this does not work on some HTML converters.
-\@ifpackageloaded{tex4ht}{      % math in tables
+\@ifpackageloaded{tex4ht.sty}{  % math in tables
   \newcommand{\mtab} [1] {      %
     \ensuremath{\mbig{#1}}}}{
   \newcommand{\mtab} [1] {      %
