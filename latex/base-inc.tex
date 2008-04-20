@@ -4,11 +4,14 @@
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: base-inc.tex,v 1.1 2007-09-30 16:48:53 ralf Exp $
+%% $Id: base-inc.tex,v 1.2 2008-04-20 14:25:39 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.1  2007-09-30 16:48:53  ralf
+%% Initial revision
+%%
 %%
 
 \usepackage{ifthen}
@@ -54,9 +57,8 @@
   \expandafter \endgroup \ifx\jobA\jobB}
 
 
-
 \providecommand{\docsubj} [3] {}
-\setlength{\skip\footins}{10mm}
+
 
 
 %% Uncomment the following lines to suppress additional text added to a cite
@@ -65,3 +67,9 @@
 %%
 %% \let\origcite\cite
 %% \renewcommand{\cite} [2] [ignored] {\protect\origcite{#2}}
+
+
+%% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\providecommand{\thenomenclature}{\theglossary}
