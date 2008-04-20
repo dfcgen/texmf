@@ -1,0 +1,484 @@
+%% -*-BibTeX-*-
+%%
+%% Cryptography
+%% ====================================================================
+%%
+%%  BibTeX-file{
+%%  author   = "Ralf Hoppe",
+%%  version  = "$Revision: 1.1 $",
+%%  filename = "security.bib",
+%%  address  = "Junker-J{\"o}rg-Strasse 2, 10318 Berlin, Germany",
+%%  email    = "ralf.hoppe at domain ieee.org"  }
+
+
+%% force type of technical report empty
+@STRING{ATMF_REPORT_TYPE = "{\mbox{}}"}
+
+
+
+%% Books
+%%%%%%%%%%%%%%%
+@Book{Lemke:2006,
+  editor =       {Kerstin Lemke, Christof Paar, Marko Wolf},
+  title =        {Embedded Security in Cars},
+  publisher =    {Springer-Verlag},
+  year =         {2006},
+  address =      {Berlin Heidelberg}
+}
+
+
+%% Articles/Reports
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% Proceedings
+%%%%%%%%%%%%%%%%%%%%%%
+@InProceedings{ruland:1997,
+  author =       "C. Ruland",
+  title =        "{B}reitbandverschl{\"u}sselung (155 {Mbit/s}) mit
+                  {S}elbstsynchronisation",
+  booktitle =    "Tagungsband 5. Deutscher IT-Sicherheitskongre{\ss} des BSI",
+  pages =        "289--301",
+  year =         "1997",
+  organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik -
+                  {BSI}",
+}
+
+@InProceedings{ruland:1999,
+  author =       "C. Ruland and S. Kuhn and K. Wollenweber",
+  title =        "{ATM}-{V}erschl{\"u}sselung mit 155 {Mbit/s}",
+  booktitle =    "IT-Sicherheit ohne Grenzen: Tagungsband 6. Deutscher
+                  IT-Sicherheitskongre{\ss} des BSI",
+  pages =        "287--295",
+  year =         "1999",
+  organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik -
+                  BSI",
+  publisher =    "SecuMedia-Verlag",
+}
+
+%% Standards
+%%%%%%%%%%%%%%%
+
+@TechReport{ANSI:X9.17,
+  title =        {Financial Institution Key Management (Wholesale)},
+  institution =  {ANSI},
+  year =         {1985},
+  key =          {ANSI},
+  type =         {American National Standard for Financial Services},
+  number =       {X9.17},
+  projects =     {FPSM},
+}
+
+@TechReport{FIPS:188,
+  institution =  "National Institute of Standards and Technology",
+  title =        "Standard Security Label for Information Transfer",
+  type =         "FIPS Publication",
+  number =       "188",
+  year =         "1994",
+  key =          "NIST",
+}
+
+@TechReport{FIPS:140-2,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Security Requirements for Cryptographic Modules},
+  type =         {FIPS Publication},
+  number =       {140-2},
+  year =         {2001},
+  month =        may,
+  key =          {NIST},
+  projects =     {BOS},
+}
+
+
+@TechReport{ITU:X509,
+  title =        {{I}nformation technology - {O}pen {S}ystems {I}nterconnection
+                  - {T}he {D}irectory: {A}uthentication framework},
+  key =          {ITU},
+  institution =  {ITU-T},
+  type =         "Recommendation",
+  number =       "X.509",
+  year =         {1997},
+  keywords =     {security, certificates, PKI},
+  projects =     {Eagle},
+}
+
+@TechReport{IETF:RFC1422,
+  author =       {S. Kent},
+  title =        {Privacy Enhancement for {Internet} Electronic Mail: Part
+                  {II}: Certificate-Based Key Management},
+  institution =  "IETF",
+  type =         {RFC},
+  number =       {1422},
+  year =         {1993},
+  month =        feb,
+  keywords =     {security, certificates, PKI, PEM, eMail},
+  projects =     {Eagle},
+}
+
+@TechReport{IEEE:STD802.10,
+  title =        {{IEEE} Standards for Local and Metropolitan Area Networks:
+                  Standard for Interoperable LAN/MAN Security (SILS)},
+  institution =  {IEEE},
+  year =         {1998},
+  key =          {IEEE},
+  type =         {Std},
+  number =       {802.10},
+  note =         {(withdrawn 01/2004)},
+  keywords =     {ethernet, SILS, security},
+  projects =     {SITLine},
+}
+
+@TechReport{ATMF:SecurityFrame:1998,
+  title =        "{ATM} Security Framework 1.0",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-sec-0096.000",
+  year =         "1998",
+  key =          "AF",
+  keywords =     {ATM, UNI, security},
+  projects =     {SITLine},
+}
+
+@TechReport{ATMF:SecuritySpec:1999,
+  title =        "{ATM} Security Specification Version 1.0",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-sec-0100.000",
+  year =         "1999",
+  month =        feb,
+  key =          "AF",
+  keywords =     {ATM, UNI, security},
+  projects =     {SITLine},
+}
+
+@TechReport{ATMF:SecurityAddUNI:1999,
+  title =        "{UNI} Signaling 4.0 Security Addendum",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-cs-0117.000",
+  year =         "1999",
+  key =          {AF},
+  keywords =     {ATM, NNI, security},
+  projects =     {SITLine},
+}
+
+@TechReport{ATMF:SecurityAddPNNI:1999,
+  title =        "{PNNI} Signaling 1.0 Security Addendum",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-cs-0116.000",
+  year =         "1999",
+  key =          {AF},
+  keywords =     {ATM, NNI, security},
+  projects =     {SITLine},
+}
+
+@TechReport{ETSI:300392-7,
+  title =        {Terrestrial Trunked Radio ({TETRA}); Voice plus Data
+                  ({V+D}); Part~7: Security},
+  institution =  {ETSI},
+  type =         {European Standard},
+  number =       {EN~300{\,}392-7},
+  key =          {ETSI},
+  year =         {2007},
+  month =        jul,
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:300393-7,
+  title =        {Terrestrial Trunked Radio ({TETRA}); Packet Data Optimized ({PDO});
+                  Part~7: Security},
+  institution =  {ETSI},
+  type =         {European Standard},
+  number =       {EN~300{\,}393-7},
+  key =          {ETSI},
+  year =         {1997},
+  month =        may,
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:300396-6,
+  title =        {Terrestrial Trunked Radio ({TETRA}); Direct Mode Operation
+                  ({DMO}); Part~6: Security},
+  institution =  {ETSI},
+  type =         {European Standard},
+  number =       {EN~300{\,}396-6},
+  key =          {ETSI},
+  year =         {2006},
+  month =        jun,
+  projects =     {BOS},
+}
+
+
+%% Smartcard
+%%%%%%%%%%%%%%%%
+
+
+@Manual{EMV:2000,
+  title =        {{EMV2000} Integrated Circuit Card Specification for Payment
+                  Systems},
+  key =          {EMV},
+  organization = {EMVCo},
+  month =        dec,
+  year =         {2000},
+  keywords =     {smartcard},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-1,
+  title =        {Identification cards -- Integrated circuit(s) cards with
+                  contacts -- Part~1: Physical characteristics},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-1},
+  year =         {1998},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-2,
+  title =        {Identification cards -- Integrated circuit cards -- Part~2:
+                  Cards with contacts -- Dimensions and location of the
+                  contacts},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-2},
+  year =         {2007},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-3,
+  title =        {Identification cards -- Integrated circuit cards -- Part~3:
+                  Cards with contacts -- Electrical interface and transmission
+                  protocols},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-3},
+  year =         {2006},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-4,
+  title =        {Identification cards -- Integrated circuit cards -- Part~4:
+                  Organization, security and commands for interchange},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-4},
+  year =         {2005},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-6,
+  title =        {Identification cards -- Integrated circuit cards -- Part~6:
+                  Interindustry data elements for interchange},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-6},
+  year =         {2004},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-8,
+  title =        {Identification cards -- Integrated circuit cards -- Part~8:
+                  Commands for security operations},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-8},
+  year =         {2004},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-9,
+  title =        {Identification cards -- Integrated circuit cards -- Part~9:
+                  Commands for card management},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-9},
+  year =         {2004},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ISO:7816-12,
+  title =        {Identification cards - Integrated circuit cards -- Part~12:
+                  Cards with contacts -- {USB} electrical interface and
+                  operating procedures},
+  type =         {International Standard},
+  number =       {ISO/IEC~7816-12},
+  year =         {2005},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:101267,
+  title =        {Digital cellular telecommunications system (Phase~{2+});
+                  Specification of the {SIM} {A}pplication {T}oolkit ({SAT})
+                  for the Subscriber Identity Module - Mobile Equipment
+                  ({SIM-ME}) interface},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~101{\,}267},
+  key =          {ETSI},
+  year =         {2006},
+  month =        jun,
+  note =         {({3GPP} {TS~11.14} version~8.18.0 Release~1999)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:121111,
+  title =        {{U}niversal {M}obile {T}elecommunications {S}ystem ({UMTS});
+                  {USIM} and {IC} card requirements},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~121{\,}111},
+  key =          {ETSI},
+  year =         {2008},
+  month =        jan,
+  note =         {({3GPP} {TS}~21.111 version~8.1.0 Release~8)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:122038,
+  title =        {Digital cellular telecommunications system (Phase {2+});
+                  {U}niversal {M}obile {T}elecommunications {S}ystem ({UMTS});
+                  {USIM} {A}pplication {T}oolkit ({USAT/SAT}); Service
+                  description; Stage~1},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~122{\,}038},
+  key =          {ETSI},
+  year =         {2005},
+  month =        sep,
+  note =         {({3GPP} {TS}~22.038 version~7.5.0 Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:131101,
+  title =        {{U}niversal {M}obile {T}elecommunications {S}ystem ({UMTS});
+                  {UICC}-terminal interface; Physical and logical
+                  characteristics},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~131{\,}101},
+  key =          {ETSI},
+  year =         {2007},
+  month =        jun,
+  note =         {({3GPP} {TS}~31.101 version~7.0.1 Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:131102,
+  title =        {{U}niversal {M}obile {T}elecommunications {S}ystem ({UMTS});
+                  Characteristics of the {U}niversal {S}ubscriber {I}dentity
+                  {M}odule ({USIM}) application},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~131{\,}102},
+  key =          {ETSI},
+  year =         {2008},
+  month =        jan,
+  note =         {({3GPP} {TS}~31.102 version~7.11.0 Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:131111,
+  title =        {Digital cellular telecommunications system (Phase~{2+});
+                  {U}niversal {M}obile {T}elecommunications {S}ystem ({UMTS});
+                  {U}niversal {S}ubscriber {I}dentity {M}odule ({USIM})
+                  {A}pplication {T}oolkit ({USAT})},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~131{\,}111},
+  key =          {ETSI},
+  year =         {2007},
+  month =        oct,
+  note =         {({3GPP} {TS}~31.111 version~7.8.0 Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:102222,
+  title =        {{I}ntegrated {C}ircuit {C}ards ({ICC}); Administrative
+                  commands for telecommunications applications},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~102{\,}222},
+  key =          {ETSI},
+  year =         {2007},
+  month =        feb,
+  note =         {(Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:102223,
+  title =        {Smart Cards; {C}ard {A}pplication {T}oolkit ({CAT})},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~102{\,}223},
+  key =          {ETSI},
+  year =         {2008},
+  month =        feb,
+  note =         {(Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:102224,
+  title =        {Smart Cards; Security mechanisms for {UICC} based
+                  Applications - Functional requirements},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~102{\,}224},
+  key =          {ETSI},
+  year =         {2006},
+  month =        oct,
+  note =         {(Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:102225,
+  title =        {Smart Cards; Secured packet structure for {UICC} based
+                  applications},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~102{\,}225},
+  key =          {ETSI},
+  year =         {2008},
+  month =        feb,
+  note =         {(Release~8)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:102226,
+  title =        {Smart Cards; Remote {APDU} structure for {UICC} based
+                  applications},
+  institution =  {ETSI},
+  type =         {Technical Specification},
+  number =       {TS~102{\,}226},
+  key =          {ETSI},
+  year =         {2008},
+  month =        feb,
+  note =         {(Release~7)},
+  projects =     {BOS},
+}
+
+@TechReport{ETSI:300812,
+  title =        {Terrestrial Trunked Radio ({TETRA}); Security aspects;
+                  Subscriber Identity Module to Mobile Equipment ({SIM-ME})
+                  interface},
+  institution =  {ETSI},
+  type =         {European Standard},
+  number =       {EN~300{\,}812},
+  key =          {EN},
+  year =         {2001},
+  month =        dec,
+  projects =     {BOS},
+}
+
+
+
