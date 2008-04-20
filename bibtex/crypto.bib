@@ -5,7 +5,7 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.5 $",
+%%  version  = "$Revision: 1.6 $",
 %%  filename = "crypto.bib",
 %%  address  = "Junker-J{\"o}rg-Strasse 2, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
@@ -20,10 +20,9 @@
 
 %% Books
 %%%%%%%%%%%%%%%
-
-
 @Book{Menezes:1992,
-  author =       {Alfred J. Menezes and P. C. {van Oorschot} and Scott A. Vanstone},
+  author =       {Alfred J. Menezes and P. C. {van Oorschot} and Scott
+                  A. Vanstone},
   title =        {Handbook of applied cryptography},
   series =       {CRC Press Series on Discrete Mathematics and Its Application},
   publisher =    {CRC Press},
@@ -31,65 +30,126 @@
   edition =      {2.}
 }
 
-
 @Book{Welschenbach:2001,
   author =       "Michael Welschenbach",
-  title =        "Kryptographie in {C} und {C++}",
+  title =        "{K}ryptographie in {C} und {C++}",
   publisher =    "Springer-Verlag",
   year =         "2001",
-  address =      "Berlin, Heidelberg New York",
+  address =      "Berlin Heidelberg New York",
   edition =      "2."
 }
 
-
 @Book{Schneier:1996,
-  author = 	 "Bruce Schneier",
-  title = 	 "Applied Cryptography",
-  publisher = 	 "John Wiley {\&} Sons",
-  year = 	 "1996",
-  edition = 	 "2.",
+  author =       "Bruce Schneier",
+  title =        "Applied Cryptography",
+  publisher =    "John Wiley {\&} Sons",
+  year =         "1996",
+  edition =      "2."
 }
-
 
 @Book{Rosing:1999,
-  author = 	 "M. Rosing",
-  title = 	 "Implementing Elliptic Curve Cryptography",
-  publisher = 	 "Manning Publications Co.",
-  year = 	 1999,
-  address = 	 "Greenwich",
+  author =       {Michael Rosing},
+  title =        {Implementing Elliptic Curve Cryptography},
+  publisher =    {Manning Publications},
+  year =         {1999}
 }
-
-
 
 %% Articles/Reports
-%%%%%%%%%%%%%%%%%%%%%%
-
-@Article{okamoto:1990,
-  author = 	 "T. Okamoto",
-  title = 	 "A Fast Signature Scheme Based on Congruential Polynomial Operations",
-  journal = 	 IEEE_J_IT,
-  year = 	 1990,
-  volume = 	 "IT-36",
-  number = 	 "1",
-  pages = 	 "47--53",
-  month = 	 jan,
+%%%%%%%%%%%%%%%%%%%%%%%%
+@Article{Bernstein:2002,
+  title =        {Pippenger's Exponentiation Algorithm},
+  author =       {Daniel J. Bernstein},
+  year =         {2002},
+  month =        dec,
 }
 
+@Article{Karatsuba:1963,
+  author =       {A. Karatsuba and Y. Ofman},
+  journal =      {Soviet Physics-Doklady},
+  number =       {7},
+  pages =        {595--596},
+  title =        {Multiplication of multidigit numbers on automata},
+  volume =       {7},
+  year =         {1963},
+  note =         {(English translation)},
+}
+
+@Article{Pope:1960,
+  author =       {D. A. Pope and M. L. Stein},
+  title =        {Multiple Precision Arithmetic},
+  journal =      {Communications of the Association for Computing Machinery
+                  ({CACM})},
+  volume =       {3},
+  number =       {12},
+  pages =        {652--654},
+  month =        dec,
+  year =         {1960},
+}
+
+@Article{Lehmer:1938,
+  author =       "D. H. Lehmer",
+  title =        "{Euclid}'s algorithm for large numbers",
+  journal =      "American Mathematical Monthly",
+  volume =       "45",
+  pages =        "227--233",
+  year =         "1938",
+}
+
+@article{Montgomery:1985,
+  author =       {P. Montgomery},
+  title =        {Modular multiplication without trial division},
+  journal =      {Mathematics of Computation},
+  volume =       {44},
+  number =       {170},
+  pages =        {519--521},
+  year =         {1985},
+}
+
+@Article{Schoenhage:1971,
+  author =       {A. Sch{\"o}nhage and V. Strassen},
+  title =        {{S}chnelle {M}ultiplikation gro{\ss}er {Z}ahlen},
+  journal =      {Computing},
+  volume =       {7},
+  number =       {3--4},
+  pages =        {281--292},
+  year =         {1971},
+}
+
+@Article{Comba:1990,
+  author =       {Paul G. Comba},
+  title =        {Exponentiation Cryptosystems on the {IBM} {PC}},
+  journal =      {IBM Systems Journal},
+  volume =       {29},
+  number =       {4},
+  year =         {1990},
+  month =        dec,
+  pages =        {526--538}
+}
+
+@Article{Shannon:Secrecy:1949,
+  author =       {C. E. Shannon},
+  title =        {Communication Theory of Secrecy Systems},
+  journal =      {Bell Systems Technical Journal},
+  year =         {1949},
+  volume =       {28},
+  pages =        {656--715}
+}
 
 @Article{Diffie:1976,
-  author = 	 {Whitfield Diffie and Martin E. Hellman},
-  title = 	 {New Directions in Cryptographie},
-  journal = 	 IEEE_J_IT,
-  year = 	 {1976},
-  volume = 	 {22},
-  number = 	 {6},
-  pages = 	 {644--654},
-  month = 	 nov,
+  author =       {Whitfield Diffie and Martin E. Hellman},
+  title =        {New Directions in Cryptographie},
+  journal =      IEEE_J_IT,
+  year =         {1976},
+  volume =       {22},
+  number =       {6},
+  pages =        {644--654},
+  month =        nov,
 }
 
 @Article{Rivest:1978,
   author =       {Leonard M. Adleman and Ronald L. Rivest},
-  title =        {The use of public key cryptography in communication system design},
+  title =        {The use of public key cryptography in communication system
+                  design},
   journal =      IEEE_M_COM,
   year =         {1978},
   volume =       {16},
@@ -99,308 +159,282 @@
 }
 
 @article{RSA:1978,
-  author = 	 "R. L. Rivest and A. Shamir and L. M. Adleman",
-  title = 	 "A Method for Obtaining Digital Signatures and Public-Key Cryptosystems",
-  journal = 	 "Communications of the ACM",
-  year = 	 "1978",
-  volume = 	 "21",
-  number = 	 "2",
-  pages = 	 "120--126",
-  month = 	 feb,
+  author =       "R. L. Rivest and A. Shamir and L. M. Adleman",
+  title =        "A Method for Obtaining Digital Signatures and Public-Key
+                  Cryptosystems",
+  journal =      "Communications of the ACM",
+  year =         "1978",
+  volume =       "21",
+  number =       "2",
+  pages =        "120--126",
+  month =        feb,
 }
-
 
 @Article{Feistel:1975,
   author =       {Horst Feistel, William A. Notz and J. Lynn Smith},
-  title =        {Some cryptographic techniques for machine-to-machine data communications},
-  journal =      {IEEE_J_PROC},
+  title =        {Some cryptographic techniques for machine-to-machine data
+                  communications},
+  journal =      IEEE_J_PROC,
   year =         {1975},
   volume =       {63},
   number =       {11},
   pages =        {1545--1554},
-  month =        {nov},
+  month =        nov,
 }
 
+@Article{okamoto:1990,
+  author =       "T. Okamoto",
+  title =        "A Fast Signature Scheme Based on Congruential Polynomial
+                  Operations",
+  journal =      IEEE_J_IT,
+  year =         1990,
+  volume =       "IT-36",
+  number =       "1",
+  pages =        "47--53",
+  month =        jan,
+}
+
+@Unpublished{Black:2000,
+  author =       {John Black and Phillip Rogaway},
+  title =        {A Suggestion for Handling Arbitrary-Length Messages with the
+                  {CBC} {MAC}},
+  note =         {Comments to NIST concerning {AES} Modes of Operations},
+  month =        may,
+  year =         {2003},
+  url =          {http://csrc.nist.gov/CryptoToolkit/modes/proposedmodes/index.html}
+}
+
+@Unpublished{Lipmaa:2000,
+  author =       {Helger Lipmaa and Phillip Rogaway and David Wagner},
+  title =        {{CTR}-{M}ode Encryption},
+  note =         {Comments to {NIST} concerning {AES} Modes of Operations},
+  month =        may,
+  year =         {2000},
+  url =          {http://csrc.nist.gov/CryptoToolkit/modes/proposedmodes/index.html}
+}
+
+%% Proceedings
+%%%%%%%%%%%%%%%%%%%%%%
+@InProceedings{miyaguchi:1990,
+  author =       "S. Miyaguchi",
+  title =        "The {FEAL} Cipher Family",
+  booktitle =    "Advances in Cryptology - CRYPTO '90",
+  pages =        "627--638",
+  year =         "1991",
+  series =       "LNCS 537",
+  publisher =    "Springer-Verlag",
+}
+
+@InProceedings{Pippenger:1976,
+  author =       "N. J. Pippenger",
+  title =        "On the evaluation of powers and related problems",
+  booktitle =    "Proceedings of the 17th Annual IEEE Symposium on Foundations
+                  of Computer Science, FOCS'76 (Houston, TX, October 25-27,
+                  1976)",
+  pages =        "258--263",
+  year =         "1976",
+  publisher =    "IEEE",
+  organization = "IEEE",
+}
+
+%% Standards
+%%%%%%%%%%%%%%%
 
 @TechReport{NIST:800-38A,
   author =       {Morris Dworkin},
   title =        {Recommendation for Block Cipher Modes of Operation},
-  institution =  {National Institute of Standards and Technology ({NIST})},
+  institution =  {NIST},
   year =         {2001},
-  key =          {NIST38A},
+  key =          {NIST},
   type =         {{NIST} Special Publication},
   number =       {800-38A},
+  projects =     {SITLine; Eagle},
 }
-
 
 @TechReport{NIST:800-38D,
   author =       {Morris Dworkin},
-  title =        {Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode({GCM}) and {GMAC}},
-  institution =  {National Institute of Standards and Technology ({NIST})},
+  title =        {Recommendation for Block Cipher Modes of Operation:
+                  Galois/Counter Mode({GCM}) and {GMAC}},
+  institution =  {NIST},
   year =         {2007},
-  key =          {NIST38D},
+  key =          {NIST},
   type =         {{NIST} Special Publication},
   number =       {800-38D},
   note =         {DRAFT (June, 2007)},
 }
 
+@TechReport{FIPS:46-2,
+  institution =  {National Bureau of Standards},
+  title =        {Data Encryption Standard ({DES})},
+  type =         {FIPS Publication},
+  number =       {46-2},
+  year =         {1993},
+  key =          {NBS},
+  projects =     {FPSM},
+}
 
-@Unpublished{Black:2000,
-  author =       {John Black and Phillip Rogaway},
-  title =        {A Suggestion for Handling Arbitrary-Length Messages with the {CBC} {MAC}},
-  note =         {Comments to NIST concerning {AES} Modes of Operations},
-  month =        {may},
-  year =         {2003},
-  annote =       {http://csrc.nist.gov/CryptoToolkit/modes/proposedmodes/index.html}
+@TechReport{FIPS:81,
+  institution =  {National Bureau of Standards},
+  title =        {{DES} Modes of Operation},
+  type =         {FIPS Publication},
+  number =       {81},
+  year =         {1980},
+  key =          {NBS},
+  projects =     {FPSM},
+}
+
+@TechReport{FIPS:186,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Digitale Signature Standard},
+  type =         {FIPS Publication},
+  number =       {186},
+  year =         {1994},
+  key =          {NIST},
+  projects =     {SITLine},
+}
+
+@TechReport{FIPS:198-1,
+  institution =  {National Institute of Standards and Technology},
+  title =        {The Keyed-Hash Message Authentication Code ({HMAC})},
+  type =         {FIPS Publication},
+  number =       {198-1},
+  year =         {2007},
+  key =          {NIST},
+  projects =     {Eagle},
 }
 
 
-@Unpublished{Lipmaa:2000,
-  author =       {Helger Lipmaa and Phillip Rogaway and David Wagner},
-  title =        {{CTR}-Mode Encryption},
-  note =         {Comments to NIST concerning {AES} Modes of Operations},
-  month =        {may},
+@TechReport{ISO:10116,
+  title =        {{I}nformation technology -- {S}ecurity techniques -- {M}odes
+                  of operation for an n-bit block cipher algorithm},
+  type =         {International Standard},
+  number =       {ISO/IEC~10116},
+  year =         {2006},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {SITLine},
+}
+
+@TechReport{ISO:9797-2,
+  title =        {{I}nformation technology -- {S}ecurity techniques --
+                  {M}essage {A}uthentication {C}odes ({MACs}) -- Part~2:
+                  {M}echanisms using a dedicated hash-function},
+  type =         {International Standard},
+  number =       {ISO/IEC~9797-2},
+  year =         {2002},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {Eagle},
+}
+
+@TechReport{ISO:9797-1,
+  title =        {{I}nformation technology -- {S}ecurity
+                  techniques -- {M}essage {A}uthentication {C}odes ({MACs}) --
+                  Part~1: {M}echanisms using a block cipher},
+  type =         {International Standard},
+  number =       {ISO/IEC~9797-1},
+  year =         {1999},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  projects =     {BOS},
+}
+
+@TechReport{ANSI:X9.52,
+  title =        {Triple Data Encryption Algorithm Modes of
+                  Operation},
+  institution =  {ANSI},
+  type =         {American National Standard for Financial Services},
+  number =       {X9.52},
+  year =         {1998},
+  key =          {ANSI},
+  projects =     {BOS; SITLine},
+}
+
+@TechReport{ANSI:X9.62,
+  title =        {Public Key Cryptography For The Financial Services Industry:
+                  The Elliptic Curve Digital Signature Algorithm
+                  ({ECDSA})},
+  month =        sep,
+  year =         {2005},
+  institution =  {ANSI},
+  type =         {American National Standard for Financial Services},
+  number =       {X9.62},
+  key =          {ANSI},
+}
+
+@TechReport{IEEE:STD1363,
+  title =        {Standard Specifications For Public-Key Cryptography},
   year =         {2000},
-  annote =       {http://csrc.nist.gov/CryptoToolkit/modes/proposedmodes/index.html}
+  institution =  {IEEE},
+  type =         {Std},
+  number =       {1363-2000},
+  key =          {IEEE},
+  projects =     {SITLine},
 }
 
-
-%% Proceedings
-%%%%%%%%%%%%%%%%%%%%%%
-
-@InProceedings{ruland:1997,
-  author = 	 "C. Ruland",
-  title = 	 "{B}reitbandverschl{\"u}sselung (155 {Mbit/s}) mit {S}elbstsynchronisation",
-  booktitle = 	 "Tagungsband 5. Deutscher IT-Sicherheitskongre{\ss} des BSI",
-  pages = 	 "289--301",
-  year = 	 "1997",
-  organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik - {BSI}",
+@TechReport{PKCS1:1993,
+  title =        {{RSA} Encryption Standard},
+  key =          {PKCS},
+  institution =  {RSA Laboratories},
+  type =         {PKCS},
+  number =       {1},
+  month =        nov,
+  year =         {1993},
+  note =         {(Version~1.5)},
+  projects =     {Eagle},
 }
 
-
-@InProceedings{ruland:1999,
-  author = 	 "C. Ruland and S. Kuhn and K. Wollenweber",
-  title = 	 "{ATM}-{V}erschl{\"u}sselung mit 155 {Mbit/s}",
-  booktitle = 	 "IT-Sicherheit ohne Grenzen: Tagungsband 6. Deutscher IT-Sicherheitskongre{\ss} des BSI",
-  pages = 	 "287--295",
-  year = 	 "1999",
-  organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik - BSI",
-  publisher = "SecuMedia-Verlag",
+@TechReport{PKCS3:1993,
+  title =        {{Diffie-Hellman} Key-Agreement Standard},
+  key =          {PKCS},
+  institution =  {RSA Laboratories},
+  type =         {PKCS},
+  number =       {3},
+  month =        nov,
+  year =         {1993},
+  projects =     {SITLine; Eagle},
 }
 
-
-
-
-@InProceedings{miyaguchi:1990,
-  author = 	 "S. Miyaguchi",
-  title = 	 "The {FEAL} Cipher Family",
-  booktitle = 	 "Advances in Cryptology - CRYPTO '90",
-  pages = 	 "627--638",
-  year = 	 "1991",
-  series = 	 "LNCS 537",
-  publisher = "Springer-Verlag",
-}
-
-
-
-
-%% Standards
-%%%%%%%%%%%%%%%
-
-
-@Manual{FIPS:46-2,
-  organization = "National Bureau of Standards",
-  title     = "{FIPS PUB} 46-2: {D}ata {E}ncryption {S}tandard ({DES})", 
-  year      = "1993",
-  key       = "FIPS46-2",
-}
-
-
-@Manual{FIPS:81,
-  organization = "National Bureau of Standards",
-  title     = "{FIPS PUB} 81: {DES} Modes of Operation", 
-  year      = "1980",
-  key       = "FIPS81",
-}
-
-
-@Manual{FIPS:186,
-  organization = "National Institute of Standards and Technology",
-  title     = "{FIPS PUB} 186: {D}igitale {S}ignature {S}tandard", 
-  year      = "1994",
-  key       = "FIPS186",
-}
-
-
-@Manual{FIPS:188,
-  organization = "National Institute of Standards and Technology",
-  title     = "{FIPS PUB} 188: Standard Security Label for Information Transfer", 
-  year      = "1994",
-  key       = "FIPS188",
-}
-
-
-@Manual{FIPS:198-1,
-  organization = "National Institute of Standards and Technology",
-  title     = "{FIPS PUB} 198-1: The Keyed-Hash Message Authentication Code ({HMAC})", 
-  year      = "2007",
-  key       = "FIPS198-1",
-}
-
-
-@Manual{ISO:10116,
-  title     = "{ISO/IEC} 10116: {I}nformation technology -- {S}ecurity techniques -- {M}odes of operation for an n-bit block cipher algorithm", 
-  year      = "2006",
-  organization = "ISO/IEC",
-  key = 	 "ISO10116",
-}
-
-
-@Manual{ISO:9797-2,
-  title     = "{ISO/IEC} 9797-2: {I}nformation technology -- {S}ecurity techniques -- {M}essage {A}uthentication {C}odes ({MACs}) -- Part~2: {M}echanisms using a dedicated hash-function", 
-  year      = "2002",
-  organization = "ISO/IEC",
-  key = 	 "ISO9797-2",
-}
-
-
-@Manual{ISO:9797-1,
-  title     = "{ISO/IEC} 9797-1: {I}nformation technology -- {S}ecurity techniques -- {M}essage {A}uthentication {C}odes ({MACs}) -- Part~1: {M}echanisms using a block cipher", 
-  year      = "1999",
-  organization = "ISO/IEC",
-  key = 	 "ISO9797-1",
-}
-
-
-@Manual{ITU:X509,
-  title     = "Recommendation X.509: {I}nformation technology - {O}pen {S}ystems {I}nterconnection - {T}he {D}irectory: {A}uthentication framework",
-  organization = "ITU-T",
-  year      = "1997",
-  key =     "X509",
-}
-
-
-@Manual{ANSI:X9.52,
-  organization = "{American National Standards Institute}",
-  title =        "{ANSI} X9.52: {A}merican {N}ational {S}tandard for {F}inancial {S}ervices: {T}riple {D}ata {E}ncryption {A}lgorithm {M}odes {O}f {O}peration{$^{\copyright}$}",
-  publisher =    "American National Standards Institute",
-  year =         "1998",
-  key =     "X9.52",
-}
-
-
-@Manual{ANSI:X9.62,
-  organization = "{American National Standards Institute}",
-  title =        "{ANSI} X9.62: Public Key Cryptography For The Financial Services Industry:
-                 The {E}lliptic {C}urve {D}igital {S}ignature {A}lgorithm ({ECDSA}){$^{\copyright}$}",
-  publisher =    "Accredited Standards Commitee X9",
-  address =      "Washington, DC, USA",
-  day =          "20",
-  month =        sep,
-  year =         "1998",
-  note =         "Working Draft {American National Standard}",
-  key =          "X9.62",
-}
-
-
-@Manual{IEEE:1363,
-  title =        "{IEEE} 1363: {S}tandard {S}pecifications {F}or {P}ublic-{K}ey {C}ryptography",
-  year =         "2000",
-  organization = "IEEE",
-  key =          "IEEE1363",
-}
-
-
-
-@Manual{PKCS:1993,
-  title = "{RSA} {E}ncryption {S}tandard",
-  key = "RSA",
-  organization = "RSA Laboratories",
-  month = nov,
-  year = "1993",
-  note = "(Version 1.5)",
-}
-
-
-@Misc{IETF:RFC1422,
-  author =       "S. Kent",
-  title =        "{RFC 1422}: Privacy Enhancement for {Internet}
-                 Electronic Mail: Part {II}: Certificate-Based Key
-                 Management",
-  month =        feb,
-  year =         "1993",
-}
-
-
-@Misc{RFC1321,
-  author =       "R. Rivest",
-  title =        "{RFC 1321}: The {MD5} Message-Digest Algorithm",
+@TechReport{RFC1321,
+  author =       {R. Rivest},
+  title =        {The {MD5} Message-Digest Algorithm},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {1321},
   month =        apr,
-  year =         "1992",
-  note =         "INFORMATIONAL",
+  year =         {1992},
+  projects =     {SITLine; Eagle},
 }
 
-
-@Misc{RFC2104,
-  author =       "H. Krawczyk, M. Bellare, R. Canetti",
-  title =        "{RFC 2104}: {HMAC}: Keyed-Hashing for Message Authentication",
+@TechReport{RFC2104,
+  author =       {H. Krawczyk, M. Bellare, R. Canetti},
+  title =        {{HMAC}: Keyed-Hashing for Message Authentication},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2104},
   month =        feb,
-  year =         "1997",
-  note =         "INFORMATIONAL",
+  year =         {1997},
+  projects =     {Eagle},
 }
 
-
-@Misc{RFC2202,
-  author =       "P. Cheng and R. Glenn",
-  title =        "{RFC 2202}: Test Cases for {HMAC-MD5} and {HMAC-SHA}-1",
+@TechReport{RFC2202,
+  author =       {P. Cheng and R. Glenn},
+  title =        {Test Cases for {HMAC-MD5} and {HMAC-SHA}-1},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2202},
   month =        sep,
-  year =         "1997",
-  note =         "INFORMATIONAL",
+  year =         {1997},
 }
 
-
-@Misc{RFC3566,
-  author =       "S. Frankel and H. Herbert",
-  title =        "{RFC 3566}: The {AES-XCBC-MAC-96} Algorithm and Its Use with {IPsec}",
+@TechReport{RFC3566,
+  author =       {S. Frankel and H. Herbert},
+  title =        {The {AES-XCBC-MAC-96} Algorithm and Its Use with {IPsec}},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {3566},
   month =        sep,
-  year =         "2003",
-}
-
-
-@Manual{ATMF:SecurityFrame:1998,
-   title     = "ATM Security Framework 1.0",
-   organization = "ATM Forum Technical Committee",
-   year      = "1998",
-   note      = "(af-sec-0096.000)",
-   key        = "ATMF",
-}
-
-
-
-@Manual{ATMF:SecuritySpec:1999,
-  title     = "ATM Security Specification Version 1.0",
-  organization = "ATM Forum Technical Committee",
-  year      = "1999",
-  month     = feb,
-  note      = "(af-sec-0100.000)",
-  key       = "ATMF",
-}
-
-
-@Manual{ATMF:SecurityAddUNI:1999,
-  title     = "UNI Signaling 4.0 Security Addendum",
-  organization = "ATM Forum Technical Committee",
-  year      = "1999",
-  key       = "ATMF",
-  note = "(af-cs-0117.000)",
-}
-
-
-@Manual{ATMF:SecurityAddPNNI:1999,
-  title     = "PNNI Signaling 1.0 Security Addendum",
-  organization = "ATM Forum Technical Committee",
-  year      = "1999",
-  key       = "ATMF",
-  note = "(af-cs-0116.000)",
+  year =         {2003},
+  projects =     {Eagle},
 }
 

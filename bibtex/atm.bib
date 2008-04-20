@@ -5,431 +5,404 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.2 $",
+%%  version  = "$Revision: 1.3 $",
 %%  filename = "atm.bib",
-%%  address  = "Karl-Egon-Str. 22, 10318 Berlin, Germany",
+%%  address  = "Junker-J{\"o}rg-Str. 2, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org" }
 
 
-@book{Kyas:1998,
-   author    = "Kyas, Othmar",
-   title     = "{ATM}-Netzwerke",
-   year      = "1998",
-   edition   = "4.",
-   publisher = "ITP",
-   address   = "Bonn",
-}
+%% force type of technical report empty
+@STRING{ATMF_REPORT_TYPE = "{\mbox{}}"}
 
+
+@book{Kyas:1998,
+  author =       "Kyas, Othmar",
+  title =        "{ATM}-Netzwerke",
+  year =         "1998",
+  edition =      "4.",
+  publisher =    "ITP",
+  address =      "Bonn",
+}
 
 @book{Sexton:1997,
-   author    = "M. Sexton and A. Reid",
-   title     = "Broadband Networking: ATM, SDH and SONET",
-   year      = "1997",
-   publisher = "{Artech House}",
+  author =       "M. Sexton and A. Reid",
+  title =        "Broadband Networking: {ATM}, {SDH} and {SONET}",
+  year =         "1997",
+  publisher =    "{Artech House}",
 }
 
-
-@book{Hein:1998,
-   author    = "M. Hein and T. Vollmer",
-   title     = "Bay Networks ATM LAN Guide (dt)",
-   year      = "1998",
-   publisher = "{K{\"o}ln: FOSSIL-Verlag}",
-   key       = "Bay",
+@book{HeinVollmer:1998,
+  author =       "M. Hein and T. Vollmer",
+  title =        "Bay Networks ATM LAN Guide (dt)",
+  year =         "1998",
+  publisher =    "{K{\"o}ln: FOSSIL-Verlag}"
 }
-
 
 @book{Sellin:1997,
-   author    = "R. Sellin",
-   title     = "ATM {\&} ATM-Management",
-   year      = "1997",
-   publisher = "VDE Verlag",
-   address    = "Berlin, Offenbach",
+  author =       "R. Sellin",
+  title =        "ATM {\&} ATM-Management",
+  year =         "1997",
+  publisher =    "VDE Verlag",
+  address =      "Berlin, Offenbach",
 }
-
-
 
 @Book{Pan:1998,
-  author = 	 "Pan, Heng",
-  title = 	 "SNMP-based ATM network management",
-  publisher = 	 "{Artech House}",
-  year = 	 "1998",
+  author =       "Pan, Heng",
+  title =        "SNMP-based ATM network management",
+  publisher =    "{Artech House}",
+  year =         "1998",
 }
-
-
-
 
 @Book{Onvural:1997,
-  author = 	 "Raif O. Onvural and Rao Cheruki",
-  title = 	 "Signaling in {ATM} Networks",
-  publisher = 	 "{Artech House}",
-  year = 	 "1997",
+  author =       "Raif O. Onvural and Rao Cheruki",
+  title =        "Signaling in {ATM} Networks",
+  publisher =    "{Artech House}",
+  year =         "1997",
 }
-
 
 @Book{Siegmund:1993,
-  author = 	 "Siegmund, Gerd",
-  title = 	 "ATM --- Die Technik des Breitband-ISDN",
-  publisher = 	 "{R.v.Decker´s Verlag, G. Schenck}",
-  address    =    "Heidelberg",
-  year = 	 "1993",
+  author =       "Siegmund, Gerd",
+  title =        "{ATM} -- {D}ie {T}echnik des {B}reitband-{ISDN}",
+  publisher =    "{R.v.Decker's Verlag, G. Schenck}",
+  address =      "Heidelberg",
+  year =         "1993",
 }
-
 
 %% manuals, datasheets
 %%
-
 @Manual{NEC:uPD98404,
-   organization = "{NEC Corporation}",
-   title     = "User´s Manual {$\mu$}PD98404 - Advanced ATM Sonet Framer",
-   year      = "1996",
-   key       = "NEC",
+  organization = "{NEC Corporation}",
+  title =        "User's Manual {$\mu$}PD98404 - Advanced ATM Sonet Framer",
+  year =         "1996",
+  key =          "NEC",
 }
 
 @Manual{TI:TNETA1500,
-   organization = "Texas Instruments, Inc.",
-   title     = "Datasheet TNETA1500 - 155.52-MBit/s Sonet/SDH ATM Receiver/Transmitter",
-   year      = "1998",
-   key       = "TI",
+  organization = "Texas Instruments, Inc.",
+  title =        "Datasheet TNETA1500 - 155.52-MBit/s Sonet/SDH ATM
+                  Receiver/Transmitter",
+  year =         "1998",
+  key =          "TI",
 }
 
 @Manual{IDT:77155,
-   organization = "Integrated Device Technology, Inc.",
-   title     = "Datasheet IDT77155 - 155Mbps ATM PHY (TC-PMD) User Network Interface",
-   year      = "1998",
-   key       = "IDT",
+  organization = "Integrated Device Technology, Inc.",
+  title =        "Datasheet IDT77155 - 155Mbps ATM PHY (TC-PMD) User Network
+                  Interface",
+  year =         "1998",
+  key =          "IDT",
 }
 
-
-
 @Manual{MOTOROLA:MC92501UM,
-   organization = "Motorola, Inc.",
-   title     = "MC92501 ATM Cell Processor User's Manual",
-   year      = "1998",
-   key       = "MOT",
+  organization = "Motorola, Inc.",
+  title =        "MC92501 ATM Cell Processor User's Manual",
+  year =         "1998",
+  key =          "MOT",
 }
 
 %% standards
-%%
+%%%%%%%%%%%%%%%
 
-@Manual{ITU:I356,
-  title     = "Recommendation {I.356}: B-ISDN ATM Layer Cell Transfer Performance",
-  organization    = "ITU-T",
-  key       = "ITU",
-  year      = "1996",
+@TechReport{ITU:I356,
+  title =        "{B-ISDN ATM} Layer Cell Transfer Performance",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.356",
+  key =          "ITU",
+  year =         "1996",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:I361,
-  title     = "Recommendation {I.361}: B-ISDN ATM Layer Specification",
-  organization    = "ITU-T",
-  key       = "ITU",
-  year      = "1992",
+@TechReport{ITU:I361,
+  title =        "{B-ISDN ATM} Layer Specification",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.361",
+  key =          "ITU",
+  year =         "1992",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:I363,
-  title     = "Recommendation {I.363}: B-ISDN {ATM} {A}daptation {L}ayer (AAL) Specification",
-  organization    = "ITU-T",
-  key       = "ITU",
-  year      = "1993",
+@TechReport{ITU:I363,
+  title =        "{B-ISDN ATM} {A}daptation {L}ayer (AAL) Specification",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.363",
+  key =          "ITU",
+  year =         "1993",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:I371,
-  title     = "Recommendation {I.371}: Traffic control and congestion control in {B-ISDN}",
-  organization    = "ITU-T",
-  key       = "ITU",
-  year      = "1996",
+@TechReport{ITU:I371,
+  title =        "Traffic control and congestion control in {B-ISDN}",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.371",
+  key =          "ITU",
+  year =         "1996",
+  projects =     "SITLine",
 }
 
-
-
-@Manual{ITU:I413,
-  title     = "Recommendation {I.413}: B-ISDN User-Network Interface",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1993",
+@TechReport{ITU:I413,
+  title =        "{B-ISDN} User-Network Interface",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.413",
+  key =          "ITU",
+  year =         "1993",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:I432,
-   title     = "Recommendation {I.432}: B-ISDN User-Network Interface - Physical Layer Specification",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year      = "1993",
+@TechReport{ITU:I432,
+  title =        "{B-ISDN} User-Network Interface - Physical Layer
+                  Specification",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.432",
+  key =          "ITU",
+  year =         "1993",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:I610,
-  title     = "Recommendation {I.610}: B-ISDN Operation and Maintenance Principles",
-  organization    = "ITU-T",
-  key       = "ITU",
-  year      = "1992",
+@TechReport{ITU:I610,
+  title =        "{B-ISDN} Operation and Maintenance Principles",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "I.610",
+  key =          "ITU",
+  year =         "1992",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:Q2100,
-  title =	 "Recommendation {Q.2100}: {B-ISDN} signalling {ATM} adaptation layer ({SAAL}) overview description",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year = "1994",
-  month = jul,
+@TechReport{ITU:Q2100,
+  title =        "{B-ISDN} signalling {ATM} adaptation layer ({SAAL}) overview
+                  description",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2100",
+  year =         "1994",
+  month =        jul,
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:Q2110,
-  title =	 "Recommendation {Q.2110}: {B-ISDN ATM} adaptation layer - Service specific connection oriented protocol ({SSCOP})",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year = "1994",
-  month = jul,
+@TechReport{ITU:Q2110,
+  title =        "{B-ISDN ATM} adaptation layer - Service specific connection
+                  oriented protocol ({SSCOP})",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2110",
+  year =         "1994",
+  month =        jul,
 }
 
-
-@Manual{ITU:Q2120,
-  title =	 "Recommendation {Q.2120}: {B-ISDN} meta-signalling protocol)",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year = "1995",
-  month = feb,
+@TechReport{ITU:Q2120,
+  title =        "{B-ISDN} meta-signalling protocol)",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2120",
+  year =         "1995",
+  month =        feb,
 }
 
-
-@Manual{ITU:Q2130,
-  title =	 "Recommendation {Q.2130}: {B-ISDN} signalling {ATM} adaptation layer - {S}ervice specific coordination function for support of signalling at the user network interface ({SSFC} at {UNI})",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year = "1994",
-  month = jul,
+@TechReport{ITU:Q2130,
+  title =        "{B-ISDN} signalling {ATM} adaptation layer - {S}ervice
+                  specific coordination function for support of signalling at
+                  the user network interface ({SSFC} at {UNI})",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2130",
+  year =         "1994",
+  month =        jul,
 }
 
-
-@Manual{ITU:Q2140,
-  title =	 "Recommendation {Q.2140}: {B-ISDN ATM} adaptation layer - service specific coordination function for signalling at the network node interface ({SSCF} at {NNI})",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year = "1995",
-  month = feb,
+@TechReport{ITU:Q2140,
+  title =        "{B-ISDN ATM} adaptation layer - service specific coordination
+                  function for signalling at the network node interface ({SSCF}
+                  at {NNI})",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2140",
+  year =         "1995",
+  month =        feb,
 }
 
-
-@Manual{ITU:Q2931,
-  title =	 "Recommendation {Q.2931}: {B}roadband {I}ntegrated {S}ervices {D}igital {N}etwork ({B-ISDN}) - Digital Subscriber Signalling System No. 2 ({DSS 2}) - {U}ser-{N}etwork {I}nterface ({UNI}) - Layer 3 Specification for Basic Call/Connection Control",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year =	 "1995",
+@TechReport{ITU:Q2931,
+  title =        "{B}roadband {I}ntegrated {S}ervices {D}igital {N}etwork
+                  ({B-ISDN}) - Digital Subscriber Signalling System No. 2 ({DSS
+                  2}) - {U}ser-{N}etwork {I}nterface ({UNI}) - Layer 3
+                  Specification for Basic Call/Connection Control",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2931",
+  year =         "1995",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:Q2961,
-  title =	 "Recommendation {Q.2961}: {B}roadband {I}ntegrated {S}ervices {D}igital {N}etwork ({B-ISDN}) - Digital Subscriber Signalling System No.2 ({DSS 2}) - Additional Traffic Parameters",
-  key =	 "ITU",
-  organization = "ITU-T",
-  year =	 "1995",
+@TechReport{ITU:Q2961,
+  title =        "{B}roadband {I}ntegrated {S}ervices {D}igital {N}etwork
+                  ({B-ISDN}) - Digital Subscriber Signalling System No.2 ({DSS
+                  2}) - Additional Traffic Parameters",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2961",
+  year =         "1995",
+  projects =     "SITLine",
 }
 
-
-
-@Manual{ITU:Q2971,
-  title = 	 "Recommendation {Q.2971}: {B}roadband {I}ntegrated {S}ervices {D}igital {N}etwork ({B-ISDN}) - {DSS 2} - Digital Subscriber Signalling System No. 2 - User-Network Interface Layer 3 Specification for Point-To-Multipoint Call/Connection Control",
-  key = 	 "ITU",
-  organization = "ITU-T",
-  year = 	 "1995",
+@TechReport{ITU:Q2971,
+  title =        "{B}roadband {I}ntegrated {S}ervices {D}igital {N}etwork
+                  ({B-ISDN}) - {DSS 2} - Digital Subscriber Signalling System
+                  No. 2 - User-Network Interface Layer 3 Specification for
+                  Point-To-Multipoint Call/Connection Control",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2971",
+  year =         "1995",
+  projects =     "SITLine",
 }
 
-
-@Manual{ITU:Q2955,
-  title =	 "{Recommendation {Q.2955}: Stage 3 Description for Community of Interest Supplementary Services Using {B-ISDN} Digital Subscriber Signalling System No. 2 ({DSS 2}): {C}losed {U}ser {G}roup ({CUG})}",
-  key =	 "ITU",
-  organization = "ITU-T",
+@TechReport{ITU:Q2955,
+  title =        "Stage 3 Description for Community of Interest Supplementary
+                  Services Using {B-ISDN} Digital Subscriber Signalling System
+                  No. 2 ({DSS 2}): {C}losed {U}ser {G}roup ({CUG})",
+  key =          "ITU",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "Q.2955",
 }
 
-@Manual{ITU:E164,
-   title     = "Recommendation {E.164/I.331}: The International Public Telecommunication Numbering Plan",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year      = "1997",
+@TechReport{ITU:E164,
+  title =        "The International Public Telecommunication Numbering Plan",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "E.164",
+  key =          "ITU",
+  year =         "1997",
+  projects =     "SITLine",
 }
 
-
-
-
-@Manual{ITU:M20,
-   title = 	 "Recommendation {M.20}: Maintenance Philosophy for Telecommunication Networks",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year = 	 "1992",
+@TechReport{ITU:M20,
+  title =        "Maintenance Philosophy for Telecommunication Networks",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "M.20",
+  key =          "ITU",
+  year =         "1992",
 }
 
-
-@Manual{ETSI:300216,
-  title = 	 "{ETS 300 216}: Network Aspects ({NA}); Metropolitan Area Network ({MAN}) Physical layer convergence procedure for 155.520 {Mbit/s}",
-  organization = "ETSI",
-  key  = "ETS",
-  year = "1992",
+@TechReport{ETSI:300216,
+  title =        "Network Aspects ({NA}); Metropolitan Area Network ({MAN})
+                  Physical layer convergence procedure for 155.520 {Mbit/s}",
+  institution =  "ETSI",
+  type =         "European Telecommunication Standard",
+  number =       "ETS~300{\,}216",
+  key =          "ETSI",
+  year =         "1992",
+  projects =     "SITLine",
 }
 
-
-@Manual{ETSI:ETS300428,
-  title = 	 "{ETS 300 428}: {B}oadband {I}ntegrated {S}ervices {D}igital {N}etwork ({BISDN});
-                  {A}synchronous {T}ransfer {M}ode ({ATM}) {A}daption {L}ayer ({AAL}) Specification - Type 5",
-  organization = "ETSI",
-  key  = "ETS",
-  year = "1995",
+@TechReport{ETSI:ETS300428,
+  title =        "{B}oadband {I}ntegrated {S}ervices {D}igital {N}etwork
+                  ({BISDN}); {A}synchronous {T}ransfer {M}ode ({ATM})
+                  {A}daption {L}ayer ({AAL}) Specification - Type 5",
+  institution =  "ETSI",
+  type =         "European Telecommunication Standard",
+  number =       "ETS~300{\,}428",
+  key =          "ETSI",
+  year =         "1995",
+  projects =     "SITLine",
 }
 
-@Manual{ETSI:ETR338,
-  title = 	 "{ETR 338}: {B}oadband {I}ntegrated {S}ervices {D}igital {N}etwork ({B-ISDN});
-                  {V}ocabulary for {B-ISDN}",
-  organization = "ETSI",
-  key  = "ETR",
-  year = "1996",
-  month = dec,
+@TechReport{ETSI:ETR338,
+  title =        {Boadband Integrated Services Digital Network
+                  ({B-ISDN}); Vocabulary for {B-ISDN}},
+  institution =  {ETSI},
+  year =         {1996},
+  key =          {ETSI},
+  number =       {ETR~338},
+  month =        dec,
 }
 
-
-@Manual{ETSI:ETR155,
-  title = 	 "{ETR 155}: {A}synchronous {T}ransfer {Mode} ({ATM});
-                  {O}peration {A}dministration and {M}aintenance ({OAM})
-                  functions and parameters for assessing performance parameters",
-  organization = "ETSI",
-  key  = "ETR",
-  year = "1995",
-  month = feb,
+@TechReport{ETSI:ETR155,
+  title =        "{A}synchronous {T}ransfer {M}ode ({ATM}); {O}peration
+                  {A}dministration and {M}aintenance ({OAM}) functions and
+                  parameters for assessing performance parameters",
+  institution =  {ETSI},
+  year =         {1995},
+  key =          {ETR},
+  number =       {ETR~155},
+  month =        feb,
+  projects =     "SITLine",
 }
 
-
-
-@Manual{ATMF:UniSpec:1994,
-   title     = "ATM User-Network Interface Specification Version 3.1",
-   organization    = "ATM Forum Technical Committee",
-   year      = "1994",
-   note      = "(af-uni-0010.002)",
-  key        = "ATMF",
+@TechReport{ATMF:UniSpec:1994,
+  title =        "{ATM} User-Network Interface Specification Version 3.1",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-uni-0010.002",
+  year =         "1994",
+  key =          "AF",
+  projects =     "SITLine",
 }
 
-
-
-@Manual{ATMF:UniSignal:1996,
-   title     = "ATM User-Network Interface (UNI) Signalling Specification Version 4.0",
-   organization = "ATM Forum Technical Committee",
-   year      = "1996",
-   note      = "(af-sig-0061.000)",
-  key = 	 "ATMF",
+@TechReport{ATMF:UniSignal:1996,
+  title =        "{ATM} User-Network Interface ({UNI}) Signalling Specification
+                  Version 4.0",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-sig-0061.000",
+  year =         "1996",
+  key =          "AF",
+  projects =     "SITLine",
 }
 
-
-
-
-@Manual{ATMF:TrafficMgmt:1996,
-  title     = "Traffic Management Specification Version 4.0",
-  organization = "ATM Forum Technical Committee",
-  year      = "1996",
-  key       = "ATMF",
-  note = "(af-tm-0056.000)",
+@TechReport{ATMF:TrafficMgmt:1996,
+  title =        "Traffic Management Specification Version 4.0",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-tm-0056.000",
+  year =         "1996",
+  key =          "AF",
+  projects =     "SITLine",
 }
 
-
-
-@Manual{ATMF:ILMI:1996,
-   title     = "Integrated Local Management Interface (ILMI) Specification Version 4.0",
-   organization = "ATM Forum Technical Committee",
-   year      = "1996",
-   note      = "(af-ilmi-0065.000)",
-   key = 	 "ATMF",
+@TechReport{ATMF:ILMI:1996,
+  title =        "Integrated Local Management Interface (ILMI) Specification
+                  Version 4.0",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-ilmi-0065.000",
+  year =         "1996",
+  key =          "AF",
 }
 
-
-@Manual{ATMF:UTOPIA:1995,
-  title     = "UTOPIA Specification, Level 2, v1.0",
-  organization = "ATM Forum Technical Committee",
-  year      = "1995",
-  note      = "(af-phy-0039.000)",
-  key = 	 "ATMF",
+@TechReport{ATMF:UTOPIA:1995,
+  title =        "UTOPIA Specification, Level 2, v1.0",
+  institution =  "ATM Forum Technical Committee",
+  type =         ATMF_REPORT_TYPE,
+  number =       "af-phy-0039.000",
+  year =         "1995",
+  key =          "AF",
+  projects =     "SITLine",
 }
 
-
-@Misc{IETF:RFC1695,
+@TechReport{IETF:RFC1695,
   author =       "M. Ahmed and K. Tesink",
-  title =        "{RFC 1695}: Definitions of Managed Objects for {ATM}
-                 Management Version 8.0 using {SMIv2}",
+  title =        "Definitions of Managed Objects for {ATM} Management Version
+                  8.0 using {SMIv2}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1695",
   month =        aug,
   year =         "1994",
-}
-
-
-
-%%
-%% SONET/SDH standards
-%%
-
-@Manual{ITU:G702,
-  title  = 	 "Recommendation {G.702}: Digital Hierarchy Bit Rates",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year   = 	 "1988",
-}
-
-
-@Manual{ITU:G703,
-  title = 	 "Recommendation {G.703}: Physical/electrical Characteristics of Hierarchical Digital Interfaces",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year = 	 "1998",
-}
-
-
-@Manual{ITU:G708,
-  organization = "ITU-T",
-  title     = "Recommendation {G.708}: Network Node Interface for the {S}ynchronous {D}igital {H}ierarchy (SDH)", 
-  key    =	 "ITU",
-  year      = "1991",
-}
-
-
-@Manual{ITU:G707,
-  title     = "Recommendation {G.707}: Network Node Interface for the {S}ynchronous {D}igital {H}ierarchy (SDH) - Synchronous Digital Hierarchy Bit Rates",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1996",
-}
-
-
-@Manual{ITU:G709,
-  title     = "Recommendation {G.709}: Synchronous Multiplexing Structure",
-  year      = "1991",
-  key    =	 "ITU",
-  organization = "ITU-T",
-}
-
-@Manual{ITU:G783,
-  title     = "Recommendation {G.783}: Characteristics of {S}ynchronous {D}igital {H}ierarchy (SDH) Equipment Functional Blocks",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
-}
-
-@Manual{ITU:G831,
-   title     = "Recommendation {G.831}: Management Capabilities of Transport Networks Based on the {S}ynchronous {D}igital {H}ierarchy (SDH)",
-   organization = "ITU-T",
-  key    =	 "ITU",
-   year      = "1996",
-}
-
-@Manual{Bell:TRNWT:253,
-  title =	"TR-NWT-000253: Synchronous Optical Network Transport Systems, Common Generic Criteria",
-  organization = "Bellcore, Inc.",
-  month =	dec,
-  year  = 	1991,
-  key = 	"Bell",
-}
-
-
-@Manual{ANSI:T1:105,
-  title = "{ANSI T1.105:1991}: Digital Hierarchy - Optical Interfaces Rates and Formats Specifications (SONET)",
-  organization = "{American National Standards Institute}",
-  address =      "Washington, DC, USA",
-  year  = "1991",
-  key = 	 "ANSI",
+  projects =     "SITLine",
 }
 

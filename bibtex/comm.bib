@@ -5,11 +5,10 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.2 $",
+%%  version  = "$Revision: 1.3 $",
 %%  filename = "comm.bib",
-%%  address  = "Karl-Egon-Str. 22, 10318 Berlin, Germany",
+%%  address  = "Junker-J{\"o}rg-Str. 2, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
-
 
 @Book{Hein:1998,
   author =       {Mathias Hein},
@@ -49,8 +48,7 @@
 }
 
 @Book{Walrand:1996,
-  ALTauthor =    {Jean Walrand and Pravin Varaiya},
-  ALTeditor =    {},
+  author =       {Jean Walrand and Pravin Varaiya},
   title =        {High-Performance Communication Networks},
   publisher =    {Morgan Kaufmann Publishers},
   year =         {1996},
@@ -76,220 +74,572 @@
   address =      {Bonn}
 }
 
-
 %%
 %% Standards
-%%
+%%%%%%%%%%%%%%%
 
-
-@Manual{ITU:X680,
-  title     = "Recommendation {X.680}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Specification of Basic Notation",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year = "1997",
+@TechReport{ISO:8824,
+  title =        "Information processing systems - Open Systems
+                  Interconnection, Specification of Basic Encoding Rules for
+                  Abstract Syntax Notation One (ASN.1)",
+  institution =  "ISO",
+  type =         "International Standard",
+  number =       "ISO/IEC~8824",
+  year =         "1987",
+  key =          "ISO",
+  note =         "(withdrawn 1990-12-18)",
 }
 
-
-@Manual{ITU:X681,
-  title     = "Recommendation {X.681}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Information Object Specification",
-  organization = "ITU-T",
-  year      = "1997",
+@TechReport{IEEE:STD802.1D,
+  title =        {{IEEE} Standard for local and metropolitan area networks;
+                  Media Access Control ({MAC}) Bridges},
+  institution =  {IEEE},
+  year =         {2004},
+  key =          {IEEE},
+  type =         {Std},
+  number =       {802.1D},
+  keywords =     {ethernet, bridge},
+  projects =     {SITLine},
 }
 
-
-@Manual{ITU:X682,
-  title     = "Recommendation {X.682}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Constraint Specification",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
+@TechReport{IEEE:STD802.2,
+  title =        {{IEEE} Standard for Information technology -
+                  Telecommunications and information exchange between systems -
+                  Local and metropolitan area networks -
+                  Specific requirements;
+                  Part 2: Logical Link Control},
+  institution =  {IEEE},
+  year =         {1998},
+  key =          {IEEE},
+  type =         {Std},
+  number =       {802.2},
+  keywords =     {ethernet, LLC},
+  projects =     {SITLine, Eagle},
 }
 
-
-@Manual{ITU:X683,
-  title     = "Recommendation {X.683}: Information Technology - Abstract Syntax Notation One ({ASN.1}): Parameterization of {ASN.1} Specifications",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
+@TechReport{IEEE:STD802.3,
+  title =        {{IEEE} Standard for Information technology -
+                  Telecommunications and information exchange between systems -
+                  Local and metropolitan area networks -
+                  Specific requirements;
+                  Part 3: Carrier sense multiple access with collision
+                  detection ({CSMA/CD}) access method and physical layer
+                  specifications},
+  institution =  {IEEE},
+  year =         {2002},
+  key =          {IEEE},
+  type =         {Std},
+  number =       {802.3},
+  keywords =     {ethernet, MAC, CSMA/CD},
+  projects =     {SITLine, Eagle},
 }
 
-
-@Manual{ITU:X690,
-  title     = "Recommendation {X.690}: Information Technology - {ASN.1} Encoding Rules; Specification of Basic Encoding Rules ({BER}), Canonical Encoding Rules ({CER}) and Distinguished Encoding Rules ({DER})",
-  organization = "ITU-T",
-  year      = "1997",
+@TechReport{ETSI:300392-1,
+  title =        {Terrestrial Trunked Radio ({TETRA});Voice plus Data
+                  ({V+D});Part~1: General network design},
+  institution =  {ETSI},
+  type =         {European Standard},
+  number =       {EN~300{\,}392-1},
+  key =          {ETSI},
+  year =         {2005},
+  month =        jun,
+  projects =     {BOS},
 }
 
-
-@Manual{ITU:X691,
-  title     = "Recommendation {X.691}: Information Technology - {ASN.1} Encoding Rules - Specification of Packed Encoding Rules ({PER})",
-  organization = "ITU-T",
-  key    =	 "ITU",
-  year      = "1997",
+@TechReport{ETSI:300392-2,
+  title =        {Terrestrial Trunked Radio ({TETRA}); Voice plus Data ({V+D});
+                  Part~2: Air Interface ({AI})},
+  institution =  {ETSI},
+  type =         {European Standard},
+  number =       {EN~300{\,}392-2},
+  key =          {ETSI},
+  year =         {2005},
+  month =        nov,
+  projects =     {BOS},
 }
 
+@TechReport{ITU:X680,
+  title =        "Information Technology - Abstract Syntax Notation One
+                  ({ASN.1}): Specification of Basic Notation",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "X.680",
+  key =          "ITU",
+  year =         "1997",
+}
+
+@TechReport{ITU:X681,
+  title =        "Information Technology - Abstract Syntax Notation One
+                  ({ASN.1}): Information Object Specification",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "X.681",
+  key =          "ITU",
+  year =         "1997",
+}
+
+@TechReport{ITU:X682,
+  title =        "Information Technology - Abstract Syntax Notation One
+                  ({ASN.1}): Constraint Specification",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "X.682",
+  key =          "ITU",
+  year =         "1997",
+}
+
+@TechReport{ITU:X683,
+  title =        "Information Technology - Abstract Syntax Notation One
+                  ({ASN.1}): Parameterization of {ASN.1} Specifications",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "X.683",
+  key =          "ITU",
+  year =         "1997",
+}
+
+@TechReport{ITU:X690,
+  title =        "Information Technology - {ASN.1} Encoding Rules;
+                  Specification of Basic Encoding Rules ({BER}), Canonical
+                  Encoding Rules ({CER}) and Distinguished Encoding Rules
+                  ({DER})",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "X.690",
+  key =          "ITU",
+  year =         "1997",
+}
+
+@TechReport{ITU:X691,
+  title =        "Information Technology - {ASN.1} Encoding Rules -
+                  Specification of Packed Encoding Rules ({PER})",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "X.691",
+  key =          "ITU",
+  year =         "1997",
+}
+
+@TechReport{ITU:G957,
+  title =        "Optical interfaces for equipments and systems relating
+                  to the synchronous digital hierarchy",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.957",
+  key =          "ITU",
+  year =         "1999",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G702,
+  title =        "Digital Hierarchy Bit Rates",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.702",
+  key =          "ITU",
+  year =         "1988",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G703,
+  title =        "Physical/electrical Characteristics of Hierarchical Digital
+                  Interfaces",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.703",
+  key =          "ITU",
+  year =         "1998",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G708,
+  institution =  "ITU-T",
+  title =        "Network Node Interface for the {S}ynchronous {D}igital
+                  {H}ierarchy ({SDH})",
+  type =         "Recommendation",
+  number =       "G.708",
+  key =          "ITU",
+  year =         "1991",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G707,
+  title =        "Network Node Interface for the {S}ynchronous {D}igital
+                  {H}ierarchy ({SDH}) - Synchronous Digital Hierarchy Bit
+                  Rates",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.707",
+  key =          "ITU",
+  year =         "1996",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G709,
+  title =        "Synchronous Multiplexing Structure",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.709",
+  year =         "1991",
+  key =          "ITU",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G775,
+  title =        {Loss of Signal ({LOS}), Alarm Indication Signal ({AIS}) and
+                  Remote Defect Indication ({RDI}) defect detection and
+                  clearance criteria for {PDH} signals },
+  institution =  {ITU-T},
+  type =         {Recommendation},
+  number =       {G.775},
+  key =          {ITU},
+  year =         {1998},
+  month =        oct,
+  projects =     {SITLine},
+}
+
+@TechReport{ITU:G783,
+  title =        "Characteristics of {S}ynchronous {D}igital {H}ierarchy ({SDH})
+                  Equipment Functional Blocks",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.783",
+  key =          "ITU",
+  year =         "1997",
+  projects =     "SITLine",
+}
+
+@TechReport{ITU:G826,
+  title =        {End-to-end error performance parameters and objectives for
+                  international, constant bit-rate digital paths and
+                  connections },
+  institution =  {ITU-T},
+  type =         {Recommendation},
+  number =       {G.826},
+  key =          {ITU},
+  year =         {2002},
+  month =        dec,
+  projects =     {SITLine},
+}
+
+@TechReport{ITU:G831,
+  title =        "Management Capabilities of Transport Networks Based on the
+                  {S}ynchronous {D}igital {H}ierarchy ({SDH})",
+  institution =  "ITU-T",
+  type =         "Recommendation",
+  number =       "G.831",
+  key =          "ITU",
+  year =         "1996",
+}
+
+@TechReport{ITU:G832,
+  title =        {Transport of {SDH} elements on {PDH} networks -- Frame and
+                  multiplexing structures },
+  institution =  {ITU-T},
+  type =         {Recommendation},
+  number =       {G.832},
+  key =          {ITU},
+  year =         {1998},
+  month =        oct,
+  projects =     {SITLine},
+}
+
+@TechReport{Bell:TRNWT:253,
+  title =        {Synchronous Optical Network Transport Systems, Common Generic
+                  Criteria},
+  institution =  {Bellcore, Inc.},
+  year =         {1991},
+  key =          {NWT},
+  number =       {TR-NWT-000253},
+  month =        dec,
+  projects =     {SITLine},
+}
+
+@TechReport{ANSI:T1.105,
+  title =        "Digital Hierarchy - Optical Interfaces Rates and Formats
+                  Specifications ({SONET})",
+  institution =  "ANSI",
+  type =         "American National Standard for Telecommunications",
+  number =       "T1.105",
+  year =         "1991",
+  key =          "ANSI",
+  projects =     "SITLine",
+}
+
+@TechReport{ANSI:T1.231,
+  title =        {{DS3} -- Layer~1 In Service Digital Transmission Performance
+                  Monitoring},
+  institution =  {ANSI},
+  type =         {American National Standard for Telecommunications},
+  number =       {T1.231},
+  year =         {2003},
+  month =        mar,
+  key =          {ANSO},
+  projects =     {SITLine},
+}
+
+@TechReport{ANSI:T1.510,
+  title =        {Network Performance Parameters for Dedicated Digital Services
+                  for Rates Up to and Including {DS3} - Specifications },
+  institution =  {ANSI},
+  type =         {American National Standard for Telecommunications},
+  number =       {T1.510},
+  year =         {1994},
+  key =          {ANSI},
+  projects =     {SITLine},
+}
+
+@TechReport{ANSI:X3.263,
+  title =        "Fibre Distributed Data Interface ({FDDI}) --
+                  Token Ring Twisted Pair Physical Layer
+                  Medium Dependent ({TP-PMD})",
+  institution =  "ANSI",
+  type =         "American National Standard for Information Technology",
+  number =       "X3.263",
+  key =          "ANSI",
+  year =         "1995",
+  projects =     "SITLine",
+}
 
 %% IETF (RFC)
 %%
 
-@Misc{IETF:RFC1157,
+@TechReport{IETF:RFC1157,
   author =       "J.D. Case and M. Fedor and M.L. Schoffstall and C. Davin",
-  title =        "{RFC 1157}: {S}imple {N}etwork {M}anagement {P}rotocol ({SNMP})",
-  day =          "1",
+  title =        "{S}imple {N}etwork {M}anagement {P}rotocol ({SNMP})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1157",
   month =        may,
   year =         "1990",
+  projects =     "SITLine",
 }
 
-
-@Misc{IETF:RFC1155,
+@TechReport{IETF:RFC1155,
   author =       "M.T. Rose and K. McCloghrie",
-  title =        "{RFC 1155}: Structure and Identification of Management
-                 Information for {TCP\slash IP}-based Internets",
-  day =          "1",
+  title =        "Structure and Identification of Management Information for
+                  {TCP\slash IP}-based Internets",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1155",
   month =        may,
   year =         "1990",
+  projects =     "SITLine",
 }
 
-
-@Misc{IETF:RFC1213,
+@TechReport{IETF:RFC1213,
   author =       "K. McCloghrie and M.T. Rose",
-  title =        "{RFC 1213}: Management Information Base for Network
-                 Management of {TCP\slash IP}-based Internets:{MIB-II}",
-  day =          "1",
+  title =        "Management Information Base for Network Management of
+                  {TCP\slash IP}-based Internets:{MIB-II}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1213",
+  year =         "1991",
+  projects =     "SITLine; Eagle",
+}
+
+@TechReport{IETF:RFC1215,
+  author =       "M. Rose",
+  title =        "A Convention for Defining Traps for use with the {SNMP}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1215",
   month =        mar,
   year =         "1991",
+  projects =     "SITLine",
 }
 
+@TechReport{IETF:RFC1902,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Structure of Management Information for Version 2 of the
+                  {Simple Network Management Protocol} ({SNMPv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1902",
+  month =        jan,
+  year =         "1996",
+  projects =     "SITLine",
+}
 
+@TechReport{IETF:RFC1903,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Textual Conventions for Version 2 of the {Simple Network
+                  Management Protocol} ({SNMPv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1903",
+  month =        jan,
+  year =         "1996",
+}
 
-@Misc{IETF:RFC1902,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1902}: Structure of Management Information for
-                 Version 2 of the {Simple Network Management Protocol}
-                 ({SNMPv2})",
+@TechReport{IETF:RFC1904,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Conformance Statements for Version 2 of the {Simple Network
+                  Management Protocol} ({SNMPv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1904",
+  month =        jan,
+  year =         "1996",
+}
+
+@TechReport{IETF:RFC1905,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Protocol Operations for Version 2 of the {Simple Network
+                  Management Protocol} ({SNMPv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1905",
+  month =        jan,
+  year =         "1996",
+}
+
+@TechReport{IETF:RFC1906,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Transport Mappings for Version 2 of the {Simple Network
+                  Management Protocol} ({SNMPv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1906",
+  month =        jan,
+  year =         "1996",
+}
+
+@TechReport{IETF:RFC1907,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Management Information Base for Version 2 of the {Simple
+                  Network Management Protocol} ({SNMPv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1907",
+  month =        jan,
+  year =         "1996",
+}
+
+@TechReport{IETF:RFC1908,
+  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
+                  M. Rose and S. Waldbusser",
+  title =        "Coexistence between Version 1 and Version 2 of the
+                  {Internet-standard Network Management Framework}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "1908",
   month =        jan,
   year =         "1996",
   note =         "DRAFT STANDARD",
 }
 
-
-
-@Misc{IETF:RFC1903,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1903}: Textual Conventions for Version 2 of the
-                 {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
+@TechReport{IETF:RFC2233,
+  author =       "K. McCloghrie and F. Kastenholz",
+  title =        "The Interfaces Group {MIB} using {SMIv2}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2233",
+  month =        nov,
+  year =         "1997",
+  projects =     "SITLine; Eagle",
 }
 
-
-@Misc{IETF:RFC1904,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1904}: Conformance Statements for Version 2 of
-                 the {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  bibdate =      "Thu Oct 16 09:34:09 MDT 1997",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1905,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1905}: Protocol Operations for Version 2 of the
-                 {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1906,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1906}: Transport Mappings for Version 2 of the
-                 {Simple Network Management Protocol} ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1907,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1907}: Management Information Base for Version 2
-                 of the {Simple Network Management Protocol}
-                 ({SNMPv2})",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC1908,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie
-                 and M. Rose and S. Waldbusser",
-  title =        "{RFC 1908}: Coexistence between Version 1 and Version
-                 2 of the {Internet-standard Network Management
-                 Framework}",
-  month =        jan,
-  year =         "1996",
-  note =         "DRAFT STANDARD",
-}
-
-
-@Misc{IETF:RFC2271,
+@TechReport{IETF:RFC2271,
   author =       "D. Harrington and R. Presuhn and B. Wijnen",
-  title =        "{RFC 2271}: An Architecture for Describing {SNMP}
-                 Management Frameworks",
+  title =        "An Architecture for Describing {SNMP} Management Frameworks",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2271",
   month =        jan,
   year =         "1998",
 }
 
-@Misc{IETF:RFC2272,
-  author =       "J. Case and D. Harrington and R. Presuhn and B.
-                 Wijnen",
-  title =        "{RFC 2272}: Message Processing and Dispatching for the
-                 {Simple Network Management Protocol} ({SNMP})",
+@TechReport{IETF:RFC2272,
+  author =       "J. Case and D. Harrington and R. Presuhn and B. Wijnen",
+  title =        "Message Processing and Dispatching for the {Simple Network
+                  Management Protocol} ({SNMP})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2272",
   month =        jan,
   year =         "1998",
 }
 
-@Misc{IETF:RFC2273,
+@TechReport{IETF:RFC2273,
   author =       "D. Levi and P. Meyer and B. Stewart",
-  title =        "{RFC 2273}: {SNMPv3} Applications",
+  title =        "{SNMPv3} Applications",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2273",
   month =        jan,
   year =         "1998",
 }
 
-@Misc{IETF:RFC2274,
+@TechReport{IETF:RFC2274,
   author =       "U. Blumenthal and B. Wijnen",
-  title =        "{RFC 2274}: {User-based Security Model} ({USM}) for
-                 version 3 of the {Simple Network Management Protocol}
-                 ({SNMPv3})",
+  title =        "{User-based Security Model} ({USM}) for version 3 of the
+                  {Simple Network Management Protocol} ({SNMPv3})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2274",
   month =        jan,
   year =         "1998",
 }
 
-@Misc{IETF:RFC2275,
+@TechReport{IETF:RFC2275,
   author =       "B. Wijnen and R. Presuhn and K. McCloghrie",
-  title =        "{RFC 2275}: {View-based Access Control Model} ({VACM})
-                 for the {Simple Network Management Protocol} ({SNMP})",
+  title =        "{View-based Access Control Model} ({VACM}) for the {Simple
+                  Network Management Protocol} ({SNMP})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2275",
   month =        jan,
   year =         "1998",
 }
 
-
-@Manual{ISO:8824,
-  title     = "ISO 8824: Information processing systems - Open Systems Interconnection, Specification of Basic Encoding Rules for Abstract Syntax Notation One (ASN.1)",
-  organization = "ISO",
-  year      = "1987",
-  key       = "ISO",
+@TechReport{IETF:RFC2578,
+  author =       "K. McCloghrie, D. Perkins and J. Schoenwaelder",
+  title =        "Structure of Management Information Version 2 ({SMIv2})",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2578",
+  month =        apr,
+  year =         "1999",
+  projects =     "SITLine; Eagle",
 }
 
+@TechReport{IETF:RFC2579,
+  author =       "K. McCloghrie, D. Perkins and J. Schoenwaelder",
+  title =        "Textual Conventions for {SMIv2}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2579",
+  month =        apr,
+  year =         "1999",
+  projects =     "SITLine; Eagle",
+}
+
+@TechReport{IETF:RFC2863,
+  author =       "K. McCloghrie and F. Kastenholz",
+  title =        "The Interfaces Group {MIB} using {SMIv2}",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "2863",
+  month =        jun,
+  year =         "2000",
+  projects =     "SITLine; Eagle",
+}
+
+@TechReport{IETF:RFC3164,
+  author =       "C. Lonvick",
+  title =        "The {BSD} syslog Protocol",
+  institution =  "IETF",
+  type =         "RFC",
+  number =       "3164",
+  month =        aug,
+  year =         "2001",
+  projects =     "Eagle",
+}
 
