@@ -14,11 +14,15 @@
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: pdf-inc.tex,v 1.7 2008-04-20 14:27:15 ralf Exp $
+%% $Id: pdf-inc.tex,v 1.8 2008-10-25 17:25:45 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.7  2008-04-20 14:27:15  ralf
+%% - reference to package tex4ht without any extension .sty
+%% - docsubj macro changed
+%%
 %% Revision 1.6  2007-09-30 16:51:48  ralf
 %% Macro mhead will be redefined or defined (whether it was defined or not)
 %%
@@ -43,8 +47,8 @@
 
   %% Postscript font Times in text and math formulas (based on freely
   %% distributable fonts). Disadvantage: No support of bold in math
-  %% formulas (normally needed in headings, see macro \mhead in file
-  %% math-inc.tex)
+  %% formulas (normally needed in headings, see macro \headingmath in
+  %% file math-inc.tex)
   %%
   \usepackage{txfonts}
   \usepackage{mathptmx}
@@ -112,14 +116,19 @@
 \fi
 
 
-%% Inline math in headings/titles (define/redefine it)
-%% Usage: \mhead{expr}{replacement}
-%% Example: \mhead{x^y}{x times y}
-\providecommand{\mhead} [2] {\ensuremath{#1}}
-\renewcommand{\mhead} [2] {%
-  \texorpdfstring{%
-    \mathversion{bold}\ensuremath{#1}\mathversion{normal}%
-  }{%
-    #2%
-  }%
+%% Special commands/text/math in headings/titles
+%% Usage: \headingspecial{cmds}{replacement}
+%% Example: \headingspecial{\footnote{Test}}{x times y}
+\providecommand{\headingspecial} [2] {#1}
+\renewcommand{\headingspecial} [2] {\texorpdfstring{#1}{#2}}
+
+
+%% Inline math in headings/titles
+%% Usage: \headingmath{expr}{replacement}
+%% Example: \headingmath{x^y}{x times y}
+\providecommand{\headingmath} [2] {\ensuremath{#1}}
+\renewcommand{\headingmath} [2] {%
+  \headingspecial{%
+    \mathversion{bold}\ensuremath{#1}\mathversion{normal}}%
+    {#2}%
 }
