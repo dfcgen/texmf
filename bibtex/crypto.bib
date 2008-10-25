@@ -5,7 +5,7 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.6 $",
+%%  version  = "$Revision: 1.7 $",
 %%  filename = "crypto.bib",
 %%  address  = "Junker-J{\"o}rg-Strasse 2, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
@@ -27,7 +27,8 @@
   series =       {CRC Press Series on Discrete Mathematics and Its Application},
   publisher =    {CRC Press},
   year =         {1992},
-  edition =      {2.}
+  edition =      {2.},
+  annote =       {library}
 }
 
 @Book{Welschenbach:2001,
@@ -36,7 +37,8 @@
   publisher =    "Springer-Verlag",
   year =         "2001",
   address =      "Berlin Heidelberg New York",
-  edition =      "2."
+  edition =      "2.",
+  annote =       "library"
 }
 
 @Book{Schneier:1996,
@@ -51,70 +53,23 @@
   author =       {Michael Rosing},
   title =        {Implementing Elliptic Curve Cryptography},
   publisher =    {Manning Publications},
-  year =         {1999}
+  year =         {1999},
+  annote =       {library}
 }
+
+
+@Book{Hankerson:2004,
+  author =       {Darrel Hankerson and Alfred Menezes and Scott Vanstone},
+  title =        {Guide to Elliptic Curve Cryptography},
+  publisher =    {Springer-Verlag},
+  year =         {2004},
+  address =      {New York},
+  annote =       {library}
+}
+
 
 %% Articles/Reports
 %%%%%%%%%%%%%%%%%%%%%%%%
-@Article{Bernstein:2002,
-  title =        {Pippenger's Exponentiation Algorithm},
-  author =       {Daniel J. Bernstein},
-  year =         {2002},
-  month =        dec,
-}
-
-@Article{Karatsuba:1963,
-  author =       {A. Karatsuba and Y. Ofman},
-  journal =      {Soviet Physics-Doklady},
-  number =       {7},
-  pages =        {595--596},
-  title =        {Multiplication of multidigit numbers on automata},
-  volume =       {7},
-  year =         {1963},
-  note =         {(English translation)},
-}
-
-@Article{Pope:1960,
-  author =       {D. A. Pope and M. L. Stein},
-  title =        {Multiple Precision Arithmetic},
-  journal =      {Communications of the Association for Computing Machinery
-                  ({CACM})},
-  volume =       {3},
-  number =       {12},
-  pages =        {652--654},
-  month =        dec,
-  year =         {1960},
-}
-
-@Article{Lehmer:1938,
-  author =       "D. H. Lehmer",
-  title =        "{Euclid}'s algorithm for large numbers",
-  journal =      "American Mathematical Monthly",
-  volume =       "45",
-  pages =        "227--233",
-  year =         "1938",
-}
-
-@article{Montgomery:1985,
-  author =       {P. Montgomery},
-  title =        {Modular multiplication without trial division},
-  journal =      {Mathematics of Computation},
-  volume =       {44},
-  number =       {170},
-  pages =        {519--521},
-  year =         {1985},
-}
-
-@Article{Schoenhage:1971,
-  author =       {A. Sch{\"o}nhage and V. Strassen},
-  title =        {{S}chnelle {M}ultiplikation gro{\ss}er {Z}ahlen},
-  journal =      {Computing},
-  volume =       {7},
-  number =       {3--4},
-  pages =        {281--292},
-  year =         {1971},
-}
-
 @Article{Comba:1990,
   author =       {Paul G. Comba},
   title =        {Exponentiation Cryptosystems on the {IBM} {PC}},
@@ -194,6 +149,29 @@
   month =        jan,
 }
 
+@Article{Hars:2006,
+  title =        {Modular Inverse Algorithms Without Multiplications for
+                  Cryptographic Applications},
+  author =       {Laszlo Hars},
+  publisher =    {Hindawi Publishing Corporation},
+  year =         {2006},
+  url =          {http://www.hindawi.com/GetArticle.aspx?doi=10.1155/ES/2006/32192}
+}
+
+@InProceedings{Grossschadl:2000,
+  title =        {The Chinese Remainder Theorem and its application in a
+                  high-speed {RSA} crypto chip},
+  year =         {2000},
+  author =       {Johann Gro{\ss}sch{\"a}dl},
+  booktitle =    {ACSAC '00: Proceedings of the 16th Annual Computer Security
+                  Applications Conference},
+  pages =        {384--393},
+  address =      {Washington, DC},
+  month =        dec,
+  publisher =    {IEEE Computer Society}
+}
+
+
 @Unpublished{Black:2000,
   author =       {John Black and Phillip Rogaway},
   title =        {A Suggestion for Handling Arbitrary-Length Messages with the
@@ -225,17 +203,6 @@
   publisher =    "Springer-Verlag",
 }
 
-@InProceedings{Pippenger:1976,
-  author =       "N. J. Pippenger",
-  title =        "On the evaluation of powers and related problems",
-  booktitle =    "Proceedings of the 17th Annual IEEE Symposium on Foundations
-                  of Computer Science, FOCS'76 (Houston, TX, October 25-27,
-                  1976)",
-  pages =        "258--263",
-  year =         "1976",
-  publisher =    "IEEE",
-  organization = "IEEE",
-}
 
 %% Standards
 %%%%%%%%%%%%%%%
@@ -248,7 +215,7 @@
   key =          {NIST},
   type =         {{NIST} Special Publication},
   number =       {800-38A},
-  projects =     {SITLine; Eagle},
+  annote =       {project},
 }
 
 @TechReport{NIST:800-38D,
@@ -270,7 +237,7 @@
   number =       {46-2},
   year =         {1993},
   key =          {NBS},
-  projects =     {FPSM},
+  annote =       {project},
 }
 
 @TechReport{FIPS:81,
@@ -280,7 +247,7 @@
   number =       {81},
   year =         {1980},
   key =          {NBS},
-  projects =     {FPSM},
+  annote =       {project},
 }
 
 @TechReport{FIPS:186,
@@ -290,7 +257,7 @@
   number =       {186},
   year =         {1994},
   key =          {NIST},
-  projects =     {SITLine},
+  annote =       {project},
 }
 
 @TechReport{FIPS:198-1,
@@ -300,7 +267,7 @@
   number =       {198-1},
   year =         {2007},
   key =          {NIST},
-  projects =     {Eagle},
+  annote =       {project},
 }
 
 
@@ -312,7 +279,7 @@
   year =         {2006},
   institution =  {ISO/IEC},
   key =          {ISO},
-  projects =     {SITLine},
+  annote =       {project},
 }
 
 @TechReport{ISO:9797-2,
@@ -324,7 +291,7 @@
   year =         {2002},
   institution =  {ISO/IEC},
   key =          {ISO},
-  projects =     {Eagle},
+  annote =       {project},
 }
 
 @TechReport{ISO:9797-1,
@@ -336,7 +303,7 @@
   year =         {1999},
   institution =  {ISO/IEC},
   key =          {ISO},
-  projects =     {BOS},
+  annote =       {project},
 }
 
 @TechReport{ANSI:X9.52,
@@ -347,7 +314,7 @@
   number =       {X9.52},
   year =         {1998},
   key =          {ANSI},
-  projects =     {BOS; SITLine},
+  annote =       {project},
 }
 
 @TechReport{ANSI:X9.62,
@@ -369,7 +336,7 @@
   type =         {Std},
   number =       {1363-2000},
   key =          {IEEE},
-  projects =     {SITLine},
+  annote =       {project},
 }
 
 @TechReport{PKCS1:1993,
@@ -381,7 +348,7 @@
   month =        nov,
   year =         {1993},
   note =         {(Version~1.5)},
-  projects =     {Eagle},
+  annote =       {project},
 }
 
 @TechReport{PKCS3:1993,
@@ -392,7 +359,7 @@
   number =       {3},
   month =        nov,
   year =         {1993},
-  projects =     {SITLine; Eagle},
+  annote =       {project},
 }
 
 @TechReport{RFC1321,
@@ -403,7 +370,7 @@
   number =       {1321},
   month =        apr,
   year =         {1992},
-  projects =     {SITLine; Eagle},
+  annote =       {project},
 }
 
 @TechReport{RFC2104,
@@ -414,7 +381,7 @@
   number =       {2104},
   month =        feb,
   year =         {1997},
-  projects =     {Eagle},
+  annote =       {project},
 }
 
 @TechReport{RFC2202,
@@ -435,6 +402,6 @@
   number =       {3566},
   month =        sep,
   year =         {2003},
-  projects =     {Eagle},
+  annote =       {project},
 }
 
