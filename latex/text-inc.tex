@@ -4,11 +4,14 @@
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: text-inc.tex,v 1.8 2008-04-20 14:27:30 ralf Exp $
+%% $Id: text-inc.tex,v 1.9 2008-10-25 17:25:58 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.8  2008-04-20 14:27:30  ralf
+%% footnote distance changed
+%%
 %% Revision 1.7  2007-09-30 16:52:22  ralf
 %% Some macros moved to base-inc.tex
 %%
@@ -42,6 +45,12 @@
 
 %% Compressed \cdot e.g. as used by Whittacker in paragraph numbers
 \newcommand{\sdot} {\ensuremath{\! \cdot \!}}
+
+%% Special commands/math/text in headings/titles (no replacement per default)
+%% Usage: \headingspecial{cmds}{replacement}
+%% Example: \headingspecial{\footnote{Test}}{}
+\providecommand{\headingspecial} [2] {#1}
+
 
 \setlength{\skip\footins}{10mm}
 
