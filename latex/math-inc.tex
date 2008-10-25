@@ -5,10 +5,13 @@
 %
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: math-inc.tex,v 1.8 2008-04-20 14:26:42 ralf Exp $
+%% $Id: math-inc.tex,v 1.9 2008-10-25 17:25:14 ralf Exp $
 %%
 %% History:
 %% $Log: not supported by cvs2svn $
+%% Revision 1.8  2008-04-20 14:26:42  ralf
+%% reference to package tex4ht without any extension .sty
+%%
 %% Revision 1.7  2007-09-30 16:52:22  ralf
 %% Some macros moved to base-inc.tex
 %%
@@ -69,6 +72,9 @@
 
 \newcommand{\mboxed} [1] {\boxed{#1}}
 \newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}} % Bold matrix/vector
+\newcommand{\mdet} [1] {\mvec{#1}} % determinant variable
+%% \newcommand{\mequiv} {\ensuremath{\mathrel{\widehat{=}}}} %% equivalent: = with hat
+\newcommand{\mequiv} {\ensuremath{\stackrel{\scriptscriptstyle\wedge}{=}}} %% equivalent: = with hat
 
 \newcommand{\ji} {\im}               %% j from package trfsigns
 \newcommand{\vp} {\,\textup{V.\,P.}} %% Cauchy principal value
@@ -164,6 +170,7 @@
 \DeclareMathOperator{\arsinh}{arsinh}
 \DeclareMathOperator{\arcosh}{arcosh}
 \DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\ld}{\log_{2}}     %% logaritmus dualis (ld)
 \DeclareMathOperator{\gd}{gd}           %% Guderman function gd(x) = arctan(sinh(x))
 
 %% Probability
@@ -179,6 +186,7 @@
 %% Algebraic functions
 \DeclareMathOperator{\ord}{ord}         %% Order
 \DeclareMathOperator{\GF}{GF}           %% Galois field
+\DeclareMathOperator{\MONTG}{M}         %% Montgomery transformation
 \newcommand{\rcls} [2] {{\left[ {#1} \right] }_{#2}} % residue class
 
 
@@ -311,6 +319,6 @@
 
 
 %% Inline math in headings/titles (no replacement per default)
-%% Usage: \mhead{expr}{replacement}
-%% Example: \mhead{x^y}{x times y}
-\providecommand{\mhead} [2] {\ensuremath{#1}}
+%% Usage: \headingmath{expr}{replacement}
+%% Example: \headingmath{x^y}{x times y}
+\providecommand{\headingmath} [2] {\ensuremath{#1}}
