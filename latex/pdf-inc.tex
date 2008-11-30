@@ -14,11 +14,14 @@
 %%
 %% Copyright (c) Ralf Hoppe
 %%
-%% $Id: pdf-inc.tex,v 1.8 2008-10-25 17:25:45 ralf Exp $
+%% $Id: pdf-inc.tex,v 1.9 2008-11-30 14:06:15 ralf Exp $
 %%
 %% History:
 %%
 %% $Log: not supported by cvs2svn $
+%% Revision 1.8  2008-10-25 17:25:45  ralf
+%% macro \mhead renamed
+%%
 %% Revision 1.7  2008-04-20 14:27:15  ralf
 %% - reference to package tex4ht without any extension .sty
 %% - docsubj macro changed
@@ -44,76 +47,55 @@
 %%
 
 \@ifpackageloaded{tex4ht.sty}{}{ % do not confuse TeX4ht
-
+  %%
   %% Postscript font Times in text and math formulas (based on freely
   %% distributable fonts). Disadvantage: No support of bold in math
   %% formulas (normally needed in headings, see macro \headingmath in
   %% file math-inc.tex)
   %%
-  \usepackage{txfonts}
-  \usepackage{mathptmx}
-
-
+  \usepackage{txfonts}%
+  \usepackage{mathptmx}%
+  %%
   %% Postscript font Palatino in text and math formulas (based on freely
   %% distributable fonts).
   %%
   %% \usepackage{pxfonts}                %% Declares \opentimes symbol)
   %% \usepackage[slantedGreek]{mathpazo} %% Palatino math
-
-
+  %%
   %% Math fonts from mathdesign package for usage with standard LaTeX
   %% fonts
   %%
   %% \usepackage[garamond]{mathdesign}
-
-  %% \docsubj{title}{subject}{keywords}
-  \providecommand{\docsubj} [3] {}
-  \renewcommand{\docsubj} [3] {
-    \hypersetup{
-      pdfauthor = {\textcopyright ~ Ralf Hoppe},
-      pdftitle = {#1},
-      pdfsubject = {#2},
-      pdfkeywords = {#3}
-    }
-  }
 }
 
 
-\usepackage[usenames]{color}
+%%
+%% Starting from LyX 1.6 this is provided in document settings
+%%
+%% \usepackage[usenames]{color}
 
-\usepackage[                    %%
-    ps2pdf,                     %% another option is pdflatex
-    pdfpagemode=UseOutlines,    %% generate bookmarks
-    pdfview=FitH,               %%
-    pdfstartview=FitH,          %%
-    pdfpagelayout=SinglePage,   %%
-    bookmarks=true,             %%
-    bookmarksopen=true,         %%
-    bookmarksnumbered=true,     %%
-    bookmarksopenlevel=1,       %%
-    colorlinks=true,            %% forces no border/frame around links
-    breaklinks=true,            %%
-    hyperindex=true,            %%
-    menucolor=BrickRed,         %% color for Acrobat menu items
-    pagecolor=BrickRed,         %% color for links to other pages
-    anchorcolor=Black,          %% color for anchor text
-    citecolor=MidnightBlue,     %% color for bibligraphical citations in text
-    linkcolor=Blue,             %% color for normal internal links
-    filecolor=Purple,           %% color for URLs which open local files
-    urlcolor=Purple             %% color for linked URLs
-] {hyperref}
+%% \usepackage[                    %%
+%%     ps2pdf,                     %% another option is pdflatex
+%%     pdfpagemode=UseOutlines,    %% generate bookmarks
+%%     pdfview=FitH,               %%
+%%     pdfstartview=FitH,          %%
+%%     pdfpagelayout=SinglePage,   %%
+%%     bookmarks=true,             %%
+%%     bookmarksopen=true,         %%
+%%     bookmarksnumbered=true,     %%
+%%     bookmarksopenlevel=1,       %%
+%%     colorlinks=true,            %% forces no border/frame around links
+%%     breaklinks=true,            %%
+%%     hyperindex=true,            %%
+%%     menucolor=BrickRed,         %% color for Acrobat menu items
+%%     pagecolor=BrickRed,         %% color for links to other pages
+%%     anchorcolor=Black,          %% color for anchor text
+%%     citecolor=MidnightBlue,     %% color for bibligraphical citations in text
+%%     linkcolor=Blue,             %% color for normal internal links
+%%     filecolor=Purple,           %% color for URLs which open local files
+%%     urlcolor=Purple             %% color for linked URLs
+%% ] {hyperref}
 
-
-%% If hyperref is loaded (after newfloat definition e.g. for algorithms,
-%% see LyX help file EmbeddedObjects.lyx for details) the following
-%% redefinitions are needed.
-\ifx\thealgorithm\undefined %% algorithm float defined?
-\else
-  \newfloat{Xalgorithm}{htbp}{loa}
-  \floatname{Xalgorithm}{Algorithmus}
-  \newcommand{\theHalgorithm}{\theHXalgorithm}
-  \renewenvironment{algorithm}[1][htbp]{\begin{Xalgorithm}[#1]}{\end{Xalgorithm}}
-\fi
 
 
 %% Special commands/text/math in headings/titles
