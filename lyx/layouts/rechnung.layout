@@ -1,0 +1,33 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[scrlttr2, rechnung.sty]{letter (Rechnung)}
+# author: Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+Input scrlttr2.layout
+
+AddToPreamble
+  \usepackage{rechnung}
+  \usepackage[right]{eurosym}
+  \Waehrung{\euro{}}
+  \Steuersatz{19}{7}
+EndPreamble
+
+
+Style Rechnungstab.
+  LatexType     Environment
+  LatexName     Rechnung
+  LatexParam    [N]
+  TopSep        2
+  LabelType     Centered_Top_Environment
+  LabelString   "Rechnungstab."
+  Margin        Static
+  NextNoIndent  1
+  PassThru      1
+  Newline       1
+  NeedProtect   1
+  LabelFont
+    Series      Bold
+    Shape       Italic
+    Size        Large
+  EndFont
+End

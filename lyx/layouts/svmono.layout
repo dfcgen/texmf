@@ -1,0 +1,196 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[svmono]{book (Springer)}
+# Springer monographies book textclass definition file. Taken from initial LyX source code
+# Author   : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
+# this file: Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+Input stdclass.inc
+
+# General textclass parameters
+# Description          "book (svmono)"
+Columns         1
+Sides           2
+MaxCounter      Counter_Chapter
+PageStyle               ""
+
+ClassOptions
+  FontSize              10
+  Other                 "vecphys"
+End  
+
+# Needed packages as stated by Springer
+#
+AddToPreamble
+  \usepackage{graphicx}
+  \usepackage{multicol}
+  \usepackage{footmisc}
+EndPreamble
+
+
+# Suppressing abstracts and redefining bibliography is copied from book.layout
+#
+NoStyle Abstract  # there are no abstract in a book.
+
+Style Bibliography
+  TopSep        4
+  LabelString   "Bibliography "
+  # label font definition
+  LabelFont 
+    Series      Bold
+    Size        Huge
+  EndFont
+End
+
+
+#
+# New theorems/styles copied from svjour.inc
+
+# Mathematics-like definitions:
+
+Style Claim
+  Margin        First_Dynamic
+  LatexType     Environment
+  LatexName     claim
+  NextNoIndent      0
+  ParIndent     MM
+  LabelSep      xx
+  ItemSep       0
+  TopSep        0.5
+  BottomSep     0.5
+  ParSep        0
+  Align         Block
+  AlignPossible     Block, Left
+  LabelType     Static
+  LabelString   "Claim "
+
+  # font & label font definition
+
+  LabelFont 
+    Shape       Italic
+  EndFont
+
+End
+
+Style Conjecture
+  CopyStyle     Claim
+  LatexName     conjecture
+  LabelString   "Conjecture # "
+End
+
+Style Corollary
+  CopyStyle     Claim
+  LatexName     corollary
+  LabelString   "Corollary # "
+
+  # font & label font definition
+  Font 
+    Shape       Italic
+  EndFont
+
+  LabelFont 
+    Shape       Up
+    Series      Bold
+  EndFont
+
+End
+
+Style Definition
+  CopyStyle     Corollary
+  LatexName     definition
+  LabelString   "Definition # "
+End
+
+Style Example
+  CopyStyle     Claim
+  LatexName     example
+  LabelString   "Example # "
+End
+
+Style Exercise
+  CopyStyle     Claim
+  LatexName     exercise
+  LabelString   "Exercise # "
+
+  # font & label font definition
+
+  LabelFont 
+    Shape       Up
+    Series      Bold
+  EndFont
+
+End
+
+Style Lemma
+  CopyStyle     Corollary
+  LatexName     lemma
+  LabelString   "Lemma # "
+End
+
+Style Note
+  CopyStyle     Claim
+  LatexName     note
+  LabelString   "Note # "
+End
+
+Style Problem
+  CopyStyle     Exercise
+  LatexName     problem
+  LabelString   "Problem # "
+End
+
+Style Proof
+  CopyStyle     Claim
+  LatexName     proof
+  LabelString   "Proof "
+End
+
+Style Property
+  CopyStyle     Claim
+  LatexName     property
+  LabelString   "Property # "
+End
+
+Style Proposition
+  CopyStyle     Claim
+  LatexName     proposition
+  LabelString   "Proposition # "
+End
+
+Style Question
+  CopyStyle     Claim
+  LatexName     question    
+  LabelString   "Question # "
+End
+
+Style Remark
+  CopyStyle     Claim
+  LatexName     remark
+  LabelString   "Remark # "
+End
+
+Style Solution
+  CopyStyle     Exercise
+  LatexName     solution
+  LabelString   "Solution # "
+End
+
+Style Theorem
+  CopyStyle     Corollary
+  LatexName     theorem
+  LabelString   "Theorem # "
+End
+
+#
+# Some remaining styles copied from amsmaths.inc
+
+# Case-numbered style declaration
+Style Case
+  CopyStyle     Remark
+  LatexName     case
+  LabelString   "Case # "
+End  
+
+
+#Finally a few older definitions for compatibility
+Input obsolete.inc

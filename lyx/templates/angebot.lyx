@@ -1,0 +1,255 @@
+#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrlttr2
+\begin_preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here you can modify the layout of your letter
+%% Have a look at the KOMA script documentation
+%% for details. Most commands are commented out
+%% here (i.e. we use default settings)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Load an *.lco style file (see KOMA documentation)
+\LoadLetterOption{DIN}%                          
+
+%% THE CLASS OPTIONS
+%% Remove preceeding '%' to uncomment an item
+\KOMAoptions{%
+enlargefirstpage=true
+%,headsepline=true%            separate the header with a line on page >1
+%,footsepline=true%             separate the footer with a line on page >1
+%pagenumber=botcenter%   position of the page number (see docu)
+%,parskip=false%          Use indent instead of skip (more options cf. docu)
+%,fromalign=center%        alignment of the address
+%,fromrule=aftername%    separate the address with a line?
+,fromphone=true%         print sender phone number
+%,fromfax=true%          print sender fax number
+,fromemail=true%           print sender e-mail address
+%,fromurl=true%               print sender URL
+%,fromlogo=true%         print a logo (position depends on fromalign)
+%,addrfield=false%        print an address field?
+%,backaddress=false%  print the back address?
+%,subject=afteropening,titled% alternative subject layout and position
+%,locfield=narrow%      width of the (extra) location field
+%,foldmarks=false%      print foldmarks?
+,numericaldate=true%  date layout
+%,refline=wide%             layout of the refline
+}
+
+%% Customize Separators
+%\setkomavar{placeseparator}{ -- }
+\setkomavar{backaddressseparator}{ $\cdot$ }
+%\setkomavar{emailseparator}{ --> }
+%\setkomavar{enclseparator}{ > }
+%\setkomavar{faxseparator}{ --> }
+%\setkomavar{phoneseparator}{ --> }
+%\setkomavar{subjectseparator}{ >>> }
+
+%% Customize fonts
+%% Use LaTeX's standard font commands
+%% Modify with \setkomafont or \addtokomafont
+%% (see KOMA documentation)
+\setkomafont{backaddress}{\rmfamily}
+%\setkomafont{descriptionlabel}{}
+\setkomafont{fromaddress}{\small}
+\setkomafont{fromname}{\scshape}
+%\setkomafont{pagefoot}{}
+%\setkomafont{pagehead}{}
+%\setkomafont{pagenumber}{}
+%\setkomafont{subject}{}
+%\setkomafont{title}{}
+\end_preamble
+\use_default_options false
+\language ngerman
+\inputencoding auto
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 11
+\spacing other 1.15
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 0
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Name
+Ralf Hoppe
+\end_layout
+
+\begin_layout SenderAddress
+Karl Egon Str.
+\begin_inset space ~
+\end_inset
+
+22
+\begin_inset Newline newline
+\end_inset
+
+10318 Berlin
+\end_layout
+
+\begin_layout Telephone
+0152
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+,
+\end_layout
+
+\end_inset
+
+01592665
+\end_layout
+
+\begin_layout E-Mail
+ralf.hoppe@ieee.org
+\end_layout
+
+\begin_layout Backaddress
+Ralf Hoppe
+\begin_inset Newline newline
+\end_inset
+
+Karl Egon Str.
+\begin_inset space ~
+\end_inset
+
+22
+\begin_inset Newline newline
+\end_inset
+
+10318 Berlin
+\end_layout
+
+\begin_layout Signature
+Ralf Hoppe
+\end_layout
+
+\begin_layout Subject
+Angebot 2007-03
+\end_layout
+
+\begin_layout Place
+Berlin
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+SOLCOM Unternehmensberatung GmbH
+\begin_inset Newline newline
+\end_inset
+
+Hr.
+ Weichelt
+\begin_inset Newline newline
+\end_inset
+
+Am Heilbrunnen 99
+\begin_inset Newline newline
+\end_inset
+
+72766 Reutlingen
+\end_layout
+
+\begin_layout Opening
+Sehr geehrter Hr.
+ Weichelt
+\end_layout
+
+\begin_layout Standard
+vielen Dank für Ihre Anfrage vom 15.01.2007.
+ Anbei erhalten Sie mein Angebot für einen Projekteinsatz als Embedded Softwaree
+ntwickler bei der Hirschmann Automation and Control GmbH in 72654
+\begin_inset space ~
+\end_inset
+
+Neckartenzlingen, Stuttgarter Str.
+ 45-51.
+ Grundlage dieses Angebots bilden die Informationen aus der GULP Projektanfrage
+ PG2212/288393 vom 22.12.2006, Ihrer Mail vom 10.01.2007 sowie dem Meeting mit
+ Hr.
+ Reister (Hirschmann Automation and Control GmbH) am 15.01.2007.
+\end_layout
+
+\begin_layout Standard
+Auf der Basis von acht Stunden pro Tag und einer Projektlaufzeit von 05.02.2007
+ bis 31.01.2008 biete ich folgenden Netto-Stundensatz für Entwicklungsdienstleistu
+ngen an:
+\end_layout
+
+\begin_layout Itemize
+im Zeitraum 05.02.2007 bis 31.03.2007: 60,00
+\begin_inset space ~
+\end_inset
+
+EUR
+\end_layout
+
+\begin_layout Itemize
+ab dem 01.04.2007: 65,00
+\begin_inset space ~
+\end_inset
+
+EUR.
+\end_layout
+
+\begin_layout Standard
+Die Rechnungsstellung erfolgt monatlich nach geleisteten Stunden.
+\end_layout
+
+\begin_layout Standard
+Dieses Angebot ist gültig bis 22.01.2007.
+\end_layout
+
+\begin_layout Closing
+Mit freundlichen Grüßen
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,50 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[scrartcl]{labels (koma-script)}
+# Author   : Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+
+
+Input scrartcl.layout
+
+AddToPreamble
+  \usepackage[newdimens]{labels}
+
+  %% Dimensions below are defined for Leitz 1685 labels
+  %% You can overwrite it in the document, followed by
+  %% a \LabelSetup statement
+  \LeftPageMargin=13mm
+  \RightPageMargin=13mm
+  \TopPageMargin=8mm
+  \BottomPageMargin=8mm
+  \InterLabelColumn=8mm
+  \InterLabelRow=0mm
+
+  \LabelCols=4
+  \LabelRows=1
+  \TopLabelBorder=10mm
+  \BottomLabelBorder=10mm
+  \LeftLabelBorder=8mm
+  \RightLabelBorder=8mm
+EndPreamble
+
+
+Style FileLabel
+  LatexType		Environment
+  LatexName		labels
+  TopSep		2
+  BottomSep		2
+  ParSep		2
+  LabelType		Centered_Top_Environment
+  LabelString		"Schilder"
+  Margin		Static
+  AlignPossible		block, left, right, center
+  NextNoIndent		1
+  KeepEmpty		1
+
+  LabelFont 
+    Series              Bold
+    Size                Huge
+    Color               magenta
+  EndFont
+End

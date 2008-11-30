@@ -1,0 +1,257 @@
+#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass labels
+\begin_preamble
+\LabelInfotrue
+%% \let\makebox\framebox
+\end_preamble
+\use_default_options false
+\language german
+\inputencoding auto
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation landscape
+\topmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout FileLabel
+\align center
+Freiberufliche Tätigkeit
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\size large
+
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "b"
+use_parbox 0
+width "100col%"
+special "none"
+height "100line%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\noindent
+\align center
+
+\series bold
+\size large
+Einnahmen/Ausgaben
+\end_layout
+
+\end_inset
+
+
+\series default
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\size huge
+Ralf Hoppe
+\series default
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+width "100col%"
+special "none"
+height "1theight%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing other 0.5
+\noindent
+\align center
+
+\series bold
+St-Nr.
+\begin_inset space ~
+\end_inset
+
+32/353/62543
+\begin_inset Newline newline
+\end_inset
+
+Ust-IdNr.
+\begin_inset space ~
+\end_inset
+
+DE
+\begin_inset space \thinspace{}
+\end_inset
+
+252281677
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+width "100col%"
+special "none"
+height "1in"
+height_special "height"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing other 0.5
+\noindent
+\align center
+Ralf Hoppe
+\begin_inset Newline newline
+\end_inset
+
+Junker-Jörg-Str.
+\begin_inset space ~
+\end_inset
+
+2
+\begin_inset Newline newline
+\end_inset
+
+10318
+\begin_inset space ~
+\end_inset
+
+Berlin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FileLabel
+\align center
+Gründung
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\size largest
+Buchhandlung
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+width "100col%"
+special "none"
+height "1in"
+height_special "height"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing other 0.5
+\noindent
+\align center
+Ralf Hoppe
+\begin_inset Newline newline
+\end_inset
+
+Junker-Jörg-Str.
+\begin_inset space ~
+\end_inset
+
+2
+\begin_inset Newline newline
+\end_inset
+
+10318
+\begin_inset space ~
+\end_inset
+
+Berlin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
