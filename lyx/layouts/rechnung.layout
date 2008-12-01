@@ -22,9 +22,7 @@ Style Rechnungstab.
   LabelString   "Rechnungstab."
   Margin        Static
   NextNoIndent  1
-  PassThru      1
   Newline       1
-  NeedProtect   1
   LabelFont
     Series      Bold
     Shape       Italic
