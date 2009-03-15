@@ -62,6 +62,7 @@ enlargefirstpage=true
 %\setkomafont{title}{}
 
 \@setplength[3]{sigbeforevskip}{\baselineskip}
+\setlength{\skip\footins}{10mm}
 \end_preamble
 \use_default_options false
 \language ngerman
