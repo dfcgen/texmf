@@ -3,12 +3,15 @@
 %% LaTeX file for mathematical extensions and support macros
 %% Needs AMS-Math to work correct.
 %
-%% Copyright (c) Ralf Hoppe
+%% Copyright (C) 2003-2009 Ralf Hoppe
 %%
-%% $Id: math-inc.tex,v 1.10 2008-11-30 14:06:15 ralf Exp $
+%% $Id: math-inc.tex,v 1.11 2009-03-15 15:40:29 ralf Exp $
 %%
 %% History:
 %% $Log: not supported by cvs2svn $
+%% Revision 1.10  2008-11-30 14:06:15  ralf
+%% adjustment to LyX 1.6.0
+%%
 %% Revision 1.9  2008-10-25 17:25:14  ralf
 %% - macro \mhead renamed
 %% - new functions declared
@@ -66,7 +69,7 @@
 
 %% Fractions look extremely ugly in tables, because there is no space over
 %% and under. The following macro writes a fbox without a frame but with the
-%% fboxsep. Bu this does not work on some HTML converters.
+%% fboxsep. But this does not work on some HTML converters.
 \@ifpackageloaded{tex4ht.sty}{  % math in tables
   \newcommand{\mtab} [1] {      %
     \ensuremath{\mbig{#1}}}}{
@@ -188,9 +191,11 @@
 
 
 %% Algebraic functions
+\DeclareMathOperator{\lcm}{lcm}         %% Least Common Multiplier
 \DeclareMathOperator{\ord}{ord}         %% Order
 \DeclareMathOperator{\GF}{GF}           %% Galois field
 \DeclareMathOperator{\MONTG}{M}         %% Montgomery transformation
+\DeclareMathOperator{\totient}{\phi}    %% Euler's totient function
 \newcommand{\rcls} [2] {{\left[ {#1} \right] }_{#2}} % residue class
 
 
