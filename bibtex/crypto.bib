@@ -5,7 +5,7 @@
 %%
 %%  BibTeX-file{
 %%  author   = "Ralf Hoppe",
-%%  version  = "$Revision: 1.7 $",
+%%  version  = "$Revision: 1.8 $",
 %%  filename = "crypto.bib",
 %%  address  = "Junker-J{\"o}rg-Strasse 2, 10318 Berlin, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
@@ -34,7 +34,7 @@
 @Book{Welschenbach:2001,
   author =       "Michael Welschenbach",
   title =        "{K}ryptographie in {C} und {C++}",
-  publisher =    "Springer-Verlag",
+  publisher =    "Springer",
   year =         "2001",
   address =      "Berlin Heidelberg New York",
   edition =      "2.",
@@ -61,7 +61,7 @@
 @Book{Hankerson:2004,
   author =       {Darrel Hankerson and Alfred Menezes and Scott Vanstone},
   title =        {Guide to Elliptic Curve Cryptography},
-  publisher =    {Springer-Verlag},
+  publisher =    {Springer},
   year =         {2004},
   address =      {New York},
   annote =       {library}
@@ -137,6 +137,35 @@
   month =        nov,
 }
 
+
+@InProceedings{Damgard:1989,
+  author =       {Ivan Bjerre Damg{\aa}rd},
+  title =        {A Design Principle for Hash Functions},
+  editor =       {G. Brassard},
+  booktitle =    {Advances in Cryptology --- {CRYPTO '89}},
+  series =       {Lecture Notes in Computer Science},
+  volume =       {435},
+  publisher =    {Springer-Verlag},
+  address =      {Berlin / Heidelberg},
+  pages =        {416--427},
+  year =         {1990}
+}
+
+
+@InProceedings{Merkle:1989,
+  author =       {Ralph C. Merkle},
+  title =        {One Way Hash Functions and {DES}},
+  editor =       {G. Brassard},
+  booktitle =    {Advances in Cryptology --- {CRYPTO '89}},
+  series =       {Lecture Notes in Computer Science},
+  volume =       {435},
+  publisher =    {Springer-Verlag},
+  address =      {Berlin / Heidelberg},
+  pages =        {428--446},
+  year =         {1990}
+}
+
+
 @Article{okamoto:1990,
   author =       "T. Okamoto",
   title =        "A Fast Signature Scheme Based on Congruential Polynomial
@@ -149,10 +178,20 @@
   month =        jan,
 }
 
+@TechReport{Koc:1994a,
+  author =       {{\c{C}}etin Kaya Ko{\c{c}}},
+  title =        {High-Speed {RSA} Implementation},
+  institution =  {RSA Laboratories},
+  year =         {1994},
+  number =       {TR-201},
+  note =         {Version 2.0}
+}
+
 @Article{Hars:2006,
   title =        {Modular Inverse Algorithms Without Multiplications for
                   Cryptographic Applications},
   author =       {Laszlo Hars},
+  journal =      {{EURASIP} Journal on Embedded Systems},
   publisher =    {Hindawi Publishing Corporation},
   year =         {2006},
   url =          {http://www.hindawi.com/GetArticle.aspx?doi=10.1155/ES/2006/32192}
@@ -171,6 +210,34 @@
   publisher =    {IEEE Computer Society}
 }
 
+@InProceedings{Bellare:1995,
+  author =       {Mihir Bellare and Phillip Rogaway},
+  title =        {Optimal Asymmetric Encryption -- How to Encrypt with {RSA}},
+  editor =       {Alfredo {De Santis}},
+  booktitle =    {Advances in Cryptology --- {EUROCRYPT '94}: Workshop on the
+                  Theory and Application of Cryptographic Techniques, Perugia,
+                  Italy, May 9 - 12, 1994. Proceedings},
+  series =       {Lecture Notes in Computer Science},
+  volume =       {950},
+  publisher =    {Springer-Verlag},
+  address =      {Berlin},
+  pages =        {92--111},
+  year =         {1995},
+  month =        aug
+}
+
+@InProceedings{Bellare:1996,
+  author =       {Mihir Bellare and Phillip Rogaway},
+  title =        {The Exact Security of Digital Signatures -- How to Sign with {RSA} and {Rabin}},
+  editor =       {U. Maurer},
+  booktitle =    {Advances in Cryptology --- {EUROCRYPT '96}},
+  series =       {Lecture Notes in Computer Science},
+  volume =       {1070},
+  publisher =    {Springer-Verlag},
+  address =      {Berlin Heidelberg},
+  pages =        {399--416},
+  year =         {1996}
+}
 
 @Unpublished{Black:2000,
   author =       {John Black and Phillip Rogaway},
@@ -194,14 +261,30 @@
 %% Proceedings
 %%%%%%%%%%%%%%%%%%%%%%
 @InProceedings{miyaguchi:1990,
-  author =       "S. Miyaguchi",
-  title =        "The {FEAL} Cipher Family",
-  booktitle =    "Advances in Cryptology - CRYPTO '90",
-  pages =        "627--638",
-  year =         "1991",
-  series =       "LNCS 537",
-  publisher =    "Springer-Verlag",
+  author =       {S. Miyaguchi},
+  title =        {The {FEAL} Cipher Family},
+  booktitle =    {Advances in Cryptology --- CRYPTO '90},
+  pages =        {627--638},
+  year =         {1991},
+  series =       {Lecture Notes in Computer Science},
+  volume =       {537},
+  publisher =    {Springer}
 }
+
+
+@InProceedings{Bleichenbacher:1998,
+  author =       {Daniel Bleichenbacher},
+  title =        {Chosen Ciphertext Attacks Against Protocols Based on the
+                  {RSA} Encryption Standard {PKCS~\#1}},
+  booktitle =    {Advances in Cryptology --- CRYPTO '98},
+  pages =        {629--660},
+  year =         {1998},
+  volume =       {1462},
+  series =       {Lecture Notes in Computer Science},
+  month =        aug,
+  publisher =    {Springer}
+}
+
 
 
 %% Standards
@@ -221,13 +304,26 @@
 @TechReport{NIST:800-38D,
   author =       {Morris Dworkin},
   title =        {Recommendation for Block Cipher Modes of Operation:
-                  Galois/Counter Mode({GCM}) and {GMAC}},
+                  Galois/Counter Mode ({GCM}) and {GMAC}},
   institution =  {NIST},
   year =         {2007},
   key =          {NIST},
   type =         {{NIST} Special Publication},
   number =       {800-38D},
   note =         {DRAFT (June, 2007)},
+}
+
+@TechReport{NIST:800-56B,
+  author =       {Elaine Barker, Lily Chen, Andrew Regenscheid and Miles Smid},
+  title =        {Recommendation for Pair-Wise Key Establishment Schemes Using
+                  Integer Factorization Cryptography},
+  institution =  {NIST},
+  year =         {2009},
+  month =        aug,
+  key =          {NIST},
+  type =         {{NIST} Special Publication},
+  number =       {800-56B},
+  annote =       {project},
 }
 
 @TechReport{FIPS:46-2,
@@ -260,6 +356,76 @@
   annote =       {project},
 }
 
+@TechReport{FIPS:186-3,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Digitale Signature Standard ({DSS})},
+  type =         {FIPS Publication},
+  number =       {186-3},
+  year =         {2009},
+  key =          {NIST},
+  annote =       {project},
+}
+
+@TechReport{FIPS:180-1,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Secure Hash Standard},
+  type =         {FIPS Publication},
+  number =       {180-1},
+  year =         {1993},
+  month =        apr,
+  key =          {NIST},
+  note =         {(Supersedes {FIPS PUB 180} - 1993 May 11)},
+  annote =       {project}
+}
+
+
+@TechReport{FIPS:180-2,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Secure Hash Standard ({SHS})},
+  type =         {FIPS Publication},
+  number =       {180-2},
+  year =         {2002},
+  month =        aug,
+  key =          {NIST},
+  annote =       {project}
+}
+
+
+@TechReport{FIPS:180-3,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Secure Hash Standard ({SHS})},
+  type =         {FIPS Publication},
+  number =       {180-3},
+  year =         {2008},
+  month =        oct,
+  key =          {NIST},
+  annote =       {project}
+}
+
+
+@TechReport{FIPS:197,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Advanced Encryption Standard ({AES})},
+  type =         {FIPS Publication},
+  number =       {197},
+  year =         {2001},
+  annote =       {project},
+}
+
+
+@TechReport{ISO:10118-3,
+  title =        {{I}nformation technology -- {S}ecurity techniques -- {H}ash
+                  functions -- {P}art 3: {D}edicated hash-functions},
+  type =         {International Standard},
+  number =       {ISO/IEC~10118-3},
+  year =         {2004},
+  month =        feb,
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  annote =       {project}
+}
+
+
 @TechReport{FIPS:198-1,
   institution =  {National Institute of Standards and Technology},
   title =        {The Keyed-Hash Message Authentication Code ({HMAC})},
@@ -282,6 +448,18 @@
   annote =       {project},
 }
 
+@TechReport{ISO:9797-1,
+  title =        {{I}nformation technology -- {S}ecurity
+                  techniques -- {M}essage {A}uthentication {C}odes ({MACs}) --
+                  Part~1: {M}echanisms using a block cipher},
+  type =         {International Standard},
+  number =       {ISO/IEC~9797-1},
+  year =         {1999},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  annote =       {project},
+}
+
 @TechReport{ISO:9797-2,
   title =        {{I}nformation technology -- {S}ecurity techniques --
                   {M}essage {A}uthentication {C}odes ({MACs}) -- Part~2:
@@ -294,16 +472,48 @@
   annote =       {project},
 }
 
-@TechReport{ISO:9797-1,
+@TechReport{ISO:18033-2,
+  title =        {{I}nformation technology -- {S}ecurity techniques --
+                  {E}ncryption algorithms -- {P}art~2: {A}symmetric ciphers},
+  type =         {International Standard},
+  number =       {ISO/IEC~18033-2},
+  year =         {2006},
+  institution =  {ISO/IEC},
+  key =          {ISO}
+}
+
+@TechReport{ISO:18033-3,
+  title =        {{I}nformation technology -- {S}ecurity techniques --
+                  {E}ncryption algorithms -- {P}art~3: {B}lock ciphers},
+  type =         {International Standard},
+  number =       {ISO/IEC~18033-3},
+  year =         {2005},
+  institution =  {ISO/IEC},
+  key =          {ISO}
+}
+
+@TechReport{ISO:9796-1,
   title =        {{I}nformation technology -- {S}ecurity
                   techniques -- {M}essage {A}uthentication {C}odes ({MACs}) --
                   Part~1: {M}echanisms using a block cipher},
   type =         {International Standard},
-  number =       {ISO/IEC~9797-1},
+  number =       {ISO/IEC~9796-1},
   year =         {1999},
   institution =  {ISO/IEC},
   key =          {ISO},
-  annote =       {project},
+  annote =       {project}
+}
+
+@TechReport{ISO:9796-2,
+  title =        {{I}nformation technology -- {S}ecurity techniques --
+                  {D}igital signature schemes giving message recovery --
+                  Part~2: {I}nteger factorization based mechanisms},
+  type =         {International Standard},
+  number =       {ISO/IEC~9796-2},
+  year =         {2002},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  annote =       {project}
 }
 
 @TechReport{ANSI:X9.52,
@@ -339,16 +549,35 @@
   annote =       {project},
 }
 
+@TechReport{IEEE:STD1363a,
+  title =        {Standard Specifications For Public-Key Cryptography --
+                  Amendment 1: Additional Techniques},
+  year =         {2004},
+  institution =  {IEEE},
+  type =         {Std},
+  number =       {1363a-2004},
+  key =          {IEEE},
+  annote =       {project},
+}
+
 @TechReport{PKCS1:1993,
   title =        {{RSA} Encryption Standard},
-  key =          {PKCS},
   institution =  {RSA Laboratories},
   type =         {PKCS},
-  number =       {1},
+  number =       {{\#1}~v1.5},
   month =        nov,
   year =         {1993},
-  note =         {(Version~1.5)},
-  annote =       {project},
+  annote =       {project}
+}
+
+@TechReport{PKCS1:2002,
+  title =        {{RSA} Cryptography Standard},
+  institution =  {RSA Laboratories},
+  type =         {PKCS},
+  number =       {{\#1}~v2.1},
+  month =        jun,
+  year =         {2002},
+  annote =       {project}
 }
 
 @TechReport{PKCS3:1993,
@@ -370,7 +599,7 @@
   number =       {1321},
   month =        apr,
   year =         {1992},
-  annote =       {project},
+  annote =       {project}
 }
 
 @TechReport{RFC2104,
@@ -402,6 +631,19 @@
   number =       {3566},
   month =        sep,
   year =         {2003},
-  annote =       {project},
+  annote =       {project}
 }
+
+@TechReport{RFC3447,
+  author =       {J. Jonsson and B. Kaliski},
+  title =        {Public-Key Cryptography Standards ({PKCS}) \#1: RSA
+                  Cryptography Specifications Version 2.1},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {3447},
+  month =        feb,
+  year =         {2003},
+  annote =       {project}
+}
+
 
