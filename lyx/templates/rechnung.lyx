@@ -1,4 +1,4 @@
-#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -154,14 +154,19 @@ firstfoot{
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features>
-<column alignment="center" valignment="top" width="40line%">
-<column alignment="right" valignment="top" width="70line%">
+<column alignment="left" valignment="top" width="40line%">
+<column alignment="left" valignment="top" width="60line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Ralf Hoppe, St.-Nr.
+Dipl.-Ing.
+ Ralf Hoppe
+\begin_inset Newline newline
+\end_inset
+
+St.-Nr.
 \begin_inset space ~
 \end_inset
 
@@ -175,7 +180,7 @@ Ralf Hoppe, St.-Nr.
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -235,7 +240,8 @@ Junker-Jörg-Str.
 \end_layout
 
 \begin_layout Bank
-Berliner Volksbank, Konto
+\noindent
+Berliner Volksbank, Kto:
 \begin_inset space ~
 \end_inset
 
@@ -251,7 +257,7 @@ Berliner Volksbank, Konto
 \begin_inset space \thinspace{}
 \end_inset
 
-019, BLZ
+019, BLZ:
 \begin_inset space ~
 \end_inset
 
@@ -264,6 +270,38 @@ Berliner Volksbank, Konto
 \end_inset
 
 00
+\begin_inset Newline newline
+\end_inset
+
+IBAN:
+\begin_inset space ~
+\end_inset
+
+DE88
+\begin_inset space \thinspace{}
+\end_inset
+
+1009
+\begin_inset space \thinspace{}
+\end_inset
+
+0000
+\begin_inset space \thinspace{}
+\end_inset
+
+7023
+\begin_inset space \thinspace{}
+\end_inset
+
+9150
+\begin_inset space \thinspace{}
+\end_inset
+
+19, BIC:
+\begin_inset space ~
+\end_inset
+
+BEV0DEBB
 \end_layout
 
 \begin_layout E-Mail
@@ -312,7 +350,7 @@ usekomavar{invoice}
 
 \end_inset
 
- zur Bestellung 450021618
+ zum Projekteinzelvertrag 60-C-104073-01 01
 \end_layout
 
 \begin_layout Place
@@ -320,39 +358,61 @@ Berlin
 \end_layout
 
 \begin_layout Date
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-today
-\end_layout
-
+9.
+\begin_inset space \thinspace{}
 \end_inset
 
+8.
+\begin_inset space \thinspace{}
+\end_inset
 
+2010
 \end_layout
 
 \begin_layout Address
-SOLCOM Unternehmensberatung GmbH
+Hays AG
 \begin_inset Newline newline
 \end_inset
 
--- Rechnungswesen --
+Administration Services
 \begin_inset Newline newline
 \end_inset
 
-Am Heilbrunnen 99
+Frau Yasemin Kaya
 \begin_inset Newline newline
 \end_inset
 
-72766 Reutlingen
+Postfach
+\begin_inset space ~
+\end_inset
+
+10
+\begin_inset space \thinspace{}
+\end_inset
+
+01
+\begin_inset space \thinspace{}
+\end_inset
+
+23
+\begin_inset Newline newline
+\end_inset
+
+68001
+\begin_inset space ~
+\end_inset
+
+Mannheim
+\begin_inset Newline newline
+\end_inset
+
+
+\shape smallcaps
+Deutschland
 \end_layout
 
 \begin_layout Invoice
-20080001
+201000011
 \begin_inset Note Note
 status open
 
@@ -370,19 +430,29 @@ Sehr geehrte Damen und Herren,
 \end_layout
 
 \begin_layout Standard
-hiermit erlaube ich mir, für die im Rahmen des Projektes 
+hiermit erlaube ich mir, für die im Rahmen des Projektes bei der 
 \begin_inset Quotes pld
 \end_inset
 
-Base2010Communication
+Hagenuk Marinekommunikation GmbH
 \begin_inset Quotes prd
 \end_inset
 
- in Dezember
+ in August
 \begin_inset space ~
 \end_inset
 
-2008 geleisteten Stunden, in Rechnung zu stellen:
+2010
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Anpassen!
+\end_layout
+
+\end_inset
+
+ geleisteten Stunden, in Rechnung zu stellen:
 \end_layout
 
 \begin_layout Rechnungstab.
@@ -393,9 +463,9 @@ status open
 
 
 \backslash
-Artikel{149,95}{Projektstunden lt.
+Artikel{135,58}{Projektstunden 
 \backslash
- Anlage}{69,00}
+mbox{lt.} Anlage}{64,00}
 \end_layout
 
 \end_inset
@@ -416,7 +486,7 @@ Anpassen!
 \begin_layout Standard
 Bitte überweisen Sie den Gesamtbetrag von 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -429,15 +499,15 @@ Gesamtsumme
 
 \end_inset
 
- bis zum 4.
+ bis zum 18.
 \begin_inset space \thinspace{}
 \end_inset
 
-4.
+10.
 \begin_inset space \thinspace{}
 \end_inset
 
-2008
+2010
 \begin_inset Note Note
 status open
 
@@ -455,7 +525,7 @@ Mit freundlichen Grüßen
 \end_layout
 
 \begin_layout Encl
-Leistungsnachweis
+Projektbericht
 \end_layout
 
 \end_body
