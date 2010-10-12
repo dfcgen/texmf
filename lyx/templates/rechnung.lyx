@@ -25,7 +25,7 @@ enlargefirstpage=true
 %,fromalign=center%        alignment of the address
 %,fromrule=aftername%    separate the address with a line?
 ,fromphone=true%         print sender phone number
-,fromfax=true%          print sender fax number
+%,fromfax=true%          print sender fax number
 ,fromemail=true%           print sender e-mail address
 %,fromurl=true%               print sender URL
 %,fromlogo=true%         print a logo (position depends on fromalign)
@@ -154,8 +154,8 @@ firstfoot{
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features>
-<column alignment="left" valignment="top" width="40line%">
-<column alignment="left" valignment="top" width="60line%">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="65line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
@@ -179,6 +179,8 @@ St.-Nr.
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+\align right
 \begin_inset ERT
 status open
 
@@ -220,15 +222,15 @@ Ralf Hoppe
 \end_layout
 
 \begin_layout SenderAddress
-Junker-Jörg-Str.
+Am Schwalbenschwanz
 \begin_inset space ~
 \end_inset
 
-2
+7
 \begin_inset Newline newline
 \end_inset
 
-10318 Berlin
+24220 Schönhorst
 \end_layout
 
 \begin_layout Telephone
@@ -301,7 +303,7 @@ DE88
 \begin_inset space ~
 \end_inset
 
-BEV0DEBB
+BEVODEBB 
 \end_layout
 
 \begin_layout E-Mail
@@ -321,15 +323,15 @@ Ralf Hoppe
 \begin_inset Newline newline
 \end_inset
 
-Junker-Jörg-Str.
+Am Schwalbenschwanz
 \begin_inset space ~
 \end_inset
 
-2
+7
 \begin_inset Newline newline
 \end_inset
 
-10318 Berlin
+24220 Schönhorst
 \end_layout
 
 \begin_layout Signature
@@ -358,15 +360,19 @@ Berlin
 \end_layout
 
 \begin_layout Date
-9.
-\begin_inset space \thinspace{}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
 \end_inset
 
-8.
-\begin_inset space \thinspace{}
-\end_inset
 
-2010
 \end_layout
 
 \begin_layout Address

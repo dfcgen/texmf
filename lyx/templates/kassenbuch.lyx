@@ -1,4 +1,4 @@
-#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -17,21 +17,21 @@
 %% THE CLASS OPTIONS
 %% Remove preceeding '%' to uncomment an item
 \KOMAoptions{%
-%enlargefirstpage=true
-headsepline=false%            separate the header with a line on page >1
+enlargefirstpage=true
+%,headsepline=true%            separate the header with a line on page >1
 %,footsepline=true%             separate the footer with a line on page >1
 ,pagenumber=botcenter%   position of the page number (see docu)
 %,parskip=false%          Use indent instead of skip (more options cf. docu)
 %,fromalign=center%        alignment of the address
-,fromrule=true%    separate the address with a line?
+%,fromrule=true%    separate the address with a line?
 %,fromrule=aftername%    separate the address with a line?
 ,fromphone=true%         print sender phone number
-,fromfax=true%          print sender fax number
+%,fromfax=true%          print sender fax number
 ,fromemail=true%           print sender e-mail address
 %,fromurl=true%               print sender URL
 %,fromlogo=true%         print a logo (position depends on fromalign)
 %,addrfield=false%        print an address field?
-,backaddress=false%  print the back address?
+,backaddress=true%  print the back address?
 %,subject=afteropening,titled% alternative subject layout and position
 %,locfield=narrow%      width of the (extra) location field
 %,foldmarks=false%      print foldmarks?
@@ -67,7 +67,7 @@ headsepline=false%            separate the header with a line on page >1
 \setlength{\skip\footins}{25mm}
 \end_preamble
 \use_default_options false
-\language german
+\language ngerman
 \inputencoding auto
 \font_roman times
 \font_sans default
@@ -110,12 +110,15 @@ Ralf Hoppe
 \end_layout
 
 \begin_layout SenderAddress
-Junker-Jörg-Str.
- 2
+Am Schwalbenschwanz
+\begin_inset space ~
+\end_inset
+
+7
 \begin_inset Newline newline
 \end_inset
 
-10318 Berlin
+24220 Schönhorst
 \end_layout
 
 \begin_layout Telephone
@@ -136,6 +139,22 @@ ralf.hoppe@ieee.org
 \end_inset
 
 23362134
+\end_layout
+
+\begin_layout Backaddress
+Ralf Hoppe
+\begin_inset Newline newline
+\end_inset
+
+Am Schwalbenschwanz
+\begin_inset space ~
+\end_inset
+
+7
+\begin_inset Newline newline
+\end_inset
+
+24220 Schönhorst
 \end_layout
 
 \begin_layout Signature
@@ -167,8 +186,8 @@ Kathrin Söhnel Stb
 \begin_inset Newline newline
 \end_inset
 
-Dorotheastr.
- 4
+Rudolf Grosse Str.
+ 19
 \begin_inset Newline newline
 \end_inset
 
