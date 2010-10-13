@@ -1,0 +1,26 @@
+#\DeclareLyXModule{Path}
+#DescriptionBegin
+#Provides a flexible inset for filesystems path
+#DescriptionEnd
+# author: Ralf Hoppe <ralf.hoppe@ieee.org>
+
+Format 11
+
+
+#   Font
+#     Family              Typewriter
+#     Color               Green
+#   EndFont
+#   LabelFont
+#     Family              Typewriter
+#     Color               Red
+#     Size                Small
+#   EndFont
+
+InsetLayout Path
+    CopyStyle             URL
+    LatexName             path
+    LabelString           Path
+    LyXType               custom
+    Requires              url
+End
