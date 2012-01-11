@@ -1,5 +1,5 @@
-#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass scrlttr2
@@ -60,68 +60,181 @@ enlargefirstpage=true
 %\setkomafont{pagenumber}{}
 %\setkomafont{subject}{}
 %\setkomafont{title}{}
+
+\@setplength[3]{sigbeforevskip}{\baselineskip}
+
+\usepackage[right]{eurosym}
 \end_preamble
 \use_default_options false
+\maintain_unincluded_children false
 \language ngerman
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman times
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
-\spacing other 1.15
+\spacing single
 \use_hyperref false
 \papersize a4paper
 \use_geometry false
 \use_amsmath 0
 \use_esint 0
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
+\paragraph_separation skip
 \defskip medskip
-\quotes_language swedish
+\quotes_language german
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+righthyphenmin=4
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lefthyphenmin=5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+firstfoot{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="35line%">
+<column alignment="left" valignment="top" width="65line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dipl.-Ing.
+ Ralf Hoppe
+\begin_inset Newline newline
+\end_inset
+
+St.-Nr.
+\begin_inset space ~
+\end_inset
+
+32/353/62543
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\align right
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Name
 Ralf Hoppe
 \end_layout
 
 \begin_layout SenderAddress
-Karl Egon Str.
+Ginsterweg
 \begin_inset space ~
 \end_inset
 
-22
+49
 \begin_inset Newline newline
 \end_inset
 
-10318 Berlin
+73230 Kirchheim unter Teck
 \end_layout
 
 \begin_layout Telephone
-0152
+01520
 \begin_inset space \thinspace{}
 \end_inset
 
-01592665
+1592665
 \end_layout
 
 \begin_layout E-Mail
@@ -133,15 +246,15 @@ Ralf Hoppe
 \begin_inset Newline newline
 \end_inset
 
-Karl Egon Str.
+Ginsterweg
 \begin_inset space ~
 \end_inset
 
-22
+49
 \begin_inset Newline newline
 \end_inset
 
-10318 Berlin
+73230 Kirchheim unter Teck
 \end_layout
 
 \begin_layout Signature
@@ -149,16 +262,16 @@ Ralf Hoppe
 \end_layout
 
 \begin_layout Subject
-Angebot 2007-03
+Angebot 2011-01
 \end_layout
 
 \begin_layout Place
-Berlin
+Kirchheim unter Teck
 \end_layout
 
 \begin_layout Date
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
