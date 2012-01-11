@@ -7,54 +7,21 @@
 %% ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.3 -dSubsetFonts=true -dEmbedAllFonts=true
 %%
 %%
-%%
-%% Forces Palatino font usage (in math too). Change this to Times if you
-%% want (using packages mathptmx and txfonts).
-%%
-%%
-%% Copyright (C) 2003-2008 Ralf Hoppe
+%% Copyright (C) 2003-2011 Ralf Hoppe
 %%
 %% $Id$
 %%
-%% History:
-%%
-%% $Log: not supported by cvs2svn $
-%% Revision 1.9  2008-11-30 14:06:15  ralf
-%% adjustment to LyX 1.6.0
-%%
-%% Revision 1.8  2008-10-25 17:25:45  ralf
-%% macro \mhead renamed
-%%
-%% Revision 1.7  2008-04-20 14:27:15  ralf
-%% - reference to package tex4ht without any extension .sty
-%% - docsubj macro changed
-%%
-%% Revision 1.6  2007-09-30 16:51:48  ralf
-%% Macro mhead will be redefined or defined (whether it was defined or not)
-%%
-%% Revision 1.5  2007-09-21 17:54:39  ralf
-%% Option clash for mathptmx avoided
-%%
-%% Revision 1.4  2007-09-08 16:43:24  ralf
-%% Some changes wrt. tex4ht
-%%
-%% Revision 1.3  2006/06/18 10:53:02  ralf
-%% New macro pdfsubj
-%%
-%% Revision 1.2  2003/10/26 20:31:22  ralf
-%% New macros
-%%
-%% Revision 1.1  2003/08/09 11:59:33  ralf
-%% Re-arranged files and contents
-%%
-%%
+
 
 \@ifpackageloaded{tex4ht.sty}{}{ % do not confuse TeX4ht
   %%
   %% Postscript font Times in text and math formulas (based on freely
-  %% distributable fonts). Disadvantage: No support of bold in math
-  %% formulas (normally needed in headings, see macro \headingmath in
-  %% file math-inc.tex)
+  %% distributable fonts).
+  %%
+  %% Disadvantages:
+  %% 1. No support of bold in math formulas (normally needed in headings, see
+  %%    macro \headingmath in file math-inc.tex)
+  %% 2. txfonts.sty collides with esint.sty (extended integral signs, see LyX)
   %%
   \usepackage{txfonts}%
   \usepackage{mathptmx}%
