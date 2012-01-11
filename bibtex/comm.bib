@@ -7,8 +7,9 @@
 %%  author   = "Ralf Hoppe",
 %%  version  = "$Revision: 1.5 $",
 %%  filename = "comm.bib",
-%%  address  = "Junker-J{\"o}rg-Str. 2, 10318 Berlin, Germany",
+%%  address  = "Ginsterweg49, 73230 Kirchheim unter Teck, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
+
 
 @Book{Hein:1998,
   author =       {Mathias Hein},
@@ -54,6 +55,16 @@
   annote =       {library}
 }
 
+@Book{Stallings:1999,
+  author =       {William Stallings},
+  title =        {{SNMP}, {Snmpv2}, {Snmpv3}, and {Rmon} 1 and 2},
+  publisher =    {Addison-Wesley Longman},
+  year =         1999,
+  address =      {Amsterdam},
+  edition =      {3.},
+  annote =       {library}
+}
+
 @Book{Walsh:2008,
   author =       {Larry Walsh},
   title =        {{SNMP} {MIB} Handbook},
@@ -82,9 +93,21 @@
   annote =       {library}
 }
 
+
+
 %%
 %% Standards
 %%%%%%%%%%%%%%%
+
+@TechReport{SDR-IQB:2009,
+  author =       {Gerald Ulbricht and Gerd Kilian},
+  title =        {Specification of the IQ Baseband Interface},
+  institution =  {Fraunhofer Institute for Integrated Circuits},
+  year =         {2009},
+  type =         {Software Defined Radio Forum Contribution},
+  address =      {Am Wolfsmantel 33, 91058 Erlangen, Germany},
+  annote =       {project}
+}
 
 @TechReport{ISO:8824,
   title =        "Information processing systems - Open Systems
@@ -412,6 +435,17 @@
 %% IETF (RFC)
 %%
 
+@TechReport{IETF:RFC1035,
+  author =       {P. Mockapetris},
+  title =        {Domain Names - Implementation and Specification)},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       1035,
+  month =        nov,
+  year =         1987,
+  annote =       {project}
+}
+
 @TechReport{IETF:RFC1157,
   author =       "J.D. Case and M. Fedor and M.L. Schoffstall and C. Davin",
   title =        "{S}imple {N}etwork {M}anagement {P}rotocol ({SNMP})",
@@ -458,8 +492,7 @@
 }
 
 @TechReport{IETF:RFC1902,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Structure of Management Information for Version 2 of the
                   {Simple Network Management Protocol} ({SNMPv2})",
   institution =  "IETF",
@@ -467,12 +500,12 @@
   number =       "1902",
   month =        jan,
   year =         "1996",
-  annote =       "project"
+  note =         {(Obsoleted by RFC~2578)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC1903,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Textual Conventions for Version 2 of the {Simple Network
                   Management Protocol} ({SNMPv2})",
   institution =  "IETF",
@@ -480,11 +513,12 @@
   number =       "1903",
   month =        jan,
   year =         "1996",
+  note =         {(Obsoleted by RFC~2579)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC1904,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Conformance Statements for Version 2 of the {Simple Network
                   Management Protocol} ({SNMPv2})",
   institution =  "IETF",
@@ -492,11 +526,12 @@
   number =       "1904",
   month =        jan,
   year =         "1996",
+  note =         {(Obsoleted by RFC~2580)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC1905,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Protocol Operations for Version 2 of the {Simple Network
                   Management Protocol} ({SNMPv2})",
   institution =  "IETF",
@@ -504,11 +539,12 @@
   number =       "1905",
   month =        jan,
   year =         "1996",
+  note =         {(Obsoleted by RFC~3416)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC1906,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Transport Mappings for Version 2 of the {Simple Network
                   Management Protocol} ({SNMPv2})",
   institution =  "IETF",
@@ -516,11 +552,12 @@
   number =       "1906",
   month =        jan,
   year =         "1996",
+  note =         {(Obsoleted by RFC~3417)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC1907,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Management Information Base for Version 2 of the {Simple
                   Network Management Protocol} ({SNMPv2})",
   institution =  "IETF",
@@ -528,11 +565,12 @@
   number =       "1907",
   month =        jan,
   year =         "1996",
+  note =         {(Obsoleted by RFC~3418)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC1908,
-  author =       "{SNMPv2 Working Group} and J. Case and K. McCloghrie and
-                  M. Rose and S. Waldbusser",
+  author =       "J. Case and K. McCloghrie and M. Rose and S. Waldbusser",
   title =        "Coexistence between Version 1 and Version 2 of the
                   {Internet-standard Network Management Framework}",
   institution =  "IETF",
@@ -540,7 +578,8 @@
   number =       "1908",
   month =        jan,
   year =         "1996",
-  note =         "DRAFT STANDARD",
+  note =         {(Obsoleted by RFC~2576)},
+  annote =       {project}
 }
 
 @TechReport{IETF:RFC2233,
@@ -551,6 +590,7 @@
   number =       "2233",
   month =        nov,
   year =         "1997",
+  note =         {(Obsoleted by RFC~2863)},
   annote =       "project"
 }
 
@@ -562,6 +602,7 @@
   number =       "2271",
   month =        jan,
   year =         "1998",
+  note =         {(Obsoleted by RFC~2571)},
   annote =       "project"
 }
 
@@ -574,6 +615,7 @@
   number =       "2272",
   month =        jan,
   year =         "1998",
+  note =         {(Obsoleted by RFC~2572)},
   annote =       "project"
 }
 
@@ -585,6 +627,7 @@
   number =       "2273",
   month =        jan,
   year =         "1998",
+  note =         {(Obsoleted by RFC~2573)},
   annote =       "project"
 }
 
@@ -597,6 +640,7 @@
   number =       "2274",
   month =        jan,
   year =         "1998",
+  note =         {(Obsoleted by RFC~2574)},
   annote =       "project"
 }
 
@@ -609,11 +653,87 @@
   number =       "2275",
   month =        jan,
   year =         "1998",
+  note =         {(Obsoleted by RFC~2575)},
   annote =       "project"
 }
 
+@TechReport{IETF:RFC2571,
+  author =       {D. Harrington and R. Presuhn and B. Wijnen},
+  title =        {An Architecture for Describing {SNMP} Management Frameworks},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2571},
+  month =        apr,
+  year =         {1999},
+  note =         {(Obsoleted by RFC~3411)},
+  annote =       {project}
+}
+
+@TechReport{IETF:RFC2572,
+  author =       {J. Case and D. Harrington and R. Presuhn and B. Wijnen},
+  title =        {Message Processing and Dispatching for the Simple Network
+                  Management Protocol ({SNMP})},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2572},
+  month =        apr,
+  year =         {1999},
+  note =         {(Obsoleted by RFC~3412)},
+  annote =       {project}
+}
+
+@TechReport{IETF:RFC2573,
+  author =       {D. Levi and P. Meyer and B. Stewart},
+  title =        {{SNMP} Applications},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2573},
+  month =        apr,
+  year =         {1999},
+  note =         {(Obsoleted by RFC~3413)},
+  annote =       {project}
+}
+
+@TechReport{IETF:RFC2574,
+  author =       {U. Blumenthal and B. Wijnen},
+  title =        {User-based Security Model ({USM}) for version 3 of the Simple
+                  Network Management Protocol ({SNMPv3})},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2574},
+  month =        apr,
+  year =         {1999},
+  note =         {(Obsoleted by RFC~3414)},
+  annote =       {project}
+}
+
+@TechReport{IETF:RFC2575,
+  author =       {B. Wijnen and R. Presuhn and K. McCloghrie},
+  title =        {View-based Access Control Model ({VACM}) for the Simple
+                  Network Management Protocol ({SNMP})},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2575},
+  month =        apr,
+  year =         {1999},
+  note =         {(Obsoleted by RFC~3415)},
+  annote =       {project}
+}
+
+@TechReport{IETF:RFC2576,
+  author =       {R. Frye and D. Levi and S. Routhier and B. Wijnen},
+  title =        {Coexistence between Version 1, Version 2, and Version 3 of
+                  the Internet-standard Network Management Framework},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2576},
+  month =        mar,
+  year =         {2000},
+  annote =       {project}
+}
+
 @TechReport{IETF:RFC2578,
-  author =       "K. McCloghrie, D. Perkins and J. Schoenwaelder",
+  author =       "K. McCloghrie and D. Perkins and J. Schoenwaelder",
   title =        "Structure of Management Information Version 2 ({SMIv2})",
   institution =  "IETF",
   type =         "RFC",
@@ -624,7 +744,7 @@
 }
 
 @TechReport{IETF:RFC2579,
-  author =       "K. McCloghrie, D. Perkins and J. Schoenwaelder",
+  author =       "K. McCloghrie and D. Perkins and J. Schoenwaelder",
   title =        "Textual Conventions for {SMIv2}",
   institution =  "IETF",
   type =         "RFC",
