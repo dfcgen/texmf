@@ -1,5 +1,5 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass rechnung
@@ -61,23 +61,31 @@ enlargefirstpage=true
 %\setkomafont{subject}{}
 %\setkomafont{title}{}
 
-%\@setplength[3]{sigbeforevskip}{\baselineskip}
+\@setplength[3]{sigbeforevskip}{\baselineskip}
 \end_preamble
 \use_default_options false
+\maintain_unincluded_children false
 \language ngerman
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman times
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
-\spacing other 1.15
+\spacing single
 \use_hyperref true
 \pdf_title "Rechnung"
 \pdf_author "Dipl.-Ing. Ralf Hoppe"
@@ -95,21 +103,31 @@ enlargefirstpage=true
 \use_geometry false
 \use_amsmath 1
 \use_esint 0
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
 \defskip medskip
-\quotes_language polish
+\quotes_language german
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -153,8 +171,8 @@ firstfoot{
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features>
-<column alignment="left" valignment="top" width="0">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="35line%">
 <column alignment="left" valignment="top" width="65line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
@@ -222,15 +240,15 @@ Ralf Hoppe
 \end_layout
 
 \begin_layout SenderAddress
-Am Schwalbenschwanz
+Ginsterweg
 \begin_inset space ~
 \end_inset
 
-7
+49
 \begin_inset Newline newline
 \end_inset
 
-24220 Schönhorst
+73230 Kirchheim unter Teck
 \end_layout
 
 \begin_layout Telephone
@@ -243,35 +261,31 @@ Am Schwalbenschwanz
 
 \begin_layout Bank
 \noindent
-Berliner Volksbank, Kto:
+Volksbank Kirchheim-Nürtingen eG, Kto:
 \begin_inset space ~
 \end_inset
 
-7
+423
 \begin_inset space \thinspace{}
 \end_inset
 
-023
+187
 \begin_inset space \thinspace{}
 \end_inset
 
-915
-\begin_inset space \thinspace{}
-\end_inset
-
-019, BLZ:
+007, BLZ:
 \begin_inset space ~
 \end_inset
 
-100
+612
 \begin_inset space \thinspace{}
 \end_inset
 
-900
+901
 \begin_inset space \thinspace{}
 \end_inset
 
-00
+20
 \begin_inset Newline newline
 \end_inset
 
@@ -279,43 +293,35 @@ IBAN:
 \begin_inset space ~
 \end_inset
 
-DE88
+DE57
 \begin_inset space \thinspace{}
 \end_inset
 
-1009
+6129
 \begin_inset space \thinspace{}
 \end_inset
 
-0000
+0120
 \begin_inset space \thinspace{}
 \end_inset
 
-7023
+0423
 \begin_inset space \thinspace{}
 \end_inset
 
-9150
+1870
 \begin_inset space \thinspace{}
 \end_inset
 
-19, BIC:
+07, BIC:
 \begin_inset space ~
 \end_inset
 
-BEVODEBB 
+GENODES1NUE
 \end_layout
 
 \begin_layout E-Mail
 ralf.hoppe@ieee.org
-\end_layout
-
-\begin_layout Fax
-030
-\begin_inset space \thinspace{}
-\end_inset
-
-23362134
 \end_layout
 
 \begin_layout Backaddress
@@ -323,15 +329,15 @@ Ralf Hoppe
 \begin_inset Newline newline
 \end_inset
 
-Am Schwalbenschwanz
+Ginsterweg
 \begin_inset space ~
 \end_inset
 
-7
+49
 \begin_inset Newline newline
 \end_inset
 
-24220 Schönhorst
+73230 Kirchheim unter Teck
 \end_layout
 
 \begin_layout Signature
@@ -356,7 +362,7 @@ usekomavar{invoice}
 \end_layout
 
 \begin_layout Place
-Schönhorst
+Kirchheim/Teck
 \end_layout
 
 \begin_layout Date
@@ -376,11 +382,7 @@ today
 \end_layout
 
 \begin_layout Address
-Hays AG
-\begin_inset Newline newline
-\end_inset
-
-Administration Services
+Hays AG - Administration Services
 \begin_inset Newline newline
 \end_inset
 
@@ -414,11 +416,27 @@ Mannheim
 
 
 \shape smallcaps
-Deutschland
+Germany
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+--
+\begin_inset space ~
+\end_inset
+
+RECHNUNG
+\begin_inset space ~
+\end_inset
+
+--
 \end_layout
 
 \begin_layout Invoice
-201000011
+2012001
 \begin_inset Note Note
 status open
 
