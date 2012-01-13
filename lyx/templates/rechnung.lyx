@@ -55,13 +55,14 @@ enlargefirstpage=true
 %\setkomafont{descriptionlabel}{}
 \setkomafont{fromaddress}{\small}
 \setkomafont{fromname}{\scshape}
-%\setkomafont{pagefoot}{}
+%\setkomafont{pagefoot}{\small}
 %\setkomafont{pagehead}{}
 %\setkomafont{pagenumber}{}
 %\setkomafont{subject}{}
 %\setkomafont{title}{}
 
 \@setplength[3]{sigbeforevskip}{\baselineskip}
+\@addtoplength{firstfootvpos}{-16pt}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -172,10 +173,10 @@ firstfoot{
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="35line%">
-<column alignment="left" valignment="top" width="65line%">
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<column alignment="left" valignment="top" width="30line%">
+<column alignment="right" valignment="top" width="70line%">
+<row topspace="default">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -184,11 +185,19 @@ Dipl.-Ing.
 \begin_inset Newline newline
 \end_inset
 
-St.-Nr.
+St.-Nr.:
 \begin_inset space ~
 \end_inset
 
 32/353/62543
+\begin_inset Newline newline
+\end_inset
+
+Ust-IdNr.:
+\begin_inset space ~
+\end_inset
+
+DE252281677
 \end_layout
 
 \end_inset
@@ -223,7 +232,7 @@ usekomavar{frombank}
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -261,7 +270,11 @@ Ginsterweg
 
 \begin_layout Bank
 \noindent
-Volksbank Kirchheim-Nürtingen eG, Kto:
+Volksbank Kirchheim-Nürtingen eG
+\begin_inset Newline newline
+\end_inset
+
+Kto-Nr.:
 \begin_inset space ~
 \end_inset
 
@@ -358,7 +371,19 @@ usekomavar{invoice}
 
 \end_inset
 
- zum Projekteinzelvertrag 60-C-104073-01 01
+ zur Bestellung
+\begin_inset space ~
+\end_inset
+
+32508949/Z23 vom 23.
+\begin_inset space \thinspace{}
+\end_inset
+
+5.
+\begin_inset space \thinspace{}
+\end_inset
+
+2011
 \end_layout
 
 \begin_layout Place
@@ -382,35 +407,24 @@ today
 \end_layout
 
 \begin_layout Address
-Hays AG - Administration Services
+Hirschmann Automation and Control GmbH
 \begin_inset Newline newline
 \end_inset
 
-Frau Yasemin Kaya
+Jochen Dolezal
 \begin_inset Newline newline
 \end_inset
 
-Postfach
+Stuttgarter Str.
+ 45--51
+\begin_inset Newline newline
+\end_inset
+
+72654
 \begin_inset space ~
 \end_inset
 
-10
-\begin_inset space \thinspace{}
-\end_inset
-
-01
-\begin_inset space \thinspace{}
-\end_inset
-
-23
-\begin_inset Newline newline
-\end_inset
-
-68001
-\begin_inset space ~
-\end_inset
-
-Mannheim
+Neckartenzlingen
 \begin_inset Newline newline
 \end_inset
 
@@ -454,19 +468,32 @@ Sehr geehrte Damen und Herren,
 \end_layout
 
 \begin_layout Standard
-hiermit erlaube ich mir, für die im Rahmen des Projektes bei der 
-\begin_inset Quotes pld
+gemäß Dienstleistungsvertrag vom 18.
+\begin_inset space \thinspace{}
 \end_inset
 
-Hagenuk Marinekommunikation GmbH
-\begin_inset Quotes prd
+5.
+\begin_inset space \thinspace{}
 \end_inset
 
- in August
-\begin_inset space ~
+2011 erlaube ich mir für Projektunterstützung RSP_SW im Leistungszeitraum
+ 1.
+\begin_inset space \thinspace{}
 \end_inset
 
-2010
+12.
+\begin_inset space \thinspace{}
+\end_inset
+
+2011 -- 31.
+\begin_inset space \thinspace{}
+\end_inset
+
+12.
+\begin_inset space \thinspace{}
+\end_inset
+
+2011 
 \begin_inset Note Note
 status open
 
@@ -476,7 +503,7 @@ Anpassen!
 
 \end_inset
 
- geleisteten Stunden, in Rechnung zu stellen:
+ in Rechnung zu stellen:
 \end_layout
 
 \begin_layout Rechnungstab.
@@ -487,9 +514,9 @@ status open
 
 
 \backslash
-Artikel{135,58}{Projektstunden 
+Artikel{86,09}{Projektstunden 
 \backslash
-mbox{lt.} Anlage}{64,00}
+mbox{lt.} Anlage}{74,00}
 \end_layout
 
 \end_inset
@@ -523,15 +550,15 @@ Gesamtsumme
 
 \end_inset
 
- bis zum 18.
+ bis zum 6.
 \begin_inset space \thinspace{}
 \end_inset
 
-10.
+2.
 \begin_inset space \thinspace{}
 \end_inset
 
-2010
+2012
 \begin_inset Note Note
 status open
 
