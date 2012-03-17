@@ -52,6 +52,8 @@ Style Emph(asized)
     EndFont
 
     Preamble
+    \makeatletter
+
     \@ifpackageloaded{tex4ht}%
     {%
       \message{****************************************************************}%
@@ -65,6 +67,8 @@ Style Emph(asized)
       \definecolor{shadecolor}{cmyk}{0,0,0.5,0}%
       \newenvironment{emphasized}{\begin{shaded}}{\end{shaded}}%
     }
+
+    \makeatother
     EndPreamble
 End
 
