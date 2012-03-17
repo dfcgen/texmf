@@ -3,6 +3,7 @@
 # author: Ralf Hoppe <ralf.hoppe@ieee.org>
 #
 
+Format 35
 Input scrlttr2.layout
 
 AddToPreamble
