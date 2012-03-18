@@ -3,7 +3,7 @@
 %% LaTeX file for mathematical extensions and support macros
 %% Needs AMS-Math to work correct.
 %
-%% Copyright (C) 2003-2011 Ralf Hoppe
+%% Copyright (C) 2003-2012 Ralf Hoppe
 %%
 %% $Id$
 %%
@@ -17,7 +17,7 @@
 \usepackage{array}                      %% needed for \extrarowheight and \jot
 \usepackage{algorithmic}
 \usepackage{algorithm}
-\usepackage{amsopn,amsfonts}            %% do not include amsthm -> collision w/ svjour
+\usepackage{amsopn,amsfonts,amssymb}            %% do not include amsthm -> collision w/ svjour
 \usepackage{trfsigns}                   %% symbols for FT, LT and e
 
 \addtolength{\extrarowheight}{2pt}      %% extra vertical space in array (tabular family) environment
@@ -37,12 +37,15 @@
 %% Fractions look extremely ugly in tables, because there is no space over
 %% and under. The following macro writes a fbox without a frame but with the
 %% fboxsep. But this does not work on some HTML converters.
+\makeatletter
 \@ifpackageloaded{tex4ht.sty}{  % math in tables
   \newcommand{\mtab} [1] {      %
     \ensuremath{\mbig{#1}}}}{
   \newcommand{\mtab} [1] {      %
     \setlength{\fboxrule}{0pt}  %
     \fbox{\ensuremath{\mbig{#1}}}}}
+\makeatother
+
 
 \newcommand{\mboxed} [1] {\boxed{#1}}
 \newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}} % Bold matrix/vector
