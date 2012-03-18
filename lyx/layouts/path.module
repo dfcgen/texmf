@@ -1,0 +1,42 @@
+#\DeclareLyXModule{Path}
+#
+#DescriptionBegin
+#Provides a path style
+#DescriptionEnd
+#
+# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+Format 35
+
+Input stdinsets.inc
+
+AddToPreamble
+\usepackage{path}
+
+%% change linebreak character set from path.sty
+%% originally: \discretionaries |~!@$%^&*()_+`-=#{}[]:";'<>,.?\/|
+\discretionaries '~!|@$%^&*()_+-=#{"}[]:;<>,.?`\/'
+
+%% Note: This command does not automatic break the line at discretionaries, but
+%%       uses the same font as \path. If a breakdown at discretionaries is
+%%       really needed use \path'' as ERT.
+\newcommand{\computer}[1]{\path'#1'}
+EndPreamble
+
+
+
+# Path Inset
+##############################
+InsetLayout "Flex:Path"
+CopyStyle             Flex:URL
+LyXType               charstyle
+LabelString           "Path (normal LaTeX line break, else use ERT \path'')"
+Decoration            Conglomerate
+LatexName             computer
+LatexType             command
+PassThru              false
+NeedProtect           true
+Spellcheck            false
+
+End

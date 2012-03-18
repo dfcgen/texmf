@@ -1,0 +1,101 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[scrartcl]{manual (KOMA-Script)}
+#%
+#%Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+#%
+
+Format 35
+
+Input scrartcl.layout
+DefaultModule path
+
+
+Preamble
+\input{all-inc}
+
+%% reduce space between text body and footnotes
+\setlength{\skip\footins}{12pt}
+
+\setlength{\marginparwidth}{24pt}
+\setlength{\marginparsep}{12pt}
+
+\setkomafont{descriptionlabel}{\small\ttfamily\bfseries}
+
+
+%% reduce title size
+\def\maketitle{%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    {\small \@author \par}%
+  \end{center}%
+  \par
+}
+
+EndPreamble
+
+
+# Command Inset
+##############################
+InsetLayout "Flex:Command"
+CopyStyle             Flex:URL
+LyXType               charstyle
+LabelString           "Command(line)"
+Decoration            Conglomerate
+LatexName             computer
+LatexType             command
+PassThru              false
+NeedProtect           true
+Spellcheck            false
+
+End
+
+
+# Synopsis list environment
+###############################
+Style Synopsis
+	Category        List
+    LatexType       List_Environment
+    LatexName       synopsis
+    Margin          Manual
+    NextNoIndent    1
+	LabelSep        xxx
+	ParSkip         0.4
+	TopSep          0.7
+	BottomSep       0.7
+	ParSep          0.2
+	Align           Block
+	AlignPossible   Block, Left
+	LabelType       Manual
+	LabelString     "12em"
+
+    LabelFont
+        Family      Typewriter
+        Color       Blue
+        Series      Bold
+    EndFont
+
+    Requires        ifthen
+
+
+	#define the environment synopsis
+	Preamble
+        \newlength{\synopsisLabelWidth}
+        \newcommand{\synopsisMakeLabel} [1] {%
+            \settowidth{\synopsisLabelWidth}{\computer{#1}}%
+            \ifthenelse{\lengthtest{\synopsisLabelWidth > \labelwidth}}%
+                       {\parbox[b]{\labelwidth}{\makebox[0pt][l]{\computer{#1}}\newline}}%
+                       {\computer{#1}}%
+            \hfil\relax}
+		\newenvironment{synopsis}[1]
+			           {\begin{list}{}{
+                             \setlength{\labelwidth}{#1}
+                             \setlength{\leftmargin}{\labelwidth}
+				             \addtolength{\leftmargin}{\labelsep}
+                             \let\makelabel\synopsisMakeLabel}}
+			           {\end{list}}
+	EndPreamble
+
+#  \renewcommand{\makelabel}[1]{\synopsisMakeLabel{##1}}}} %
+End
+
