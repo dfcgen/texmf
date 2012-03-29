@@ -1,0 +1,33 @@
+#\DeclareLyXModule{Extensions: Electrical Engineering}
+#
+#DescriptionBegin
+#Provides some electrical engineering and signal processing macros.
+#DescriptionEnd
+#Requires:
+#Excludes:
+#
+# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+Format 35
+
+
+AddToPreamble
+
+\usepackage{amsopn} % \DeclareMathOperator
+
+\newcommand{\acf} {\varphi} %% Auto (Cross) -correlation function
+\newcommand{\spd} {S} %% Spectral Power Density
+\newcommand{\drf} {D} %% Characteristic function (Drosselung)
+\newcommand{\trf} {H} %% Transfer function
+\newcommand{\atf} {A} %% Attenuation
+\newcommand{\phf} {B} %% Phase (neg. angle)
+\newcommand{\irf} {h} %% Impulse response function
+
+\DeclareMathOperator{\usf}   {u} %% Unit step function
+\DeclareMathOperator{\rect}  {r} %% Rectangular pulse
+\DeclareMathOperator{\dirac} {\delta} %% Dirac pulse
+
+
+EndPreamble
+

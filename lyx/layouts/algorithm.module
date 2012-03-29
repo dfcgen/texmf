@@ -1,0 +1,25 @@
+#\DeclareLyXModule{Extensions: Algorithm}
+#
+#DescriptionBegin
+#Algorithm environment and float.
+#DescriptionEnd
+#Requires: 
+#Excludes:
+#
+# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+Format 35
+
+AddToPreamble
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+\floatname{algorithm}{Algorithmus}
+
+%% Assigns a value to a variable (used in algorithms)
+\newcommand{\assign} [2] {\ensuremath{{#1} \Leftarrow \displaystyle{#2}}} % variable := value
+
+EndPreamble
+

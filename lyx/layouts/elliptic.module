@@ -1,0 +1,111 @@
+#\DeclareLyXModule{Extensions: Elliptic Functions}
+#
+#DescriptionBegin
+#Jacobian elliptic integrals and functions.
+#DescriptionEnd
+#Requires: mathext
+#Excludes:
+#
+# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+#
+
+Format 35
+
+AddToPreamble
+
+\DeclareMathOperator{\AGM}{M} % Arithmetic Geometric Mean
+\DeclareMathOperator{\jK}{K}  % Complete Elliptic Integral
+
+%% Preliminaries for Jacobian elliptic functions
+%% note: \the\epqheight prints the height value
+\newlength{\epqheight}
+\newlength{\epqlimit}
+\settoheight{\epqlimit}{\ensuremath{\epar{\ji\xi/2+\jK'}{k'}}}
+\newsavebox{\epqbox}
+
+%% Basic definition for abstract Jacobian elliptic function pq
+%% 1. arg: exponent
+%% 2. arg: name
+%% 3. arg: argument
+%% 4. arg: module (k)
+
+\newcommand{\epq} [4] {%
+  \savebox{\epqbox}{\ensuremath{\epar{#3}{#4}}}
+  \settoheight{\epqheight}{\usebox{\epqbox}}
+  \optsup{#1}{#2}%
+  \ifthenelse{\lengthtest{\epqheight > \epqlimit}}%
+             {\left(\usebox{\epqbox}\right)}%
+             {(\usebox{\epqbox})}%
+}
+
+
+\newcommand{\exarg} [1] {\underset{{}^{\scriptscriptstyle{\star}}}{#1}}
+
+
+%% all Jacobian elliptic functions
+
+\DeclareMathOperator{\jam}{am}
+\DeclareMathOperator{\jdelta}{\varDelta} % delta-amplitude
+\DeclareMathOperator{\jsn}{sn}
+\DeclareMathOperator{\jcn}{cn}
+\DeclareMathOperator{\jdn}{dn}
+\DeclareMathOperator{\jcd}{cd}
+\DeclareMathOperator{\jdc}{dc}
+\DeclareMathOperator{\jsc}{sc}
+\DeclareMathOperator{\jnc}{nc}
+\DeclareMathOperator{\jds}{ds}
+\DeclareMathOperator{\jcs}{cs}
+\DeclareMathOperator{\jsd}{sd}
+\DeclareMathOperator{\jns}{ns}
+\DeclareMathOperator{\jnd}{nd}
+
+%% Example \edc [2]{u}{k}
+%%         \edc {u}{k}
+
+\newcommand{\efunc} [4] [0] {\epq{#1}{#2}{#3}{#4}} % general elliptic function
+
+\newcommand{\esn} [3] [0] {\epq{#1}{\jsn}{#2}{#3}}
+\newcommand{\ecn} [3] [0] {\epq{#1}{\jcn}{#2}{#3}}
+\newcommand{\edn} [3] [0] {\epq{#1}{\jdn}{#2}{#3}}
+\newcommand{\ecd} [3] [0] {\epq{#1}{\jcd}{#2}{#3}}
+\newcommand{\edc} [3] [0] {\epq{#1}{\jdc}{#2}{#3}}
+\newcommand{\esc} [3] [0] {\epq{#1}{\jsc}{#2}{#3}}
+\newcommand{\enc} [3] [0] {\epq{#1}{\jnc}{#2}{#3}}
+\newcommand{\eds} [3] [0] {\epq{#1}{\jds}{#2}{#3}}
+\newcommand{\ecs} [3] [0] {\epq{#1}{\jcs}{#2}{#3}}
+\newcommand{\esd} [3] [0] {\epq{#1}{\jsd}{#2}{#3}}
+\newcommand{\ens} [3] [0] {\epq{#1}{\jns}{#2}{#3}}
+\newcommand{\ejnd} [3] [0] {\epq{#1}{\jnd}{#2}{#3}} % \end is reserved by LaTeX
+
+\newcommand{\eam} [3] [0] {\epq{#1}{\jam}{#2}{#3}}
+
+\newcommand{\edelta} [3] [0] {\epq{#1}{\jdelta}{#2}{#3}}
+
+
+%% Complete Elliptic Integral
+
+\newcommand{\eK} [2] [0] { \optsup{#1}{\jK} \left(\spar{#2}\right)}
+
+
+%% Incomplete Elliptic Integral
+
+\DeclareMathOperator{\ellF}{F}
+\DeclareMathOperator{\ellxF}{\exarg{\ellF}}
+\DeclareMathOperator{\ellE}{E}
+\DeclareMathOperator{\ellPi}{\Pi}
+
+\newcommand{\eF} [3] [0] {\epq{#1}{\ellF}{#2}{#3}}       %% Legendre form F(phi; k)
+\newcommand{\exF} [3] [0] {\epq{#1}{\ellxF}{#2}{#3}}     %% F(x; k)
+\newcommand{\eE} [3] [0] {\epq{#1}{\ellE}{#2}{#3}}       %% E(phi; k)
+\newcommand{\ePi} [3] {\ellPi (\tpar{#1}{#2}{#3})}
+
+
+
+%% Zolotarev's function
+
+\DeclareMathOperator{\Z}{Z}
+\newcommand{\Zo} [3] [0] {\epq{#1}{\Z}{#2}{#3}}
+
+
+EndPreamble
+
