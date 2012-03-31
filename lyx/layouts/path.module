@@ -1,7 +1,7 @@
-#\DeclareLyXModule{Path}
+#\DeclareLyXModule{Extensions: Path}
 #
 #DescriptionBegin
-#Provides a path style
+#Provides a path style/inset.
 #DescriptionEnd
 #
 # Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
@@ -17,6 +17,7 @@ AddToPreamble
 %% change linebreak character set from path.sty
 %% originally: \discretionaries |~!@$%^&*()_+`-=#{}[]:";'<>,.?\/|
 \discretionaries '~!|@$%^&*()_+-=#{"}[]:;<>,.?`\/'
+
 
 %% Note: This command does not automatic break the line at discretionaries, but
 %%       uses the same font as \path. If a breakdown at discretionaries is
