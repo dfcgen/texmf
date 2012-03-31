@@ -14,33 +14,33 @@
 %% Some abbreviations taken from IEEEabrv.bib
 %% Transactions/Journals
 @STRING{IEEE_J_PROC       = "Proc. {IEEE}"}
-@STRING{IEEE_J_ASSP       = "{IEEE} Trans. Acoust., Speech, Signal Processing"}
-@STRING{IEEE_J_AUEA       = "{IEEE} Trans. Audio Electroacoust."}
-@STRING{IEEE_J_CAS        = "{IEEE} Trans. Circuits Syst."}
-@STRING{IEEE_J_CASI       = "{IEEE} Trans. Circuits Syst. {I}"}
-@STRING{IEEE_J_CASII      = "{IEEE} Trans. Circuits Syst. {II}"}
+@STRING{IEEE_J_ASSP       = "{IEEE} Trans. Acoustic, Speech, Signal Processing"}
+@STRING{IEEE_J_AUEA       = "{IEEE} Trans. Audio Electroacoustics"}
+@STRING{IEEE_J_CAS        = "{IEEE} Trans. Circuits Systems"}
+@STRING{IEEE_J_CASI       = "{IEEE} Trans. Circuits Systems {I}"}
+@STRING{IEEE_J_CASII      = "{IEEE} Trans. Circuits Systems {II}"}
 @STRING{IEEE_J_CT         = "{IEEE} Trans. Circuit Theory"}
 @STRING{IEEE_J_SP         = "{IEEE} Trans. Signal Processing"}
 @STRING{IEEE_J_SAP        = "{IEEE} Trans. Speech Audio Processing"}
-@STRING{IEEE_J_IT         = "{IEEE} Trans. Inform. Theory"}
-@STRING{IEEE_J_JSAC       = "{IEEE} J. Select. Areas Commun."}
-@STRING{IEEE_J_COM        = "{IEEE} Trans. Commun."}
-@STRING{IEEE_J_COMT       = "{IEEE} Trans. Commun. Technol."}
-@STRING{IEEE_J_WCOM       = "{IEEE} Trans. Wireless Commun."}
+@STRING{IEEE_J_IT         = "{IEEE} Trans. Information Theory"}
+@STRING{IEEE_J_JSAC       = "{IEEE} Journal Selected Areas Communication"}
+@STRING{IEEE_J_COM        = "{IEEE} Trans. Communications"}
+@STRING{IEEE_J_COMT       = "{IEEE} Trans. Communications Technology"}
+@STRING{IEEE_J_WCOM       = "{IEEE} Trans. Wireless Communications"}
 
 %% Magazines
-@STRING{IEEE_M_ASSP       = "{IEEE} {ASSP} Mag."}
-@STRING{IEEE_M_CD         = "{IEEE} Circuits Devices Mag."}
-@STRING{IEEE_M_CAS        = "{IEEE} Circuits Syst. Mag."}
-@STRING{IEEE_M_COM        = "{IEEE} Commun. Mag."}
-@STRING{IEEE_M_CS         = "{IEEE} Control Syst. Mag."}
-@STRING{IEEE_M_SP         = "{IEEE} Signal Processing Mag."}
-@STRING{IEEE_M_WC         = "{IEEE} Wireless Commun. Mag."}
-@STRING{IEEE_M_S          = "{IEEE} Softw."}
-@STRING{IEEE_M_SPECT      = "{IEEE} Spectr."}
+@STRING{IEEE_M_ASSP       = "{IEEE} {ASSP} Magazine"}
+@STRING{IEEE_M_CD         = "{IEEE} Circuits Devices Magazine"}
+@STRING{IEEE_M_CAS        = "{IEEE} Circuits Syst. Magazine"}
+@STRING{IEEE_M_COM        = "{IEEE} Communications Magazine"}
+@STRING{IEEE_M_CS         = "{IEEE} Control Systems Magazine"}
+@STRING{IEEE_M_SP         = "{IEEE} Signal Processing Magazine"}
+@STRING{IEEE_M_WC         = "{IEEE} Wireless Communications Magazine"}
+@STRING{IEEE_M_S          = "{IEEE} Software Magazine"}
+@STRING{IEEE_M_SPECT      = "{IEEE} Spectrum"}
 
 %% and some older magazines/journals (not in IEEEabrv.bib)
-@STRING{IRE_J_PROC        = "Proc. {IRE}"}
+@STRING{IRE_J_PROC        = "Proceedings of the {IRE}"}
 @STRING{IRE_J_CT          = "{IRE} Trans. Circuit Theory"}
 
 
@@ -349,6 +349,15 @@
   annote =       {library}
 }
 
+@Book{Schwartz:1966,
+  author =       {Mischa Schwartz and William R. Bennett and Seymour Stein},
+  title =        {Communication Systems and Techniques},
+  publisher =    {McGraw-Hill},
+  year =         {1966},
+  address =      {New York},
+  annote =       {library}
+}
+
 @Article{Guillemin:1952,
   author =       {E. A. Guillemin},
   title =        {What is Network Synthesis?},
@@ -576,7 +585,7 @@
 @Article{Bedrosian:1962,
   author =       {Bedrosian, E.},
   title =        {The Analytic Signal Representation of Modulated Waveforms},
-  journal =      {Proceedings of the IRE},
+  journal =      IRE_J_PROC,
   year =         1962,
   month =        oct,
   volume =       50,
@@ -584,6 +593,16 @@
   pages =        {2071 -- 2076},
 }
 
+@Article{Mirabbasi:2000,
+  author =       {Shahriar Mirabbasi and Ken Martin},
+  journal =      IEEE_M_COM,
+  title =        {Classical and modern receiver architectures},
+  year =         {2000},
+  month =        nov,
+  volume =       {38},
+  number =       {11},
+  pages =        {132 -- 139}
+}
 
 @Book{Marven:1993,
   author =       {Craig Marven and Gillian Ewers},
