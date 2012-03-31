@@ -7,11 +7,10 @@
 Format 35
 
 Input scrartcl.layout
-DefaultModule path
+DefaultModule helpers
 
 
 Preamble
-\input{all-inc}
 
 %% reduce space between text body and footnotes
 \setlength{\skip\footins}{12pt}
@@ -23,6 +22,7 @@ Preamble
 
 
 %% reduce title size
+\makeatletter
 \def\maketitle{%
   \begin{center}%
   \let \footnote \thanks
@@ -31,6 +31,10 @@ Preamble
   \end{center}%
   \par
 }
+%% Normally '@' should be put back to category 'other' (catcode 12). But this
+%% is done by LyX at the end of preamble.
+%%
+%% \makeatother
 
 EndPreamble
 
