@@ -19,7 +19,7 @@ AddToPreamble
 \usepackage{amsopn,amsfonts} %% \DeclareMathOperator, AMS symbols
 \usepackage{trfsigns}        %% symbols for FT, LT and e
 
-\input{mathext}
+\input{mathext-inc}
 
 
 %% FIXME: some changes in package array

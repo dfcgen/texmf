@@ -15,7 +15,7 @@ Format 35
 AddToPreamble
 
 \usepackage{amsopn} % required by electrical.tex
-\input{electrical}
+\input{electrical-inc}
 
 
 EndPreamble

@@ -13,7 +13,7 @@ Requires        pifont,textcomp,color,framed
 
 AddToPreamble
 
-\usepackage{newclude}
+%% \usepackage{newclude}
 \usepackage{bibgerm}
 \usepackage[right]{eurosym} % EUR symbol & friends
 
