@@ -14,19 +14,8 @@ Format 35
 
 AddToPreamble
 
-\usepackage{amsopn} % \DeclareMathOperator
-
-\newcommand{\acf} {\varphi} %% Auto (Cross) -correlation function
-\newcommand{\spd} {S} %% Spectral Power Density
-\newcommand{\drf} {D} %% Characteristic function (Drosselung)
-\newcommand{\trf} {H} %% Transfer function
-\newcommand{\atf} {A} %% Attenuation
-\newcommand{\phf} {B} %% Phase (neg. angle)
-\newcommand{\irf} {h} %% Impulse response function
-
-\DeclareMathOperator{\usf}   {u} %% Unit step function
-\DeclareMathOperator{\rect}  {r} %% Rectangular pulse
-\DeclareMathOperator{\dirac} {\delta} %% Dirac pulse
+\usepackage{amsopn} % required by electrical-inc.tex
+\input{electrical-inc}
 
 
 EndPreamble

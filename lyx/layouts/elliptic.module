@@ -10,6 +10,7 @@
 #
 
 Format 35
+Requires        ifthen,amsmath
 
 AddToPreamble
 
@@ -40,6 +41,12 @@ AddToPreamble
 
 
 \newcommand{\exarg} [1] {\underset{{}^{\scriptscriptstyle{\star}}}{#1}}
+
+
+%% Helpers
+\newcommand{\tpar} [3] {#1;\, #2; #3}
+\newcommand{\epar} [2] {#1;\, #2}
+\newcommand{\spar} [1] {#1}
 
 
 %% all Jacobian elliptic functions

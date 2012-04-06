@@ -19,10 +19,8 @@ AddToPreamble
 \discretionaries '~!|@$%^&*()_+-=#{"}[]:;<>,.?`\/'
 
 
-%% Note: This command does not automatic break the line at discretionaries, but
-%%       uses the same font as \path. If a breakdown at discretionaries is
-%%       really needed use \path'' as ERT.
-\newcommand{\computer}[1]{\path'#1'}
+%% Note: This command uses the same font as \path.
+\newcommand{\computer}[1]{\texttt{#1}}
 EndPreamble
 
 
