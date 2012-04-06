@@ -19,7 +19,6 @@
 
 
 %% Optional superscript if exponent is unequal to zero
-%% Requires \usepackage{ifthen}
 %% Example: \optsup {0}{x} displays "x", \optsup {n}{x} displays "x^n"
 \newcommand{\optsup} [2] {{#2} \ifthenelse{\equal{#1}{0}}{\mbox{}}{^{#1}}}
 
