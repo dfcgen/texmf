@@ -13,8 +13,7 @@ Requires        pifont,textcomp,color,framed
 
 AddToPreamble
 
-%% \usepackage{newclude}
-\usepackage{bibgerm}
+\usepackage{bibgerm}        % German bibliography
 \usepackage[right]{eurosym} % EUR symbol & friends
 
 
