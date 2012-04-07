@@ -10,14 +10,13 @@
 %% Requires:
 %% \usepackage{amsopn}   % \DeclareMathOperator
 %% \usepackage{ifthen}   % \ifthenelse
-%% \input{mathext}       % \optsup, \ji
+%% \input{mathext-inc}   % \optsup, \ji
 %%
 
 
 %% Elliptic Parameters
-\newcommand{\tpar} [3] {#1;\, #2; #3}
-\newcommand{\epar} [2] {#1;\, #2}
-\newcommand{\spar} [1] {#1}
+\newcommand{\eargdelim} {;\,}
+\newcommand{\eargs} [2] {#1 \eargdelim #2}
 \newcommand{\exarg} [1] {\underset{{}^{\scriptscriptstyle{\star}}}{#1}}
 
 
@@ -26,14 +25,14 @@
 
 %% Complete Elliptic Integral
 \DeclareMathOperator{\jK}{K}  % Complete Elliptic Integral
-\newcommand{\eK} [2] [0] { \optsup{#1}{\jK} \left(\spar{#2}\right)}
+\newcommand{\eK} [2] [0] { \optsup{#1}{\jK} \left(#2\right)}
 
 
 %% Preliminaries for Jacobian elliptic functions
 %% Note: \the\epqheight prints the height value
 \newlength{\epqheight}
 \newlength{\epqlimit}
-\settoheight{\epqlimit}{\ensuremath{\epar{\ji\xi/2+\jK'}{k'}}}
+\settoheight{\epqlimit}{\ensuremath{\eargs{\ji\xi/2+\jK'}{k'}}}
 \newsavebox{\epqbox}
 
 %% Basic definition for abstract Jacobian elliptic function pq
@@ -42,7 +41,7 @@
 %% 3. arg: argument
 %% 4. arg: module (k)
 \newcommand{\epq} [4] {%
-  \savebox{\epqbox}{\ensuremath{\epar{#3}{#4}}}
+  \savebox{\epqbox}{\ensuremath{\eargs{#3}{#4}}}
   \settoheight{\epqheight}{\usebox{\epqbox}}
   \optsup{#1}{#2}%
   \ifthenelse{\lengthtest{\epqheight > \epqlimit}}%
@@ -60,7 +59,7 @@
 \newcommand{\eF} [3] [0] {\epq{#1}{\ellF}{#2}{#3}}       %% Legendre form F(phi; k)
 \newcommand{\exF} [3] [0] {\epq{#1}{\ellxF}{#2}{#3}}     %% F(x; k)
 \newcommand{\eE} [3] [0] {\epq{#1}{\ellE}{#2}{#3}}       %% E(phi; k)
-\newcommand{\ePi} [3] {\ellPi (\tpar{#1}{#2}{#3})}
+\newcommand{\ePi} [3] {\ellPi (#1 \eargdelim #2 \eargdelim #3)}
 
 
 %% all Jacobian elliptic functions
