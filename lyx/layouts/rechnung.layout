@@ -7,6 +7,7 @@ Format 35
 Input scrlttr2.layout
 
 AddToPreamble
+  \usepackage{txfonts}
   \usepackage{rechnung}
   \usepackage[right]{eurosym}
   \Waehrung{\euro{}}
