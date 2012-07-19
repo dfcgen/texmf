@@ -1,3 +1,4 @@
+#% -*- LaTeX -*-
 #\DeclareLyXModule{Extensions: Basic Styles and Helpers}
 #DescriptionBegin
 #Provides some helper macros, abbreviations and an emphasized environment.
@@ -55,9 +56,24 @@ AddToPreamble
   \expandafter \endgroup \ifx\jobA\jobB}
 
 
+%%
+%% Declares a package as already loaded - so LaTeX does not load it again (in
+%% other words prevents LaTeX from using a package). But notice that this
+%% command must be issued before \usepackage{package}.
+%%
+%% Example usage: \dontusepackage[opt1,opt2]{package}
+\newcommand{\dontusepackage}[2][]{%
+  \@namedef{ver@#2.sty}{9999/12/31}%
+  \@namedef{opt@#2.sty}{#1}}
 
-\@ifpackageloaded{tex4ht}{}%
-{
+
+%% Some re- or extra definitions in case TeX4ht is (not) loaded
+\@ifpackageloaded{tex4ht} {%
+  \@ifpackageloaded{breakurl} {%
+    %% breakurl.sty inserts special postscript code, which then is passed to
+    %% the HTML page
+    \message{package breakurl.sty not compatible with TeX4ht...}}{}
+}{%
   %%
   %% Postscript font Times in text and math formulas (based on freely
   %% distributable fonts).
@@ -164,7 +180,7 @@ Style Emph(asized)
     {%
       \@ifpackageloaded{color}{}{\usepackage[usenames]{color}}%
       \usepackage{framed}%
-      \definecolor{shadecolor}{cmyk}{0,0,0.5,0}%
+      \definecolor{shadecolor}{cmyk}{0,0,0.25,0}%
       \newenvironment{emphasized}{\begin{shaded}}{\end{shaded}}%
     }
 
