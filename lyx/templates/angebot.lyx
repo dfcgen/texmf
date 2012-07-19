@@ -26,7 +26,7 @@ enlargefirstpage=true
 %,fromrule=aftername%    separate the address with a line?
 ,fromphone=true%         print sender phone number
 %,fromfax=true%          print sender fax number
-,fromemail=true%           print sender e-mail address
+%,fromemail=true%           print sender e-mail address
 %,fromurl=true%               print sender URL
 %,fromlogo=true%         print a logo (position depends on fromalign)
 %,addrfield=false%        print an address field?
@@ -88,7 +88,19 @@ enlargefirstpage=true
 \index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_title "Angebot"
+\pdf_author "Dipl.-Ing. R. Hoppe"
+\pdf_subject "Angebot"
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry false
 \use_amsmath 0
@@ -147,7 +159,7 @@ lefthyphenmin=5
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -162,34 +174,64 @@ firstfoot{
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="35line%">
-<column alignment="left" valignment="top" width="65line%">
+<column alignment="left" valignment="top" width="70line%">
+<column alignment="left" valignment="top" width="30line%">
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Dipl.-Ing.
- Ralf Hoppe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{fromemail}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{fromurl}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 St.-Nr.
 \begin_inset space ~
 \end_inset
 
 69225/20302
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-\noindent
-\align right
+Ust-IdNr.
+\begin_inset space ~
+\end_inset
 
+DE252281677
 \end_layout
 
 \end_inset
@@ -239,6 +281,10 @@ Ginsterweg
 
 \begin_layout E-Mail
 ralf.hoppe@ieee.org
+\end_layout
+
+\begin_layout URL
+www.dfcgen.de/freelancer
 \end_layout
 
 \begin_layout Backaddress
