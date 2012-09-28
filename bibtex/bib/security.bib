@@ -18,11 +18,12 @@
 
 %% Books
 %%%%%%%%%%%%%%%
+
 @Book{Lemke:2006,
   editor =       {Kerstin Lemke, Christof Paar, Marko Wolf},
   title =        {Embedded Security in Cars},
   publisher =    {Springer},
-  year =         {2006},
+  year =         2006,
   address =      {Berlin Heidelberg},
   annote =       {library}
 }
@@ -35,13 +36,14 @@
 
 %% Proceedings
 %%%%%%%%%%%%%%%%%%%%%%
+
 @InProceedings{ruland:1997,
   author =       "C. Ruland",
   title =        "{B}reitbandverschl{\"u}sselung (155 {Mbit/s}) mit
                   {S}elbstsynchronisation",
   booktitle =    "Tagungsband 5. Deutscher IT-Sicherheitskongre{\ss} des BSI",
   pages =        "289--301",
-  year =         "1997",
+  year =         1997,
   organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik -
                   {BSI}",
 }
@@ -52,7 +54,7 @@
   booktitle =    "IT-Sicherheit ohne Grenzen: Tagungsband 6. Deutscher
                   IT-Sicherheitskongre{\ss} des BSI",
   pages =        "287--295",
-  year =         "1999",
+  year =         1999,
   organization = "Bundesamt f{\"u}r Sicherheit in der Informationstechnik -
                   BSI",
   publisher =    "SecuMedia-Verlag",
@@ -64,20 +66,19 @@
 @TechReport{ANSI:X9.17,
   title =        {Financial Institution Key Management (Wholesale)},
   institution =  {ANSI},
-  year =         {1985},
+  year =         1985,
   key =          {ANSI},
   type =         {American National Standard for Financial Services},
   number =       {X9.17},
   annote =       {project},
 }
 
-
 @TechReport{FIPS:188,
   institution =  "National Institute of Standards and Technology",
   title =        "Standard Security Label for Information Transfer",
   type =         "FIPS Publication",
-  number =       "188",
-  year =         "1994",
+  number =       188,
+  year =         1994,
   key =          "NIST",
 }
 
@@ -86,12 +87,11 @@
   title =        {Security Requirements for Cryptographic Modules},
   type =         {FIPS Publication},
   number =       {140-2},
-  year =         {2001},
+  year =         2001,
   month =        may,
   key =          {NIST},
   annote =       {project},
 }
-
 
 @TechReport{ITU:X509,
   title =        {{I}nformation technology - {O}pen {S}ystems {I}nterconnection
@@ -100,7 +100,7 @@
   institution =  {ITU-T},
   type =         "Recommendation",
   number =       "X.509",
-  year =         {1997},
+  year =         1997,
   keywords =     {security, certificates, X.509, PKI},
   annote =       {project},
 }
@@ -111,8 +111,8 @@
                   {II}: Certificate-Based Key Management},
   institution =  {IETF},
   type =         {RFC},
-  number =       {1422},
-  year =         {1993},
+  number =       1422,
+  year =         1993,
   month =        feb,
   keywords =     {security, certificates, PKI, PEM, eMail},
   annote =       {project},
@@ -124,10 +124,92 @@
                   {III}: Algorithms, Modes, and Identifiers},
   institution =  {IETF},
   type =         {RFC},
-  number =       {1423},
-  year =         {1993},
+  number =       1423,
+  year =         1993,
   month =        feb,
   keywords =     {security, certificates, PKI, PEM, eMail},
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC1423,
+  author =       {S. Kent},
+  title =        {Privacy Enhancement for {Internet} Electronic Mail: Part
+                  {III}: Algorithms, Modes, and Identifiers},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       1423,
+  year =         1993,
+  month =        feb,
+  keywords =     {security, certificates, PKI, PEM, eMail},
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC2045,
+  author =       {N. Freed and N. Borenstein},
+  title =        {Multipurpose Internet Mail Extensions ({MIME}) Part One:
+                  Format of Internet Message Bodies},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       2045,
+  year =         1996,
+  month =        nov,
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC2046,
+  author =       {N. Freed and N. Borenstein},
+  title =        {Multipurpose Internet Mail Extensions (MIME) Part Two: Media
+                  Types},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       2046,
+  year =         1996,
+  month =        nov,
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC2818,
+  author =       {E. Rescorla},
+  title =        {HTTP Over TLS},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       2818,
+  year =         2000,
+  month =        may,
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC5246,
+  author =       {T. Dierks and E. Rescorla},
+  title =        {The Transport Layer Security ({TLS}) Protocol Version 1.2},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       5246,
+  year =         2008,
+  month =        aug,
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC4492,
+  author =       {S. Blake-Wilson, N. Bolyard, V. Gupta, C. Hawk, B. Moeller},
+  title =        {Elliptic Curve Cryptography ({ECC}) Cipher Suites for
+                  Transport Layer Security ({TLS})},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       4492,
+  year =         2006,
+  month =        may,
+  annote =       {project},
+}
+
+@TechReport{IETF:RFC5246,
+  author =       {T. Dierks and E. Rescorla},
+  title =        {The Transport Layer Security ({TLS}) Protocol Version 1.2},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       5246,
+  year =         2008,
+  month =        aug,
   annote =       {project},
 }
 
@@ -135,7 +217,7 @@
   title =        {{IEEE} Standards for Local and Metropolitan Area Networks:
                   Standard for Interoperable LAN/MAN Security (SILS)},
   institution =  {IEEE},
-  year =         {1998},
+  year =         1998,
   key =          {IEEE},
   type =         {Std},
   number =       {802.10},
@@ -149,7 +231,7 @@
   institution =  "ATM Forum Technical Committee",
   type =         ATMF_REPORT_TYPE,
   number =       "af-sec-0096.000",
-  year =         "1998",
+  year =         1998,
   key =          "AF",
   keywords =     {ATM, UNI, security},
   annote =       {project},
@@ -160,7 +242,7 @@
   institution =  "ATM Forum Technical Committee",
   type =         ATMF_REPORT_TYPE,
   number =       "af-sec-0100.000",
-  year =         "1999",
+  year =         1999,
   month =        feb,
   key =          "AF",
   keywords =     {ATM, UNI, security},
@@ -172,7 +254,7 @@
   institution =  "ATM Forum Technical Committee",
   type =         ATMF_REPORT_TYPE,
   number =       "af-cs-0117.000",
-  year =         "1999",
+  year =         1999,
   key =          {AF},
   keywords =     {ATM, NNI, security},
   annote =       {project},
@@ -183,32 +265,32 @@
   institution =  "ATM Forum Technical Committee",
   type =         ATMF_REPORT_TYPE,
   number =       "af-cs-0116.000",
-  year =         "1999",
+  year =         1999,
   key =          {AF},
   keywords =     {ATM, NNI, security},
   annote =       {project},
 }
 
 @TechReport{ETSI:300392-7,
-  title =        {Terrestrial Trunked Radio ({TETRA}); Voice plus Data
-                  ({V+D}); Part~7: Security},
+  title =        {Terrestrial Trunked Radio ({TETRA}); Voice plus Data ({V+D});
+                  Part~7: Security},
   institution =  {ETSI},
   type =         {European Standard},
   number =       {EN~300{\,}392-7},
   key =          {ETSI},
-  year =         {2007},
+  year =         2007,
   month =        jul,
   annote =       {project},
 }
 
 @TechReport{ETSI:300393-7,
-  title =        {Terrestrial Trunked Radio ({TETRA}); Packet Data Optimized ({PDO});
-                  Part~7: Security},
+  title =        {Terrestrial Trunked Radio ({TETRA}); Packet Data Optimized
+                  ({PDO}); Part~7: Security},
   institution =  {ETSI},
   type =         {European Standard},
   number =       {EN~300{\,}393-7},
   key =          {ETSI},
-  year =         {1997},
+  year =         1997,
   month =        may,
   annote =       {project},
 }
@@ -220,7 +302,7 @@
   type =         {European Standard},
   number =       {EN~300{\,}396-6},
   key =          {ETSI},
-  year =         {2006},
+  year =         2006,
   month =        jun,
   annote =       {project},
 }
@@ -229,14 +311,13 @@
 %% Smartcard
 %%%%%%%%%%%%%%%%
 
-
 @Manual{EMV:2000,
   title =        {{EMV2000} Integrated Circuit Card Specification for Payment
                   Systems},
   key =          {EMV},
   organization = {EMVCo},
   month =        dec,
-  year =         {2000},
+  year =         2000,
   keywords =     {smartcard},
   annote =       {project},
 }
@@ -246,7 +327,7 @@
                   contacts -- Part~1: Physical characteristics},
   type =         {International Standard},
   number =       {ISO/IEC~7816-1},
-  year =         {1998},
+  year =         1998,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -258,7 +339,7 @@
                   contacts},
   type =         {International Standard},
   number =       {ISO/IEC~7816-2},
-  year =         {2007},
+  year =         2007,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -270,7 +351,7 @@
                   protocols},
   type =         {International Standard},
   number =       {ISO/IEC~7816-3},
-  year =         {2006},
+  year =         2006,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -281,7 +362,7 @@
                   Organization, security and commands for interchange},
   type =         {International Standard},
   number =       {ISO/IEC~7816-4},
-  year =         {2005},
+  year =         2005,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -292,7 +373,7 @@
                   Interindustry data elements for interchange},
   type =         {International Standard},
   number =       {ISO/IEC~7816-6},
-  year =         {2004},
+  year =         2004,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -303,7 +384,7 @@
                   Commands for security operations},
   type =         {International Standard},
   number =       {ISO/IEC~7816-8},
-  year =         {2004},
+  year =         2004,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -314,7 +395,7 @@
                   Commands for card management},
   type =         {International Standard},
   number =       {ISO/IEC~7816-9},
-  year =         {2004},
+  year =         2004,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -326,7 +407,7 @@
                   operating procedures},
   type =         {International Standard},
   number =       {ISO/IEC~7816-12},
-  year =         {2005},
+  year =         2005,
   institution =  {ISO/IEC},
   key =          {ISO},
   annote =       {project},
@@ -341,7 +422,7 @@
   type =         {Technical Specification},
   number =       {TS~101{\,}267},
   key =          {ETSI},
-  year =         {2006},
+  year =         2006,
   month =        jun,
   note =         {({3GPP} {TS~11.14} version~8.18.0 Release~1999)},
   annote =       {project},
@@ -354,7 +435,7 @@
   type =         {Technical Specification},
   number =       {TS~121{\,}111},
   key =          {ETSI},
-  year =         {2008},
+  year =         2008,
   month =        jan,
   note =         {({3GPP} {TS}~21.111 version~8.1.0 Release~8)},
   annote =       {project},
@@ -369,7 +450,7 @@
   type =         {Technical Specification},
   number =       {TS~122{\,}038},
   key =          {ETSI},
-  year =         {2005},
+  year =         2005,
   month =        sep,
   note =         {({3GPP} {TS}~22.038 version~7.5.0 Release~7)},
   annote =       {project},
@@ -383,7 +464,7 @@
   type =         {Technical Specification},
   number =       {TS~131{\,}101},
   key =          {ETSI},
-  year =         {2007},
+  year =         2007,
   month =        jun,
   note =         {({3GPP} {TS}~31.101 version~7.0.1 Release~7)},
   annote =       {project},
@@ -397,7 +478,7 @@
   type =         {Technical Specification},
   number =       {TS~131{\,}102},
   key =          {ETSI},
-  year =         {2008},
+  year =         2008,
   month =        jan,
   note =         {({3GPP} {TS}~31.102 version~7.11.0 Release~7)},
   annote =       {project},
@@ -412,7 +493,7 @@
   type =         {Technical Specification},
   number =       {TS~131{\,}111},
   key =          {ETSI},
-  year =         {2007},
+  year =         2007,
   month =        oct,
   note =         {({3GPP} {TS}~31.111 version~7.8.0 Release~7)},
   annote =       {project},
@@ -425,7 +506,7 @@
   type =         {Technical Specification},
   number =       {TS~102{\,}222},
   key =          {ETSI},
-  year =         {2007},
+  year =         2007,
   month =        feb,
   note =         {(Release~7)},
   annote =       {project},
@@ -437,7 +518,7 @@
   type =         {Technical Specification},
   number =       {TS~102{\,}223},
   key =          {ETSI},
-  year =         {2008},
+  year =         2008,
   month =        feb,
   note =         {(Release~7)},
   annote =       {project},
@@ -450,7 +531,7 @@
   type =         {Technical Specification},
   number =       {TS~102{\,}224},
   key =          {ETSI},
-  year =         {2006},
+  year =         2006,
   month =        oct,
   note =         {(Release~7)},
   annote =       {project},
@@ -463,7 +544,7 @@
   type =         {Technical Specification},
   number =       {TS~102{\,}225},
   key =          {ETSI},
-  year =         {2008},
+  year =         2008,
   month =        feb,
   note =         {(Release~8)},
   annote =       {project},
@@ -476,7 +557,7 @@
   type =         {Technical Specification},
   number =       {TS~102{\,}226},
   key =          {ETSI},
-  year =         {2008},
+  year =         2008,
   month =        feb,
   note =         {(Release~7)},
   annote =       {project},
@@ -490,10 +571,7 @@
   type =         {European Standard},
   number =       {EN~300{\,}812},
   key =          {EN},
-  year =         {2001},
+  year =         2001,
   month =        dec,
   annote =       {project},
 }
-
-
-
