@@ -112,6 +112,16 @@ enlargefirstpage=true
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
+\branch WERKVERTRAG
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch DIENSTVERTRAG
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Stichwortverzeichnis
 \shortcut idx
 \color #008000
@@ -180,7 +190,7 @@ firstfoot{
 \begin_inset Text
 
 \begin_layout Plain Layout
-St.-Nr.
+St-Nr.
 \begin_inset space ~
 \end_inset
 
@@ -188,7 +198,7 @@ St.-Nr.
 \begin_inset Newline newline
 \end_inset
 
-ID-Nr.
+USt-IdNr.
 \begin_inset space ~
 \end_inset
 
@@ -256,11 +266,11 @@ Ginsterweg
 \end_layout
 
 \begin_layout Telephone
-0152
+01520
 \begin_inset space \thinspace{}
 \end_inset
 
-01592665
+1592665
 \end_layout
 
 \begin_layout Bank
@@ -320,6 +330,44 @@ Ginsterweg
 Ralf Hoppe
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch WERKVERTRAG
+status open
+
+\begin_layout Subject
+Rechnung 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{invoice}
+\end_layout
+
+\end_inset
+
+ zum Werkvertrag vom 20.
+\begin_inset space \thinspace{}
+\end_inset
+
+9.
+\begin_inset space \thinspace{}
+\end_inset
+
+2012 (Projekt SDHR / SVFuA)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch DIENSTVERTRAG
+status open
+
 \begin_layout Subject
 Rechnung 
 \begin_inset ERT
@@ -338,15 +386,20 @@ usekomavar{invoice}
 \begin_inset space ~
 \end_inset
 
-32508949/Z23 vom 23.
+32513227/Z23 vom 04.
 \begin_inset space \thinspace{}
 \end_inset
 
-5.
+06.
 \begin_inset space \thinspace{}
 \end_inset
 
-2011
+2012
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Place
@@ -370,37 +423,16 @@ today
 \end_layout
 
 \begin_layout Address
-Hirschmann Automation and Control GmbH
+SEKAS GmbH
 \begin_inset Newline newline
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mbox{Hr.}
-\end_layout
-
-\end_inset
-
- Jochen Dolezal (R&D)
+Baierbrunnerstr.
+ 23
 \begin_inset Newline newline
 \end_inset
 
-Stuttgarter Str.
- 45--51
-\begin_inset Newline newline
-\end_inset
-
-72654
-\begin_inset space ~
-\end_inset
-
-Neckartenzlingen
+81379 München
 \begin_inset Newline newline
 \end_inset
 
@@ -426,7 +458,7 @@ RECHNUNG
 \end_layout
 
 \begin_layout Invoice
-2012001
+2012011
 \begin_inset Note Note
 status open
 
@@ -444,16 +476,11 @@ Sehr geehrte Damen und Herren,
 \end_layout
 
 \begin_layout Standard
-gemäß Dienstleistungsvertrag vom 18.
-\begin_inset space \thinspace{}
-\end_inset
+\begin_inset Branch WERKVERTRAG
+status open
 
-5.
-\begin_inset space \thinspace{}
-\end_inset
-
-2011 erlaube ich mir für Projektunterstützung RSP_SW im Leistungszeitraum
- 1.
+\begin_layout Standard
+gemäß Leistungsnachweis 10/2012 erlaube ich mir für den Zeitraum 1.
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -482,6 +509,59 @@ Anpassen!
  in Rechnung zu stellen:
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch DIENSTVERTRAG
+status open
+
+\begin_layout Standard
+gemäß Dienstleistungsvertrag vom 18.
+\begin_inset space \thinspace{}
+\end_inset
+
+5.
+\begin_inset space \thinspace{}
+\end_inset
+
+2011 erlaube ich mir für Projektunterstützung RSP_SW im Leistungszeitraum
+ 1.
+\begin_inset space \thinspace{}
+\end_inset
+
+9.
+\begin_inset space \thinspace{}
+\end_inset
+
+2012 -- 30.
+\begin_inset space \thinspace{}
+\end_inset
+
+9.
+\begin_inset space \thinspace{}
+\end_inset
+
+2012 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Anpassen!
+\end_layout
+
+\end_inset
+
+ in Rechnung zu stellen:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Rechnungstab.
 \begin_inset ERT
 status open
@@ -490,9 +570,9 @@ status open
 
 
 \backslash
-Artikel{86,09}{Projektstunden 
+Artikel{180,08}{Projektstunden 
 \backslash
-mbox{lt.} Anlage}{74,00}
+mbox{lt.} Anlage}{71,00}
 \end_layout
 
 \end_inset
@@ -526,11 +606,11 @@ Gesamtsumme
 
 \end_inset
 
- bis zum 6.
+ bis zum 7.
 \begin_inset space \thinspace{}
 \end_inset
 
-2.
+12.
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -552,7 +632,7 @@ Mit freundlichen Grüßen
 \end_layout
 
 \begin_layout Encl
-Projektbericht
+Leistungsnachweis
 \end_layout
 
 \end_body
