@@ -1,13 +1,16 @@
 %
 % MakeIndex Configuration
 %
-% Copyright (C) 2011 Ralf Hoppe
+% Copyright (C) 2011, 2012 Ralf Hoppe
 %
 % $Id$
 %
 
-% first include sort orders from DIN 5007
-include "din.ist"
+% Change the quote character '"' to avoid problems with german umlauts (which
+% are normally coded as "a, "u, "o in index entries) in conjunction with the
+% makeindex option -g for german DIN 5007 sorting. Notice that this also is
+% explained in Lamport's LaTeX manual, appendix F.4.
+quote '+'
 
 headings_flag 1
 heading_prefix "{\\bf "
