@@ -6,7 +6,7 @@
 #Requires: 
 #Excludes:
 #
-# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012, 2013 Ralf Hoppe <ralf.hoppe@ieee.org>
 #
 
 Format 35
@@ -128,7 +128,9 @@ AddToPreamble
 %% Compressed \cdot e.g. as used by Whittacker in paragraph numbers
 \newcommand{\sdot} {\ensuremath{\! \cdot \!}}
 
-\renewcommand{\indexname}{Stichwortverzeichnis}
+\ifdefined\indexname
+    \renewcommand{\indexname}{Stichwortverzeichnis}
+\fi
 
 
 %% Uncomment the following lines to suppress additional text added to a cite
