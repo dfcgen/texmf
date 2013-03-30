@@ -63,10 +63,11 @@ enlargefirstpage=true
 
 \@setplength[3]{sigbeforevskip}{\baselineskip}
 \setlength{\skip\footins}{10mm}
-
-\input{text-inc} % EUR symbol
 \end_preamble
 \use_default_options false
+\begin_modules
+helpers
+\end_modules
 \maintain_unincluded_children false
 \language ngerman
 \language_package default
