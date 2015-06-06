@@ -16,6 +16,7 @@
 @STRING{IEEE_J_PROC       = "Proc. {IEEE}"}
 @STRING{IEEE_J_IT         = "{IEEE} Trans. Inform. Theory"}
 @STRING{IEEE_M_COM        = "{IEEE} Commun. Mag."}
+@STRING{IEEE_J_C          = "{IEEE} Trans. Comput."}
 
 
 %% Books
@@ -167,15 +168,15 @@
 
 
 @Article{okamoto:1990,
-  author =       "T. Okamoto",
-  title =        "A Fast Signature Scheme Based on Congruential Polynomial
-                  Operations",
+  author =       {T. Okamoto},
+  title =        {A Fast Signature Scheme Based on Congruential Polynomial
+                  Operations},
   journal =      IEEE_J_IT,
-  year =         1990,
-  volume =       "IT-36",
-  number =       "1",
-  pages =        "47--53",
-  month =        jan,
+  year =         {1990},
+  volume =       {IT-36},
+  number =       {1},
+  pages =        {47--53},
+  month =        jan
 }
 
 @TechReport{Koc:1994a,
@@ -258,6 +259,18 @@
   url =          {http://csrc.nist.gov/CryptoToolkit/modes/proposedmodes/index.html}
 }
 
+@Article{Fong:2004,
+  author =       {Fong, K. and Hankerson, D. and Lopez, J. and Menezes, A.},
+  journal =      IEEE_J_C,
+  title =        {Field inversion and point halving revisited},
+  year =         {2004},
+  month =        aug,
+  volume =       {53},
+  number =       {8},
+  pages =        {1047-1059}
+}
+
+
 %% Proceedings
 %%%%%%%%%%%%%%%%%%%%%%
 @InProceedings{miyaguchi:1990,
@@ -283,6 +296,32 @@
   series =       {Lecture Notes in Computer Science},
   month =        aug,
   publisher =    {Springer}
+}
+
+@InProceedings{Hankerson:2000,
+  author =       {Hankerson, Darrel and Hernandez, Julio L{\'{o}}pez and
+                  Menezes, Alfred},
+  title =        {Software Implementation of Elliptic Curve Cryptography over
+                  Binary Fields},
+  booktitle =    {Cryptographic Hardware and Embedded Systems --- {CHES 2000}},
+  pages =        {1-24},
+  publisher =    {Springer},
+  series =       {Lecture Notes in Computer Science},
+  volume =       1965,
+  year =         2000
+}
+
+@InProceedings{Brown:2001,
+  author =       {Brown, Michael and Hankerson, Darrel and Hernandez, Julio
+                  L{\'{o}}pez and Menezes, Alfred},
+  title =        {Software Implementation of the NIST Elliptic Curves Over
+                  Prime Fields},
+  booktitle =    {Topics in Cryptology --- {CT-RSA 2001}},
+  pages =        {250-265},
+  publisher =    {Springer},
+  series =       {Lecture Notes in Computer Science},
+  volume =       2020,
+  year =         2001
 }
 
 
@@ -313,7 +352,44 @@
   note =         {DRAFT (June, 2007)},
 }
 
-@TechReport{NIST:800-56B,
+@TechReport{NIST:SP800-56A,
+  author =       {Elaine Barker, Lily Chen, Allen Roginsky and Miles Smid},
+  title =        {Recommendation for Pair-Wise Key Establishment Schemes Using
+                  Discrete Logarithm Cryptography},
+  institution =  {NIST},
+  year =         2013,
+  month =        may,
+  key =          {NIST},
+  type =         {{NIST} Special Publication},
+  number =       {800-56A},
+  note =         {Revision~2},
+  annote =       {project}
+}
+
+@TechReport{NIST:SP800-89,
+  author =       {Elaine Barker},
+  title =        {Recommendation for Obtaining Assurances for Digital Signature
+                  Applications},
+  institution =  {NIST},
+  year =         2006,
+  month =        nov,
+  key =          {NIST},
+  type =         {{NIST} Special Publication},
+  number =       {800-89},
+  annote =       {project}
+}
+@TechReport{BSI:TR03111,
+  author =       {{Bundesamt f{\"u}r Sicherheit in der Informationstechnik}},
+  title =        {Elliptic Curve Cryptography},
+  institution =  {BSI},
+  year =         {2012},
+  key =          {BSI},
+  type =         {Technical Guideline},
+  number =       {TR-03111},
+  annote =       {project},
+}
+
+@TechReport{NIST:SP800-56B,
   author =       {Elaine Barker, Lily Chen, Andrew Regenscheid and Miles Smid},
   title =        {Recommendation for Pair-Wise Key Establishment Schemes Using
                   Integer Factorization Cryptography},
@@ -362,6 +438,16 @@
   type =         {FIPS Publication},
   number =       {186-3},
   year =         {2009},
+  key =          {NIST},
+  annote =       {project},
+}
+
+@TechReport{FIPS:186-4,
+  institution =  {National Institute of Standards and Technology},
+  title =        {Digitale Signature Standard ({DSS})},
+  type =         {FIPS Publication},
+  number =       {186-4},
+  year =         {2013},
   key =          {NIST},
   annote =       {project},
 }
@@ -516,6 +602,32 @@
   annote =       {project}
 }
 
+@TechReport{ISO:11770-3,
+  title =        {{I}nformation technology -- {S}ecurity techniques --
+                  {K}ey management -- Part~3: {M}echanisms using
+                  asymmetric techniques},
+  type =         {International Standard},
+  number =       {ISO/IEC~11770-3},
+  year =         {2008},
+  institution =  {ISO/IEC},
+  key =          {ISO},
+  annote =       {project}
+}
+
+Information technology -- Security techniques -- Key management -- Part 3: Mechanisms using asymmetric techniques
+
+@TechReport{ANSI:X9.42,
+  title =        {Public Key Cryptography for the Financial Services Industry:
+                  Agreement of Symmetric Keys Using Discrete Logarithm
+                  Cryptography Operation},
+  institution =  {ANSI},
+  type =         {American National Standard for Financial Services},
+  number =       {X9.42},
+  year =         {2003},
+  key =          {ANSI},
+  annote =       {project},
+}
+
 @TechReport{ANSI:X9.52,
   title =        {Triple Data Encryption Algorithm Modes of
                   Operation},
@@ -536,6 +648,17 @@
   institution =  {ANSI},
   type =         {American National Standard for Financial Services},
   number =       {X9.62},
+  key =          {ANSI},
+  annote =       {project},
+}
+
+@TechReport{ANSI:X9.63,
+  title =        {Public Key Cryptography for the Financial Services Industry -
+                  Key Agreement and Key Transport Using Elliptic Curve Cryptography},
+  year =         {2011},
+  institution =  {ANSI},
+  type =         {American National Standard for Financial Services},
+  number =       {X9.63},
   key =          {ANSI},
 }
 
@@ -623,6 +746,17 @@
   year =         {1997},
 }
 
+@TechReport{IETF:RFC2631,
+  author =       {E. Rescorla},
+  title =        {Diffie-Hellman Key Agreement Method},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       2631,
+  year =         1999,
+  month =        jun,
+  annote =       {project},
+}
+
 @TechReport{RFC3566,
   author =       {S. Frankel and H. Herbert},
   title =        {The {AES-XCBC-MAC-96} Algorithm and Its Use with {IPsec}},
@@ -631,6 +765,18 @@
   number =       {3566},
   month =        sep,
   year =         {2003},
+  annote =       {project}
+}
+
+@TechReport{RFC2313,
+  author =       {B. Kaliski},
+  title =        {Public-Key Cryptography Standards ({PKCS}) \#1: RSA
+                  Encryption Version 1.5},
+  institution =  {IETF},
+  type =         {RFC},
+  number =       {2313},
+  month =        mar,
+  year =         {1998},
   annote =       {project}
 }
 
