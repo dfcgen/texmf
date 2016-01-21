@@ -7,7 +7,7 @@
 #Requires: 
 #Excludes:
 #
-# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012, 2015 Ralf Hoppe <ralf.hoppe@ieee.org>
 #
 
 Format 35
@@ -86,7 +86,8 @@ AddToPreamble
       \texorpdfstring{%
         \mathversion{bold}%
         \ensuremath{#1}%
-        \mathversion{normal}}{#2}}%
+        \mathversion{normal}
+      }{#2}}%
   }{ %% hyperref NOT loaded (no replacement)
     \newcommand{\tocmath} [2] {\ensuremath{#1}}}
 }
