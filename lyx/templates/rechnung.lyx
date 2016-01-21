@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass rechnung
@@ -24,9 +24,9 @@ enlargefirstpage=true
 %,parskip=false%          Use indent instead of skip (more options cf. docu)
 %,fromalign=center%        alignment of the address
 %,fromrule=aftername%    separate the address with a line?
-,fromphone=true%         print sender phone number
+%,fromphone=true%         print sender phone number
 %,fromfax=true%          print sender fax number
-,fromemail=true%           print sender e-mail address
+%,fromemail=true%           print sender e-mail address
 %,fromurl=true%               print sender URL
 %,fromlogo=true%         print a logo (position depends on fromalign)
 %,addrfield=false%        print an address field?
@@ -73,13 +73,13 @@ enlargefirstpage=true
 \font_roman times
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -102,26 +102,25 @@ enlargefirstpage=true
 \pdf_pdfusetitle false
 \papersize a4paper
 \use_geometry false
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
-\branch WERKVERTRAG
-\selected 1
-\filename_suffix 0
-\color #faf0e6
-\end_branch
-\branch DIENSTVERTRAG
-\selected 0
-\filename_suffix 0
-\color #faf0e6
-\end_branch
 \index Stichwortverzeichnis
 \shortcut idx
 \color #008000
@@ -145,7 +144,7 @@ enlargefirstpage=true
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -182,7 +181,7 @@ firstfoot{
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="30line%">
 <column alignment="right" valignment="top" width="70line%">
 <row topspace="default">
@@ -190,7 +189,66 @@ firstfoot{
 \begin_inset Text
 
 \begin_layout Plain Layout
-St-Nr.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Tel.}
+\end_layout
+
+\end_inset
+
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{fromphone}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emailname
+\end_layout
+
+\end_inset
+
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{fromemail}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+St-Nr.:
 \begin_inset space ~
 \end_inset
 
@@ -198,7 +256,7 @@ St-Nr.
 \begin_inset Newline newline
 \end_inset
 
-USt-IdNr.
+USt-IdNr.:
 \begin_inset space ~
 \end_inset
 
@@ -273,12 +331,46 @@ Ginsterweg
 1592665
 \end_layout
 
+\begin_layout E-Mail
+ralf.hoppe@ieee.org
+\end_layout
+
+\begin_layout URL
+http://freelancer.dfcgen.de
+\end_layout
+
 \begin_layout Bank
 \noindent
 Volksbank Kirchheim-Nürtingen eG
 \begin_inset Newline newline
 \end_inset
 
+IBAN:
+\begin_inset space ~
+\end_inset
+
+DE57
+\begin_inset space \thinspace{}
+\end_inset
+
+61290120
+\begin_inset space \thinspace{}
+\end_inset
+
+0423187007
+\begin_inset Newline newline
+\end_inset
+
+BIC:
+\begin_inset space ~
+\end_inset
+
+GENODES1NUE
+\begin_inset Note Note
+status open
+
+\begin_layout Bank
+\noindent
 Kto.
 \begin_inset space ~
 \end_inset
@@ -306,8 +398,9 @@ Kto.
 20
 \end_layout
 
-\begin_layout E-Mail
-ralf.hoppe@ieee.org
+\end_inset
+
+
 \end_layout
 
 \begin_layout Backaddress
@@ -330,44 +423,6 @@ Ginsterweg
 Ralf Hoppe
 \end_layout
 
-\begin_layout Standard
-\begin_inset Branch WERKVERTRAG
-status open
-
-\begin_layout Subject
-Rechnung 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-usekomavar{invoice}
-\end_layout
-
-\end_inset
-
- zum Werkvertrag vom 20.
-\begin_inset space \thinspace{}
-\end_inset
-
-9.
-\begin_inset space \thinspace{}
-\end_inset
-
-2012 (Projekt SDHR / SVFuA)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch DIENSTVERTRAG
-status open
-
 \begin_layout Subject
 Rechnung 
 \begin_inset ERT
@@ -386,20 +441,15 @@ usekomavar{invoice}
 \begin_inset space ~
 \end_inset
 
-32513227/Z23 vom 04.
+450026841 vom 10.
 \begin_inset space \thinspace{}
 \end_inset
 
-06.
+10.
 \begin_inset space \thinspace{}
 \end_inset
 
-2012
-\end_layout
-
-\end_inset
-
-
+2013
 \end_layout
 
 \begin_layout Place
@@ -423,25 +473,38 @@ today
 \end_layout
 
 \begin_layout Address
-SEKAS GmbH
+SOLCOM Unternehmensberatung GmbH
 \begin_inset Newline newline
 \end_inset
 
-Baierbrunnerstr.
- 23
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Abt.}
+\end_layout
+
+\end_inset
+
+ Rechnungswesen
 \begin_inset Newline newline
 \end_inset
 
-81379 München
+Schuckertstr.
+ 1
+\begin_inset Newline newline
+\end_inset
+
+72766 Reutlingen
 \begin_inset Newline newline
 \end_inset
 
 
 \shape smallcaps
-Germany
-\begin_inset Newline newline
-\end_inset
-
 
 \begin_inset Newline newline
 \end_inset
@@ -458,7 +521,7 @@ RECHNUNG
 \end_layout
 
 \begin_layout Invoice
-2012011
+2013011
 \begin_inset Note Note
 status open
 
@@ -476,27 +539,32 @@ Sehr geehrte Damen und Herren,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch WERKVERTRAG
-status open
+gemäß Ihrer Allgemeinen Vertragsbedingungen erlaube ich mir für das Projekt
+ 
+\begin_inset Quotes gld
+\end_inset
 
-\begin_layout Standard
-gemäß Leistungsnachweis 10/2012 erlaube ich mir für den Zeitraum 1.
+Embedded Softwareentwicklung
+\begin_inset Quotes grd
+\end_inset
+
+ im Leistungszeitraum 1.
 \begin_inset space \thinspace{}
 \end_inset
 
-12.
+11.
 \begin_inset space \thinspace{}
 \end_inset
 
-2011 -- 31.
+2013 -- 30.
 \begin_inset space \thinspace{}
 \end_inset
 
-12.
+11.
 \begin_inset space \thinspace{}
 \end_inset
 
-2011 
+2013 
 \begin_inset Note Note
 status open
 
@@ -507,59 +575,6 @@ Anpassen!
 \end_inset
 
  in Rechnung zu stellen:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch DIENSTVERTRAG
-status open
-
-\begin_layout Standard
-gemäß Dienstleistungsvertrag vom 18.
-\begin_inset space \thinspace{}
-\end_inset
-
-5.
-\begin_inset space \thinspace{}
-\end_inset
-
-2011 erlaube ich mir für Projektunterstützung RSP_SW im Leistungszeitraum
- 1.
-\begin_inset space \thinspace{}
-\end_inset
-
-9.
-\begin_inset space \thinspace{}
-\end_inset
-
-2012 -- 30.
-\begin_inset space \thinspace{}
-\end_inset
-
-9.
-\begin_inset space \thinspace{}
-\end_inset
-
-2012 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Anpassen!
-\end_layout
-
-\end_inset
-
- in Rechnung zu stellen:
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Rechnungstab.
@@ -570,9 +585,9 @@ status open
 
 
 \backslash
-Artikel{180,08}{Projektstunden 
+Artikel{179,00}{Projektstunden 
 \backslash
-mbox{lt.} Anlage}{71,00}
+mbox{lt.} Anlage}{69,00}
 \end_layout
 
 \end_inset
@@ -614,7 +629,7 @@ Gesamtsumme
 \begin_inset space \thinspace{}
 \end_inset
 
-2012
+2013
 \begin_inset Note Note
 status open
 
