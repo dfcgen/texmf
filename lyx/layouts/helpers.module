@@ -6,7 +6,7 @@
 #Requires: 
 #Excludes:
 #
-# Copyright (C) 2012, 2013 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012, 2013, 2015 Ralf Hoppe <ralf.hoppe@ieee.org>
 #
 
 Format 35
@@ -69,10 +69,14 @@ AddToPreamble
 
 %% Some re- or extra definitions in case TeX4ht is (not) loaded
 \@ifpackageloaded{tex4ht} {%
-  \@ifpackageloaded{breakurl} {%
-    %% breakurl.sty inserts special postscript code, which then is passed to
-    %% the HTML page
-    \message{package breakurl.sty not compatible with TeX4ht...}}{}
+  %% breakurl.sty inserts special postscript code, which then is passed to
+  %% the DVI page, then read by TeX4ht and finally passed to HTML page
+  \PackageWarningNoLine{breakurl}{%
+    Package breakurl not not compatible with TeX4ht...\MessageBreak
+    \string\burl\space will be just a synonym of \string\url.}
+  \DeclareRobustCommand{\burl}{\url}
+  \DeclareRobustCommand*{\burlalt}{\hyper@normalise\burl@alt}
+  \def\burl@alt#1#2{\hyper@linkurl{\Hurl{#1}}{#2}}
 }{%
   %%
   %% Postscript font Times in text and math formulas (based on freely
