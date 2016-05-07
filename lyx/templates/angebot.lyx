@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass scrlttr2
@@ -24,7 +24,7 @@ enlargefirstpage=true
 %,parskip=false%          Use indent instead of skip (more options cf. docu)
 %,fromalign=center%        alignment of the address
 %,fromrule=aftername%    separate the address with a line?
-,fromphone=true%         print sender phone number
+%,fromphone=true%         print sender phone number
 %,fromfax=true%          print sender fax number
 %,fromemail=true%           print sender e-mail address
 %,fromurl=true%               print sender URL
@@ -74,13 +74,13 @@ enlargefirstpage=true
 \font_roman times
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -103,15 +103,24 @@ enlargefirstpage=true
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry false
-\use_amsmath 0
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Stichwortverzeichnis
 \shortcut idx
@@ -159,7 +168,7 @@ lefthyphenmin=5
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -173,14 +182,57 @@ firstfoot{
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="70line%">
-<column alignment="left" valignment="top" width="30line%">
-<row>
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="33line%">
+<column alignment="right" valignment="top" width="67line%">
+<row topspace="default">
 <cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Tel.}
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{fromphone}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emailname
+\end_layout
+
+\end_inset
+
+: 
 \begin_inset ERT
 status open
 
@@ -197,29 +249,7 @@ usekomavar{fromemail}
 \begin_inset Newline newline
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-usekomavar{fromurl}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-St.-Nr.
+St-Nr.:
 \begin_inset space ~
 \end_inset
 
@@ -227,11 +257,34 @@ St.-Nr.
 \begin_inset Newline newline
 \end_inset
 
-Ust-IdNr.
+USt-IdNr.:
 \begin_inset space ~
 \end_inset
 
 DE252281677
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\align right
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usekomavar{frombank}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -284,7 +337,71 @@ ralf.hoppe@ieee.org
 \end_layout
 
 \begin_layout URL
-www.dfcgen.de/freelancer
+freelancer.dfcgen.de
+\end_layout
+
+\begin_layout Bank
+\noindent
+Volksbank Kirchheim-Nürtingen eG
+\begin_inset Newline newline
+\end_inset
+
+IBAN:
+\begin_inset space ~
+\end_inset
+
+DE57
+\begin_inset space \thinspace{}
+\end_inset
+
+61290120
+\begin_inset space \thinspace{}
+\end_inset
+
+0423187007
+\begin_inset Newline newline
+\end_inset
+
+BIC:
+\begin_inset space ~
+\end_inset
+
+GENODES1NUE
+\begin_inset Note Note
+status open
+
+\begin_layout Bank
+\noindent
+Kto.
+\begin_inset space ~
+\end_inset
+
+423
+\begin_inset space \thinspace{}
+\end_inset
+
+187
+\begin_inset space \thinspace{}
+\end_inset
+
+007, BLZ
+\begin_inset space ~
+\end_inset
+
+612
+\begin_inset space \thinspace{}
+\end_inset
+
+901
+\begin_inset space \thinspace{}
+\end_inset
+
+20
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Backaddress
