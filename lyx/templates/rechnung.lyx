@@ -189,6 +189,8 @@ firstfoot{
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset ERT
 status open
 
@@ -248,15 +250,20 @@ usekomavar{fromemail}
 \begin_inset Newline newline
 \end_inset
 
-St-Nr.:
-\begin_inset space ~
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{USt-IdNr}
+\end_layout
+
 \end_inset
 
-69225/20302
-\begin_inset Newline newline
-\end_inset
-
-USt-IdNr.:
+:
 \begin_inset space ~
 \end_inset
 
@@ -271,6 +278,8 @@ DE252281677
 \begin_layout Plain Layout
 \noindent
 \align right
+
+\size small
 \begin_inset ERT
 status open
 
@@ -308,19 +317,31 @@ status open
 \end_layout
 
 \begin_layout Name
-Ralf Hoppe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Dipl.-Ing.}
+\end_layout
+
+\end_inset
+
+ Ralf Hoppe
 \end_layout
 
 \begin_layout SenderAddress
-Ginsterweg
+Müllerstr.
 \begin_inset space ~
 \end_inset
 
-49
+25
 \begin_inset Newline newline
 \end_inset
 
-73230 Kirchheim/Teck
+D-15366 Neuenhagen (bei Berlin)
 \end_layout
 
 \begin_layout Telephone
@@ -353,11 +374,23 @@ DE57
 \begin_inset space \thinspace{}
 \end_inset
 
-61290120
+6129
 \begin_inset space \thinspace{}
 \end_inset
 
-0423187007
+0120
+\begin_inset space \thinspace{}
+\end_inset
+
+0423
+\begin_inset space \thinspace{}
+\end_inset
+
+1870
+\begin_inset space \thinspace{}
+\end_inset
+
+07
 \begin_inset Newline newline
 \end_inset
 
@@ -408,15 +441,15 @@ Ralf Hoppe
 \begin_inset Newline newline
 \end_inset
 
-Ginsterweg
+Müllerstr.
 \begin_inset space ~
 \end_inset
 
-49
+25
 \begin_inset Newline newline
 \end_inset
 
-73230 Kirchheim/Teck
+D-15366 Neuenhagen (bei Berlin)
 \end_layout
 
 \begin_layout Signature
@@ -453,7 +486,7 @@ usekomavar{invoice}
 \end_layout
 
 \begin_layout Place
-Kirchheim/Teck
+Neuenhagen
 \end_layout
 
 \begin_layout Date
