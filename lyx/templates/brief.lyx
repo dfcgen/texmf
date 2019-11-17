@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass scrlttr2
@@ -76,13 +76,13 @@ helpers
 \font_roman times
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -93,15 +93,24 @@ helpers
 \use_hyperref false
 \papersize a4paper
 \use_geometry false
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Stichwortverzeichnis
 \shortcut idx
@@ -125,19 +134,35 @@ helpers
 \begin_body
 
 \begin_layout Name
-Ralf Hoppe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Dipl.-Ing.}
 \end_layout
 
-\begin_layout SenderAddress
-Ginsterweg
-\begin_inset space ~
 \end_inset
 
-49
+ Ralf Hoppe
 \begin_inset Newline newline
 \end_inset
 
-73230 Kirchheim unter Teck
+Embedded Software Development
+\end_layout
+
+\begin_layout SenderAddress
+Müllerstr.
+\begin_inset space ~
+\end_inset
+
+25
+\begin_inset Newline newline
+\end_inset
+
+15366 Neuenhagen (bei Berlin)
 \end_layout
 
 \begin_layout Telephone
@@ -157,15 +182,12 @@ Ralf Hoppe
 \begin_inset Newline newline
 \end_inset
 
-Ginsterweg
-\begin_inset space ~
-\end_inset
-
-49
+Müllerstr.
+ 25
 \begin_inset Newline newline
 \end_inset
 
-73230 Kirchheim unter Teck
+15366 Neuenhagen (bei Berlin)
 \end_layout
 
 \begin_layout Signature
@@ -177,7 +199,7 @@ Ralf Hoppe
 \end_layout
 
 \begin_layout Place
-Kirchheim/Teck
+Neuenhagen
 \end_layout
 
 \begin_layout Date
