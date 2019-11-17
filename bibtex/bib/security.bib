@@ -7,7 +7,7 @@
 %%  author   = "Ralf Hoppe",
 %%  version  = "$Revision: 1.3 $",
 %%  filename = "security.bib",
-%%  address  = "Junker-J{\"o}rg-Strasse 2, 10318 Berlin, Germany",
+%%  address  = "M{\"u}llerstr. 25, 15366 Neuenhagen, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
 
 
@@ -93,6 +93,28 @@
   annote =       {project},
 }
 
+@TechReport{FIPS:140-2A-DRAFT,
+  author =       {Apostol Vassilev},
+  title =        {Approved Security Functions for {FIPS PUB 140-2}, Security
+                  Requirements for Cryptographic Modules},
+  institution =  {NIST},
+  year =         {2016},
+  month =        apr,
+  type =         {FIPS Publication},
+  number =       {140-2 Annex~A},
+  note =         {Draft},
+  annote =       {project}
+}
+
+@Manual{FIPS:140-2IG,
+  title =        {Implementation Guidance for {FIPS PUB 140-2} and the
+                  Cryptographic Module Validation Program},
+  organization = {NIST \& CSE},
+  year =         {2016},
+  month =        jan,
+  annote =       {project}
+}
+
 @TechReport{ITU:X509,
   title =        {{I}nformation technology - {O}pen {S}ystems {I}nterconnection
                   - {T}he {D}irectory: {A}uthentication framework},
@@ -112,19 +134,6 @@
   institution =  {IETF},
   type =         {RFC},
   number =       1422,
-  year =         1993,
-  month =        feb,
-  keywords =     {security, certificates, PKI, PEM, eMail},
-  annote =       {project},
-}
-
-@TechReport{IETF:RFC1423,
-  author =       {S. Kent},
-  title =        {Privacy Enhancement for {Internet} Electronic Mail: Part
-                  {III}: Algorithms, Modes, and Identifiers},
-  institution =  {IETF},
-  type =         {RFC},
-  number =       1423,
   year =         1993,
   month =        feb,
   keywords =     {security, certificates, PKI, PEM, eMail},
@@ -179,19 +188,9 @@
   annote =       {project},
 }
 
-@TechReport{IETF:RFC5246,
-  author =       {T. Dierks and E. Rescorla},
-  title =        {The Transport Layer Security ({TLS}) Protocol Version 1.2},
-  institution =  {IETF},
-  type =         {RFC},
-  number =       5246,
-  year =         2008,
-  month =        aug,
-  annote =       {project},
-}
-
 @TechReport{IETF:RFC4492,
-  author =       {S. Blake-Wilson, N. Bolyard, V. Gupta, C. Hawk, B. Moeller},
+  author =       {S. Blake-Wilson and N. Bolyard and V. Gupta and C. Hawk and
+                  B. Moeller},
   title =        {Elliptic Curve Cryptography ({ECC}) Cipher Suites for
                   Transport Layer Security ({TLS})},
   institution =  {IETF},
@@ -211,6 +210,27 @@
   year =         2008,
   month =        aug,
   annote =       {project},
+}
+
+@Manual{OPENSSL:FIPS-UG2016,
+  title =        {User Guide for the {OpenSSL} {FIPS} Object Module v2.0},
+  organization = {OpenSSL Validation Services, Inc.},
+  month =        may,
+  year =         {2016},
+  note =         {(for validations {\#1747}, {\#2398}, and {\#2473} including
+                  revisions v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6,
+                  v2.0.7, 2.0.8, 2.0.9, 2.0.10, 2.0.11, 2.0.12)},
+  annote =       {project}
+}
+
+@Manual{OPENSSL:FIPS-POLICY2016,
+  title =        {{OpenSSL} {FIPS 140-2} Security Policy},
+  organization = {OpenSSL Software Foundation},
+  edition =      {Version 2.0.10},
+  month =        jan,
+  year =         {2016},
+  note =         {OpenSSL FIPS Object Module},
+  annote =       {project}
 }
 
 @TechReport{IEEE:STD802.10,

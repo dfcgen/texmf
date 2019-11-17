@@ -7,7 +7,7 @@
 %%  author   = "Ralf Hoppe",
 %%  version  = "$Revision: 1.8 $",
 %%  filename = "crypto.bib",
-%%  address  = "Junker-J{\"o}rg-Strasse 2, 10318 Berlin, Germany",
+%%  address  = "M{\"u}llerstr. 25, 15366 Neuenhagen, Germany",
 %%  email    = "ralf.hoppe at domain ieee.org"  }
 
 
@@ -127,7 +127,7 @@
 }
 
 @Article{Feistel:1975,
-  author =       {Horst Feistel, William A. Notz and J. Lynn Smith},
+  author =       {Horst Feistel and William A. Notz and J. Lynn Smith},
   title =        {Some cryptographic techniques for machine-to-machine data
                   communications},
   journal =      IEEE_J_PROC,
@@ -363,8 +363,21 @@
   note =         {DRAFT (June, 2007)},
 }
 
+@TechReport{NIST:SP800-131REV1,
+  author =       {Elaine Barker and Allen Roginsky},
+  title =        {Transitions: Recommendation for Transitioning the Use of
+                  Cryptographic Algorithms and Key Lengths},
+  institution =  {NIST},
+  type =         {{NIST} Special Publication},
+  number =       {800-131A},
+  year =         {2015},
+  month =        nov,
+  note =         {Revision~1},
+  annote =       {project}
+}
+
 @TechReport{NIST:SP800-56A,
-  author =       {Elaine Barker, Lily Chen, Allen Roginsky and Miles Smid},
+  author =       {Elaine Barker and Lily Chen and Allen Roginsky and Miles Smid},
   title =        {Recommendation for Pair-Wise Key Establishment Schemes Using
                   Discrete Logarithm Cryptography},
   institution =  {NIST},
@@ -389,6 +402,81 @@
   number =       {800-89},
   annote =       {project}
 }
+
+@TechReport{NIST:SP800-57PT1REV4,
+  author =       {Elaine Barker},
+  title =        {Recommendation for Key Management -- Part~1: General},
+  institution =  {NIST},
+  year =         {2016},
+  month =        jan,
+  type =         {{NIST} Special Publication},
+  number =       {800-57 Part~1},
+  note =         {Revision~4},
+  annote =       {project}
+}
+
+@TechReport{NIST:SP800-57PT3REV1,
+  author =       {Elaine Barker and Quynh Dang},
+  title =        {Recommendation for Key Management -- Part~3:
+                  Application-Specific Key Management Guidance},
+  institution =  {NIST},
+  year =         {2015},
+  month =        jan,
+  type =         {{NIST} Special Publication},
+  number =       {800-57 Part~3},
+  note =         {Revision~1},
+  annote =       {project}
+}
+
+@TechReport{NIST:SP800-38C,
+  author =       {Morris Dworkin},
+  title =        {Recommendation for Block Cipher Modes of Operation: The {CCM}
+                  Mode for Authentication and Confidentiality},
+  institution =  {NIST},
+  year =         {2004},
+  month =        may,
+  type =         {{NIST} Special Publication},
+  number =       {800-38C},
+  annote =       {project}
+}
+
+@TechReport{NIST:SP800-38D,
+  author =       {Morris Dworkin},
+  title =        {Recommendation for Block Cipher Modes of Operation:
+                  Galois/Counter Mode ({GCM}) and {GMAC}},
+  institution =  {NIST},
+  year =         {2007},
+  month =        nov,
+  type =         {{NIST} Special Publication},
+  number =       {800-38D},
+  annote =       {project}
+}
+
+@TechReport{NIST:SP800-38F,
+  author =       {Morris Dworkin},
+  title =        {Recommendation for Block Cipher Modes of Operation: Methods
+                  for Key Wrapping},
+  institution =  {NIST},
+  year =         {2012},
+  month =        dec,
+  type =         {{NIST} Special Publication},
+  number =       {800-38F},
+  annote =       {project}
+}
+
+@TechReport{NIST:SP800-90A,
+  author =       {Elaine Barker and John Kelsey},
+  title =        {Recommendation for Random Number Generation Using
+                  Deterministic Random Bit Generators},
+  institution =  {NIST},
+  year =         {2015},
+  month =        jun,
+  type =         {{NIST} Special Publication},
+  number =       {800-90A},
+  note =         {Revision~1},
+  annote =       {project}
+}
+
 @TechReport{BSI:TR03111,
   author =       {{Bundesamt f{\"u}r Sicherheit in der Informationstechnik}},
   title =        {Elliptic Curve Cryptography},
@@ -401,7 +489,7 @@
 }
 
 @TechReport{NIST:SP800-56B,
-  author =       {Elaine Barker, Lily Chen, Andrew Regenscheid and Miles Smid},
+  author =       {Elaine Barker and Lily Chen and Andrew Regenscheid and Miles Smid},
   title =        {Recommendation for Pair-Wise Key Establishment Schemes Using
                   Integer Factorization Cryptography},
   institution =  {NIST},
@@ -737,7 +825,7 @@ Information technology -- Security techniques -- Key management -- Part 3: Mecha
 }
 
 @TechReport{RFC2104,
-  author =       {H. Krawczyk, M. Bellare, R. Canetti},
+  author =       {H. Krawczyk and M. Bellare and R. Canetti},
   title =        {{HMAC}: Keyed-Hashing for Message Authentication},
   institution =  {IETF},
   type =         {RFC},
@@ -779,9 +867,33 @@ Information technology -- Security techniques -- Key management -- Part 3: Mecha
   annote =       {project}
 }
 
+@TechReport{RFC4868,
+  author =       {S. Kelly and S. Frankel},
+  title =        {Using {HMAC-SHA-256}, {HMAC-SHA-384}, and {HMAC-SHA-512}
+                  with {IPsec}},
+  institution =  {Network Working Group},
+  year =         {2007},
+  month =        may,
+  type =         {RFC},
+  number =       {4868},
+  annote =       {project}
+}
+
+@TechReport{RFC3686,
+  author =       {R. Housley},
+  title =        {Using Advanced Encryption Standard ({AES}) Counter Mode With
+                  IPsec Encapsulating Security Payload ({ESP})},
+  institution =  {Network Working Group},
+  year =         {2004},
+  month =        jan,
+  type =         {RFC},
+  number =       {3686},
+  annote =       {project}
+}
+
 @TechReport{RFC2313,
   author =       {B. Kaliski},
-  title =        {Public-Key Cryptography Standards ({PKCS}) \#1: RSA
+  title =        {Public-Key Cryptography Standards ({PKCS}) {\#1}: RSA
                   Encryption Version 1.5},
   institution =  {IETF},
   type =         {RFC},
@@ -793,7 +905,7 @@ Information technology -- Security techniques -- Key management -- Part 3: Mecha
 
 @TechReport{RFC3447,
   author =       {J. Jonsson and B. Kaliski},
-  title =        {Public-Key Cryptography Standards ({PKCS}) \#1: RSA
+  title =        {Public-Key Cryptography Standards ({PKCS}) {\#1}: RSA
                   Cryptography Specifications Version 2.1},
   institution =  {IETF},
   type =         {RFC},
@@ -803,13 +915,48 @@ Information technology -- Security techniques -- Key management -- Part 3: Mecha
   annote =       {project}
 }
 
+@TechReport{RFC5288,
+  author =       {J. Salowey and A. Choudhury and D. McGrew},
+  title =        {{AES} Galois Counter Mode ({GCM}) Cipher Suites for {TLS}},
+  institution =  {Network Working Group},
+  year =         {2008},
+  month =        aug,
+  type =         {RFC},
+  number =       {5288},
+  annote =       {project}
+}
+
+@TechReport{RFC5289,
+  author =       {E. Rescorla},
+  title =        {{TLS} Elliptic Curve Cipher Suites with {SHA-256/384} and
+                  {AES} Galois Counter Mode ({GCM})},
+  institution =  {Network Working Group},
+  year =         {2008},
+  month =        aug,
+  type =         {RFC},
+  number =       {5289},
+  annote =       {project}
+}
+
 @TechReport{RFC6090,
-  author =       {D. McGrew, K. Igoe, M. Salter},
+  author =       {D. McGrew and K. Igoe and M. Salter},
   title =        {Fundamental Elliptic Curve Cryptography Algorithms},
   institution =  {IETF},
   type =         {RFC},
   number =       {6090},
   month =        feb,
   year =         {2011},
+  annote =       {project}
+}
+
+@TechReport{RFC6151,
+  author =       {S. Turner and L. Chen},
+  title =        {Updated Security Considerations for the {MD5} Message-Digest
+                  and the {HMAC-MD5} Algorithms},
+  institution =  {IETF},
+  year =         {2011},
+  month =        mar,
+  type =         {RFC},
+  number =       {6151},
   annote =       {project}
 }
