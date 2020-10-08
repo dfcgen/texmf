@@ -3,7 +3,7 @@
 %% LaTeX file for mathematical symbols, to be included from another file (which
 %% provides the required packages)
 %%
-%% Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+%% Copyright (C) 2012, 2020 Ralf Hoppe <ralf.hoppe@ieee.org>
 %%
 %% $Id$
 %%
@@ -38,31 +38,21 @@
 %% Analysis
 
 
-%% Conjugate complexe value of a variable, function or expression
-%% 
-%% When the first (optional) argument is missing then the second will be
-%% completely indicated as a conjugate complex value. When there is a
-%% first argument then the second will be assumed as a function parameter.
-%% In that case only the first argument is indicated as a conjugate complex
-%% value and the second is shown only in normal parenthesis.
+%% Conjugate complex value of an expression
+%%
+%% Indicates an expression, or it's (optional) "prefix representative",
+%% as a complex value.
 %%
 \newcommand{\cjgt} [2] [empty] {%
   \def\tempa{empty}%
   \def\tempb{#1}%
   \ifx\tempb\tempa
-    #2^\ast%
+    {#2}^\ast%
   \else
-    #1^\ast(#2)%
+    {#1}^\ast{#2}%
   \fi
 }
 
-%% \newcommand{\cjgt} [2] [] {%
-%%   \ifx\\#1\\%
-%%     \overline{#2}%
-%%   \else
-%%     \overline{#1(#2)}%
-%%   \fi
-%% }
 
 \newcommand{\res} [2] {\residue_{#1} {#2}}  %% residue of function #2 at point #1
 
@@ -129,7 +119,8 @@
 %% Chebyshev functions (polynomials)
 \DeclareMathOperator{\Tn}{T}
 \DeclareMathOperator{\Un}{U}
-\DeclareMathOperator{\sinc}{sinc}       %% sinc(x) = sin(x)/x
+\DeclareMathOperator{\si}{si}           %% si(x) = sin(x)/x
+\DeclareMathOperator{\sinc}{sinc}       %% sinc(x) = sin(\pi x)/(\pi x)
 
 
 
