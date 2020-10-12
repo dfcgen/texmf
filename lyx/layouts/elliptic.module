@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{Extensions: Elliptic Functions}
+#\DeclareLyXModule{@Extensions: Elliptic Functions}
 #
 #DescriptionBegin
 #Jacobian elliptic integrals and functions.
@@ -7,7 +7,7 @@
 #Requires: mathext
 #Excludes:
 #
-# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012, 2020 Ralf Hoppe <rho@dfcgen.de>
 #
 
 Format 35
@@ -18,4 +18,3 @@ AddToPreamble
 \input{elliptic-inc}
 
 EndPreamble
-

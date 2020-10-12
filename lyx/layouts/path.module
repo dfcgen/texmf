@@ -1,18 +1,21 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{Extensions: Path}
+#\DeclareLyXModule{@Extensions: Path}
 #
 #DescriptionBegin
 #Provides a path style/inset.
 #DescriptionEnd
+#Requires: stdinsets
+#Excludes:
 #
-# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012-2020 Ralf Hoppe <rho@dfcgen.de>
 #
 
 Format 35
+Provides        path 1
 
-Input stdinsets.inc
 
 AddToPreamble
+
 \usepackage{path}
 
 %% change linebreak character set from path.sty
@@ -22,6 +25,7 @@ AddToPreamble
 
 %% Note: This command uses the same font as \path.
 \newcommand{\computer}[1]{\texttt{#1}}
+
 EndPreamble
 
 

@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{Extensions: Electrical Engineering}
+#\DeclareLyXModule{@Extensions: Electrical Engineering}
 #
 #DescriptionBegin
 #Provides some electrical engineering and signal processing macros.
@@ -7,17 +7,17 @@
 #Requires:
 #Excludes:
 #
-# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012-2020 Ralf Hoppe <rho@dfcgen.de>
 #
 
 Format 35
+Requires        amsmath
+Provides        trfsigns 1
 
 
 AddToPreamble
 
-\usepackage{amsopn} % required by electrical.tex
+\usepackage{trfsigns}        %% symbols for FT, LT, ...
 \input{electrical-inc}
 
-
 EndPreamble
-

@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{Extensions: Algorithm}
+#\DeclareLyXModule{@Extensions: Algorithm}
 #
 #DescriptionBegin
 #Algorithm environment and float.
@@ -7,10 +7,11 @@
 #Requires: 
 #Excludes:
 #
-# Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012-2020 Ralf Hoppe <rho@dfcgen.de>
 #
 
 Format 35
+Provides        algorithm 1
 
 AddToPreamble
 
