@@ -1,22 +1,57 @@
 %% -*- LaTeX -*-
 %%
-%% LaTeX file for mathematical symbols, to be included from another file (which
-%% provides the required packages)
+%% LaTeX file for higher math. extensions (to be included from another file,
+%% which must provide the required packages)
 %%
-%% Copyright (C) 2012, 2020 Ralf Hoppe <ralf.hoppe@ieee.org>
-%%
-%% $Id$
+%% Copyright (C) 2012-2020 Ralf Hoppe <rho@dfcgen.de>
 %%
 %% Requires:
-%% \usepackage{amsopn,amssymb} %% DeclareMathOperator, AMS symbols
-%% \usepackage{trfsigns}       %% symbols for FT, LT and e
-%% \usepackage{ifthen}         %% \ifthenelse
+%% \makeatletter               % at beginning of preamble
+%% \usepackage{amsopn,amssymb} % \DeclareMathOperator, AMS symbols
+%% \usepackage{ifthen}         % \ifthenelse
+%% \makeatother                % at end of preamble
 %%
 
 
+%%%%%%%% HTML/PDF Conditionals
 
-%% Misc
+%% Fractions look extremely ugly in tables, because there is no space over
+%% and under. The following macro writes a fbox without a frame but with the
+%% fboxsep. But this might not work on some LaTeX to HTML converters.
+\@ifpackageloaded{tex4ht}{%
+  \newcommand{\mtab} [1] { %% math in tables
+    \ensuremath{\mbig{#1}}}}{%
+  \newcommand{\mtab} [1] {%
+    \setlength{\fboxrule}{0pt}%
+    \fbox{\ensuremath{\mbig{#1}}}}}
 
+
+%% Inline math in headings/titles
+%% Usage: \tocmath{expr}{replacement}
+%% Example: \tocmath{x^y}{x times y}
+\AtBeginDocument{
+  \@ifpackageloaded{hyperref}{ %% hyperref loaded (PDF)
+    \newcommand{\tocmath} [2] {%
+      \texorpdfstring{%
+        \mathversion{bold}%
+        \ensuremath{#1}%
+        \mathversion{normal}
+      }{#2}}%
+  }{ %% hyperref NOT loaded (no replacement)
+    \newcommand{\tocmath} [2] {\ensuremath{#1}}}
+}
+
+
+
+%%%%%%%% Misc
+
+\newcommand{\msp} {\ensuremath{\;}}% math space
+\newcommand{\mperiod} {\msp.}      % period (at end of sentence) in math mode
+
+\newcommand{\mbig} [1]   {\displaystyle{#1}}
+\newcommand{\mboxed} [1] {\boxed{#1}}
+\newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}} % Bold matrix/vector
+\newcommand{\mdet} [1] {\mvec{#1}} % determinant variable
 
 %% Optional superscript if exponent is unequal to zero
 %% Example: \optsup {0}{x} displays "x", \optsup {n}{x} displays "x^n"
@@ -28,20 +63,44 @@
 
 
 \AtBeginDocument{
-  \ifx\opentimes\undefined %% \opentimes from px/txfonts packages loaded?
+  \ifx\opentimes\undefined % \opentimes from px/txfonts packages loaded?
   \def\opentimes{\times}
   \fi
 }
 
 
 
-%% Analysis
+%%%%%%%% Analysis
 
+\newcommand{\pdc} {\partial}            % partial differential character
+\newcommand{\tdc} {\textup{d}}          % total differential character
+\newcommand{\pic} {\,\pdc}              % partial differential with leading (thin) space
+\newcommand{\tic} {\,\tdc}              % total differential with leading (thin) space
+
+\newcommand{\pdiff} [3] [0] {\frac{\optsup{#1}{\pdc} #2}{\pdc \optsup{#1}{#3}}}
+\newcommand{\tdiff} [3] [0] {\frac{\optsup{#1}{\tdc} #2}{\tdc \optsup{#1}{#3}}}
+
+\newcommand{\vp} {\,\textup{V.\,P.}}    % Cauchy principal value
+\DeclareMathOperator{\residue}{res}     % residue
+\newcommand{\res} [2] {\residue_{#1} {#2}} % residue of function #2 at point #1
+
+\newcommand{\zn} [3] [0] {\optsup{#1}{{#2}\kern-.24em\lower.68ex\hbox{$\scriptscriptstyle\circ$}}_{#3}}
+\newcommand{\pn} [3] [0] {\optsup{#1}{{#2}\kern-.24em\lower.68ex\hbox{$\scriptscriptstyle\opentimes$}}_{#3}}
+
+% polynomial: \poly{a}{x}{n} defines a polynomial in x with coefficients a[i]
+% from i=0 to i=n
+\newcommand {\poly} [3] {\ensuremath{{#1}_{#3}{#2}^{#3}+\cdots +{#1}_2 {#2}^2+{#1}_1 {#2}+{#1}_0}}
+
+
+
+%%%%%%%% Complex Numbers
+
+\newcommand{\ji} {\ensuremath{\mathrm{j}}}
 
 %% Conjugate complex value of an expression
 %%
 %% Indicates an expression, or it's (optional) "prefix representative",
-%% as a complex value.
+%% as a conjugate complex value.
 %%
 \newcommand{\cjgt} [2] [empty] {%
   \def\tempa{empty}%
@@ -53,84 +112,46 @@
   \fi
 }
 
-
-\newcommand{\res} [2] {\residue_{#1} {#2}}  %% residue of function #2 at point #1
-
-\newcommand{\zn} [3] [0] {\optsup{#1}{{#2}\kern-.24em\lower.68ex\hbox{$\scriptscriptstyle\circ$}}_{#3}}
-%% \newcommand{\zn} [3] [0] {\optsup{#1}{{#2}_{\! \scriptscriptstyle \circ}}_{#3}}
-\newcommand{\pn} [3] [0] {\optsup{#1}{{#2}\kern-.24em\lower.68ex\hbox{$\scriptscriptstyle\opentimes$}}_{#3}}
-%% \newcommand{\pn} [3] [0] {\optsup{#1}{{#2}_{\! \scriptscriptstyle \infty}}_{#3}}
-
-
-\newcommand{\ji} {\im} %% j from package trfsigns
-\newcommand{\lps} {s}  %% Laplace variable s or p
-
-
-%% \DeclareMathOperator{\imop}{\Im}
-\DeclareMathOperator{\imop}{Im}         %% Imaginary part of complex number (Im{} operator)
-%% \DeclareMathOperator{\reop}{\Re}
-\DeclareMathOperator{\reop}{Re}         %% real part of complex number (Re{} operator)
-\DeclareMathOperator{\ang}{\measuredangle}    %% angle of a complex number
-%% \DeclareMathOperator{\ang}{\angle}   %% angle of a complex number
-%% \DeclareMathOperator{\ang}{\arg}     %% angle of a complex number
-\DeclareMathOperator{\residue}{res}     %% residue
-\DeclareMathOperator{\expf}{e}          %% Exponential function
+\DeclareMathOperator{\imop}{Im}         % imaginary part of complex number (Im{} operator)
+\DeclareMathOperator{\reop}{Re}         % real part of complex number (Re{} operator)
+\DeclareMathOperator{\ang}{\measuredangle} % angle of a complex number (alt. \angle, \arg)
 
 
 
-%% Basic functions
+%%%%%%%% Functions
 
-\DeclareMathOperator{\sign}{sgn}        %% Sign of an expression
-\DeclareMathOperator{\cosec}{cosec}     %% 1/sin(x)
-\DeclareMathOperator{\sech}{sech}       %% 1/cosh(x)
+\DeclareMathOperator{\expf}{e}          % Exponential function
+\DeclareMathOperator{\sign}{sgn}        % Sign of an expression
+\DeclareMathOperator{\cosec}{cosec}     % 1/sin(x)
+\DeclareMathOperator{\sech}{sech}       % 1/cosh(x)
 \DeclareMathOperator{\arsinh}{arsinh}
 \DeclareMathOperator{\arcosh}{arcosh}
 \DeclareMathOperator{\artanh}{artanh}
-\DeclareMathOperator{\ld}{\log_{2}}     %% logaritmus dualis (ld)
-\DeclareMathOperator{\gd}{gd}           %% Guderman function gd(x) = arctan(sinh(x))
+\DeclareMathOperator{\ld}{\log_{2}}     % logarithmus dualis (ld)
+\DeclareMathOperator{\gd}{gd}           % Guderman function gd(x) = arctan(sinh(x))
+\DeclareMathOperator{\si}{si}           % si(x) = sin(x)/x
+\DeclareMathOperator{\sinc}{sinc}       % sinc(x) = sin(\pi x)/(\pi x)
+\DeclareMathOperator{\tn}{T}            % Chebyshev polynomial of 1st kind
+\DeclareMathOperator{\un}{U}            % Chebyshev polynomial of 2nd kind
+
 
 %% Probability
-\newcommand{\avg} [1] {\overline{#1}}   %% Average (in German >>Mittelwert<<)
-\DeclareMathOperator{\pr}{\Pr}          %% Probability (sometimes only P)
-\DeclareMathOperator{\cnorm}{\Phi}      %% Normal (cummulative) distribution
-\DeclareMathOperator{\mean}{E}          %% Expected value (operator)
-\DeclareMathOperator{\var}{Var}         %% Variance, e.g. \var X
-\DeclareMathOperator{\cov}{Cov}         %% Covariance
-\DeclareMathOperator{\corr}{Corr}       %% Correlation coefficient
+\newcommand{\avg} [1] {\overline{#1}}   % Average (in German: Mittelwert)
+\DeclareMathOperator{\pr}{\Pr}          % Probability (sometimes only P)
+\DeclareMathOperator{\cnorm}{\Phi}      % Normal (cummulative) distribution
+\DeclareMathOperator{\mean}{E}          % Expected value (operator)
+\DeclareMathOperator{\var}{Var}         % Variance, e.g. \var X
+\DeclareMathOperator{\cov}{Cov}         % Covariance
+\DeclareMathOperator{\corr}{Corr}       % Correlation coefficient
 
 
-%% Algebraic functions
-\DeclareMathOperator{\lcm}{lcm}         %% Least Common Multiplier
-\DeclareMathOperator{\ord}{ord}         %% Order
-\DeclareMathOperator{\GF}{GF}           %% Galois field
-\DeclareMathOperator{\trace}{tr}        %% trace
-\DeclareMathOperator{\htrace}{htr}      %% half-trace
-\DeclareMathOperator{\MONTG}{M}         %% Montgomery transformation
-\DeclareMathOperator{\totient}{\phi}    %% Euler's totient function
+%% Algebra
+\DeclareMathOperator{\lcm}{lcm}         % Least Common Multiplier
+\DeclareMathOperator{\ord}{ord}         % Order
+\DeclareMathOperator{\GF}{GF}           % Galois field
+\DeclareMathOperator{\trace}{tr}        % trace
+\DeclareMathOperator{\htrace}{htr}      % half-trace
+\DeclareMathOperator{\MONTG}{M}         % Montgomery transformation
+\DeclareMathOperator{\totient}{\phi}    % Euler's totient function
 \newcommand{\rcls} [2] {{\left[ {#1} \right] }_{#2}} % residue class
-
-%% Logic
-\DeclareMathOperator{\rol}{rol}         %% Rotate Left
-\DeclareMathOperator{\ror}{ror}         %% Rotate Right
-\DeclareMathOperator{\shl}{shl}         %% Shift Left
-\DeclareMathOperator{\shr}{shr}         %% Shift Right
-
-
-%% Chebyshev functions (polynomials)
-\DeclareMathOperator{\Tn}{T}
-\DeclareMathOperator{\Un}{U}
-\DeclareMathOperator{\si}{si}           %% si(x) = sin(x)/x
-\DeclareMathOperator{\sinc}{sinc}       %% sinc(x) = sin(\pi x)/(\pi x)
-
-
-
-%% Integral transformations (FT, LT, ZT, DFT, ...) and \e, \im from trfsigns
-\DeclareMathOperator{\ft} {\mathcal F}  %% Fourier-Transform
-\DeclareMathOperator{\lt} {\mathcal L}  %% Laplace-Transform
-\DeclareMathOperator{\zt} {\mathcal Z}  %% Z-Transform
-
-\newcommand{\lft} [1] [] {\allowbreak\;\laplace{#1}\allowbreak\;}    %% Continuous Fourier transform (left time domain)
-\newcommand{\rft} [1] [] {\allowbreak\;\Laplace{#1}\allowbreak\;}    %% Continuous Fourier transform (right time domain)
-\newcommand{\lpt} [1] [] {\allowbreak\;\laplace{#1}\allowbreak\;}    %% Continuous Laplace transform (left time domain)
-\newcommand{\rlt} [1] [] {\allowbreak\;\Laplace{#1}\allowbreak\;}    %% Continuous Laplace transform (right time domain)
-
+\newcommand{\mequiv} {\ensuremath{\stackrel{\scriptscriptstyle\wedge}{=}}} % equivalent: '=' with hat

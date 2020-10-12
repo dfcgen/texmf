@@ -2,100 +2,20 @@
 #\DeclareLyXModule{Extensions: Higher Math. Functions}
 #
 #DescriptionBegin
-#My mathematical LaTeX command extensions
+#Higher math. extensions
 #DescriptionEnd
 #Requires: 
 #Excludes:
 #
-# Copyright (C) 2012, 2015 Ralf Hoppe <ralf.hoppe@ieee.org>
+# Copyright (C) 2012-2020 Ralf Hoppe <rho@dfcgen.de>
 #
 
 Format 35
-Requires        array,ifthen,amssymb
+Requires        array,ifthen,amsmath,amssymb
 
 
 AddToPreamble
 
-%% required by mathext.tex
-\usepackage{amsopn,amsfonts} %% \DeclareMathOperator, AMS symbols
-\usepackage{trfsigns}        %% symbols for FT, LT and e
-
 \input{mathext-inc}
 
-
-%% FIXME: some changes in package array
-%% \addtolength{\extrarowheight}{2pt}      %% extra vertical space in array (tabular family) environment
-%% \addtolength{\jot}{2pt}                 %% extra vertical space in eqnarray environment
-
-\newcommand{\tabvstretch} {\renewcommand{\arraystretch}{1.5}} % table/array vertical stretching
-\newcommand{\tabvnormal}  {\renewcommand{\arraystretch}{1.0}} % reset to default
-
-
-%% Styles
-\newcommand{\mbig} [1]   {\displaystyle{#1}}
-\newcommand{\mboxed} [1] {\boxed{#1}}
-\newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}} % Bold matrix/vector
-\newcommand{\mdet} [1] {\mvec{#1}} % determinant variable
-
-
-%% Symbols, Variables, Constants
-\newcommand{\vp} {\,\textup{V.\,P.}} %% Cauchy principal value
-%% \newcommand{\mequiv} {\ensuremath{\mathrel{\widehat{=}}}} %% equivalent: = with hat
-\newcommand{\mequiv} {\ensuremath{\stackrel{\scriptscriptstyle\wedge}{=}}} %% equivalent: = with hat
-\newcommand{\msp} {\ensuremath{\;}}% math space
-\newcommand{\mperiod} {\msp.}      % period (at end of sentence) in math mode
-\newcommand{\pdc} {\partial}       % partial differential character
-\newcommand{\tdc} {\textup{d}}     % total differential character
-\newcommand{\pic} {\,\pdc}         % partial differential with leading (thin) space
-\newcommand{\tic} {\,\tdc}         % total differential with leading (thin) space
-
-
-%% Macros
-\newcommand{\pdiff} [3] [0] {\frac{\optsup{#1}{\pdc} #2}{\pdc \optsup{#1}{#3}}}
-\newcommand{\tdiff} [3] [0] {\frac{\optsup{#1}{\tdc} #2}{\tdc \optsup{#1}{#3}}}
-
-
-%% Simple Polynomial
-%% Example: \poly{a}{x}{n} defines a polynomial in x with coefficients a[i]
-%% from i=0 to i=n
-\newcommand {\poly} [3] {\ensuremath{{#1}_{#3}{#2}^{#3}+\cdots +{#1}_2 {#2}^2+{#1}_1 {#2}+{#1}_0}}
-
-
-%% for the following macros we must assign the '@' character to category
-%% 'letter' (catcode 11), else you will get LaTeX errors
-\makeatletter
-
-%% Fractions look extremely ugly in tables, because there is no space over
-%% and under. The following macro writes a fbox without a frame but with the
-%% fboxsep. But this does not work on some HTML converters.
-\@ifpackageloaded{tex4ht}{      %
-  \newcommand{\mtab} [1] {      % math in tables
-    \ensuremath{\mbig{#1}}}}{   %
-  \newcommand{\mtab} [1] {      %
-    \setlength{\fboxrule}{0pt}  %
-    \fbox{\ensuremath{\mbig{#1}}}}}
-
-
-
-%% Inline math in headings/titles
-%% Usage: \tocmath{expr}{replacement}
-%% Example: \tocmath{x^y}{x times y}
-\AtBeginDocument{
-  \@ifpackageloaded{hyperref}{ %% hyperref loaded (PDF)
-    \newcommand{\tocmath} [2] {%
-      \texorpdfstring{%
-        \mathversion{bold}%
-        \ensuremath{#1}%
-        \mathversion{normal}
-      }{#2}}%
-  }{ %% hyperref NOT loaded (no replacement)
-    \newcommand{\tocmath} [2] {\ensuremath{#1}}}
-}
-
-%% Normally '@' should be put back to category 'other' (catcode 12). But this
-%% is done by LyX at the end of preamble.
-%%
-%% \makeatother
-
 EndPreamble
-
