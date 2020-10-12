@@ -1,0 +1,113 @@
+%% -*- LaTeX -*-
+%%
+%% LaTeX file with base definitions/macros (to be included from another
+%% file, which must provide the required packages)
+%%
+%% Copyright (C) 2007-2020 Ralf Hoppe <rho@dfcgen.de>
+%%
+%% Requires:
+%% \makeatletter               % at beginning of preamble
+%% \usepackage{amsopn,amssymb} % \DeclareMathOperator, AMS symbols
+%% \usepackage{ifthen}         % \ifthenelse
+%% \makeatother                % at end of preamble
+%%
+
+\usepackage{bibgerm}        %% German bibliography
+\usepackage[right]{eurosym} %% EUR symbol & friends
+
+\ifdefined\indexname
+    \renewcommand{\indexname}{Stichwortverzeichnis}
+\fi
+
+%% definition of \provideenvironment{name}[narg]{begdef}{enddef} command
+\def\provide@environment#1{%
+  \@ifundefined{#1}{\relax}{%
+  \expandafter\let\csname#1\endcsname\relax
+  \expandafter\let\csname end#1\endcsname\relax
+  \new@environment{#1}}}
+
+%% You can derive some  \if\isdefined{} ... \else...\fi construct from this
+\def\isdefined#1{\begingroup
+    \expandafter\endgroup\expandafter\ifx
+    \csname #1\endcsname\@undefined
+    undefined\else defined\fi}
+
+%%
+%% Checks if a TeX job is equal to (file) name. This is tricky because
+%% TeX macro \jobname expands to catcode 12 (other) characters.
+%%
+%% Example usage:
+%%   \if\thisjob{name}%
+%%   do this%
+%%   \else%
+%%   do that%
+%%   \fi%
+%% 
+\def\thisjob#1{..\fi\begingroup
+  \edef\jobA{\jobname}%
+% Convert an arbitrary string to "other" characters:
+% do \csname, \string, then \@gobble
+  \edef\jobB{\expandafter \expandafter \expandafter \@gobble %
+   \expandafter \string \csname #1\endcsname}%
+  \expandafter \endgroup \ifx\jobA\jobB}
+
+
+%% Some re- or extra definitions in case TeX4ht is (not) loaded
+\@ifpackageloaded{tex4ht} {%
+  %% breakurl.sty inserts special postscript code, which then is passed to
+  %% the DVI page, then read by TeX4ht and finally passed to HTML page
+  \PackageWarningNoLine{breakurl}{%
+    Package breakurl is not compatible with TeX4ht...\MessageBreak
+    \string\burl\space will be just a synonym of \string\url.}
+  \DeclareRobustCommand{\burl}{\url}
+  \DeclareRobustCommand*{\burlalt}{\hyper@normalise\burl@alt}
+  \def\burl@alt#1#2{\hyper@linkurl{\Hurl{#1}}{#2}}
+}{%
+  %%
+  %% Postscript font ``Times'' in text and math formulas (based on freely
+  %% distributable fonts).
+  %%
+  %% Disadvantages:
+  %% 1. No support of bold in math formulas (normally needed in headings, see
+  %%    macro \headingmath in file math-inc.tex)
+  %% 2. txfonts.sty collides with esint.sty (extended integral signs, see LyX)
+  %%
+  \usepackage{txfonts}
+  \message{Using package txfonts...}
+  %%  \usepackage{mathptmx}% automatic within LyX, when "Times Roman" chosen
+  %%
+  %% Postscript font Palatino in text and math formulas (based on freely
+  %% distributable fonts).
+  %%
+  %% \usepackage{pxfonts}                %% Declares \opentimes symbol)
+  %% \usepackage[slantedGreek]{mathpazo} %% Palatino math
+  %%
+  %% Math fonts from mathdesign package for usage with standard LaTeX
+  %% fonts
+  %%
+  %% \usepackage[garamond]{mathdesign}
+}
+
+
+%% Special commands/math/text in headings/titles
+%% Usage: \toccmd{cmds}{replacement}
+%% Example: \toccmd{\footnote{Test}}{}
+\AtBeginDocument{
+  \@ifpackageloaded{hyperref}{ %% hyperref loaded (PDF)
+    \newcommand{\toccmd} [2] {\texorpdfstring{#1}{#2}}%
+  }{ %% hyperref NOT loaded (no replacement)
+    \newcommand{\toccmd} [2] {#1}%
+  }
+}
+
+
+\newcommand{\re} {\mbox{bzgl.} }      %% regarding
+\newcommand{\eg} {\mbox{z.\,B.} }     %% for example
+\newcommand{\ie} {\mbox{d.\,h.} }     %% that is (id est)
+\newcommand{\resp} {\mbox{bzw.} }     %% respective
+\newcommand{\cf} {\mbox{vgl.} }       %% confer
+\newcommand{\etc} {\mbox{usw.} }      %% et cetera
+
+
+%% Compressed \cdot e.g. as used by Whittacker in paragraph numbers
+\newcommand{\sdot} {\ensuremath{\! \cdot \!}}
