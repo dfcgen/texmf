@@ -1,11 +1,9 @@
 %% -*- LaTeX -*-
 %%
-%% LaTeX file for elliptic functions, to be included from another file (which
+%% LaTeX file for elliptic functions (to be included from another file, which
 %% provides the required packages)
 %%
-%% Copyright (C) 2012 Ralf Hoppe <ralf.hoppe@ieee.org>
-%%
-%% $Id$
+%% Copyright (C) 2012, 2020 Ralf Hoppe <rho@dfcgen.de>
 %%
 %% Requires:
 %% \usepackage{amsopn}   % \DeclareMathOperator
@@ -29,7 +27,7 @@
 
 
 %% Preliminaries for Jacobian elliptic functions
-%% Note: \the\epqheight prints the height value
+%% NOTE: \the\epqheight prints the height value
 \newlength{\epqheight}
 \newlength{\epqlimit}
 \settoheight{\epqlimit}{\ensuremath{\eargs{\ji\xi/2+\jK'}{k'}}}
@@ -102,4 +100,3 @@
 %% Zolotarev's function
 \DeclareMathOperator{\Z}{Z}
 \newcommand{\Zo} [3] [0] {\epq{#1}{\Z}{#2}{#3}}
-
