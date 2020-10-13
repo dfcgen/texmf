@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{@Extensions: Elliptic Functions}
+#\DeclareLyXModule{@Custom: Elliptic Functions}
 #
 #DescriptionBegin
 #Jacobian elliptic integrals and functions.

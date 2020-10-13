@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{@Extensions: Algorithm}
+#\DeclareLyXModule{@Custom: Algorithm}
 #
 #DescriptionBegin
 #Algorithm environment and float.

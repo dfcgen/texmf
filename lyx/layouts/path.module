@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{@Extensions: Path}
+#\DeclareLyXModule{@Custom: Path}
 #
 #DescriptionBegin
 #Provides a path style/inset.

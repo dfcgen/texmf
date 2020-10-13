@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{@Extensions: Higher Math. Extensions}
+#\DeclareLyXModule{@Custom: Higher Math. Extensions}
 #
 #DescriptionBegin
 #Higher math. extensions

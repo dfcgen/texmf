@@ -1,5 +1,5 @@
 #% -*- LaTeX -*-
-#\DeclareLyXModule{@Extensions: Basics and Helpers}
+#\DeclareLyXModule{@Custom: Basics and Helpers}
 #DescriptionBegin
 #Provides some helper macros, abbreviations and an emphasized environment.
 #DescriptionEnd
