@@ -33,13 +33,13 @@
 \DeclareMathOperator{\irf}   {h} % Impulse response function
 \DeclareMathOperator{\usf}   {u} % Unit step function
 
-%%%%%%%% (Cyrillic) Shah
+%%%%%%%% Cyrillic Shah
 \DeclareFontFamily{U}{wncy}{}
 \DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
 \DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
 \DeclareMathSymbol{\Sha}{\mathord}{mcy}{"58}
 
 %%%%%%%% Signals
-\DeclareMathOperator{\rect}  {r} % Rectangular pulse
+\DeclareMathOperator{\rect}  {\Pi} % Rectangular pulse
 \DeclareMathOperator{\dirac} {\delta} % Dirac pulse
-\DeclareMathOperator{\dcomb} {\Sha} % Dirac comb (sampling function)
+\DeclareMathOperator{\dcomb} {\Sha} %% Dirac (sampling) comb: \sum_{k=0}^{k=\inf} \dirac(t-k T_0)
