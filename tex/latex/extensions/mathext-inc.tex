@@ -48,7 +48,7 @@
 \newcommand{\msp} {\ensuremath{\;}}% math space
 \newcommand{\mperiod} {\msp.}      % period (at end of sentence) in math mode
 
-\newcommand{\mbig} [1]   {\displaystyle{#1}}
+\newcommand{\mbig} [1]   {\displaystyle{#1}} % FIXME: try to remove macro \mbig
 \newcommand{\mboxed} [1] {\boxed{#1}}
 \newcommand{\mvec} [1] {\ensuremath{\mathbf{#1}}} % Bold matrix/vector
 \newcommand{\mdet} [1] {\mvec{#1}} % determinant variable
@@ -73,7 +73,7 @@
 %%%%%%%% Analysis
 
 \newcommand{\pdc} {\partial}            % partial differential character
-\newcommand{\tdc} {\textup{d}}          % total differential character
+\newcommand{\tdc} {\mathrm{d}}          % total differential character
 \newcommand{\pic} {\,\pdc}              % partial differential with leading (thin) space
 \newcommand{\tic} {\,\tdc}              % total differential with leading (thin) space
 
