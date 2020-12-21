@@ -15,7 +15,7 @@
 %% Transactions/Journals
 @STRING{IEEE_J_PROC       = "Proceedings of the {IEEE}"}
 @STRING{IEEE_J_AIEE       = "Transactions of the American Institute of Electrical Engineers"}
-@STRING{IEEE_J_ASSP       = "{IEEE} Trans. Acoustic, Speech, Signal Processing"}
+@STRING{IEEE_J_ASSP       = "{IEEE} Trans. Acoust., Speech, Signal Processing"}
 @STRING{IEEE_J_AUEA       = "{IEEE} Trans. Audio Electroacoustics"}
 @STRING{IEEE_J_CAS        = "{IEEE} Trans. Circuits Systems"}
 @STRING{IEEE_J_CASI       = "{IEEE} Trans. Circuits Systems {I}"}
@@ -175,7 +175,7 @@
 
 @Book{Fritzsche:1981a,
   author =       {Gottfried Fritzsche},
-  title =        {Informationsübertragung},
+  title =        {Informations{\"u}bertragung},
   year =         {1981},
   publisher =    {Verlag Technik},
   edition =      {3.},
@@ -282,6 +282,24 @@
   annote =       {library}
 }
 
+@Book{Lyons:2011,
+  author =       {Richard G. Lyons},
+  title =        {Understanding Digital Signal Processing},
+  publisher =    {Pearson Education},
+  year =         {2011},
+  edition =      {3.},
+  annote =       {library}
+}
+
+@Book{Crochiere:1983,
+  author =       {Ronald E. Crochiere and Lawrence R. Rabiner},
+  title =        {Multirate Digital Signal Processing},
+  publisher =    {Prentice-Hall},
+  address =      {Englewood Cliffs, {N.J.}},
+  year =         {1983},
+  annote =       {library}
+}
+
 @Book{Chen:1995,
   author =       {Wai-Kai Chen},
   title =        {The circuits and filters handbook},
@@ -295,7 +313,7 @@
   title =        {C Language Algorithms for Digital Signal Processing},
   publisher =    {Prentice Hall},
   year =         {1991},
-  address =      {Englewood Cliffs},
+  address =      {Englewood Cliffs, {N.J.}},
   annote =       {library}
 }
 
@@ -570,8 +588,42 @@
   pages =        {322--337},
 }
 
+@Comment Parks - McClellan Algorithm
+@Article{Parks_McClellan_Rabiner:1973,
+  author =       {J. McClellan and T. Parks and L. Rabiner},
+  journal =      IEEE_J_AUEA,
+  title =        {A computer program for designing optimum FIR linear phase
+                  digital filters},
+  year =         1973,
+  volume =       21,
+  number =       6,
+  pages =        {506-526}
+}
+
+@Article{McClellan_Parks:1973,
+  author =       {J. {McClellan} and T. {Parks}},
+  journal =      IEEE_J_CT,
+  title =        {A unified approach to the design of optimum FIR linear-phase
+                  digital filters},
+  year =         1973,
+  volume =       20,
+  number =       6,
+  pages =        {697-701}
+}
+
+@Article{Rabiner_Herrmann:1973,
+  author =       {L. Rabiner and O. Herrmann},
+  journal =      IEEE_J_AUEA,
+  title =        {On the design of optimum FIR low-pass filters with even
+                  impulse response duration},
+  year =         1973,
+  volume =       21,
+  number =       4,
+  pages =        {329-336}
+}
+
 @Article{Crochiere_Rabiner:1981,
-  author =       {R. E. Crochiere and L. R. Rabiner},
+  author =       {Ronald E. Crochiere and Lawrence R. Rabiner},
   journal =      IEEE_J_PROC,
   title =        {Interpolation and decimation of digital signals --- A tutorial review},
   year =         1981,
@@ -581,7 +633,7 @@
 }
 
 @Article{Schafer_Rabiner:1973,
-  author =       {R. W. Schafer and L. R. Rabiner},
+  author =       {Ronald W. Schafer and Lawrence R. Rabiner},
   journal =      IEEE_J_PROC,
   title =        {A digital signal processing approach to interpolation},
   year =         1973,
@@ -591,7 +643,7 @@
 }
 
 @Article{Crochiere_Rabiner:1975,
-  author =       {R. Crochiere and L. Rabiner},
+  author =       {Ronald E. Crochiere and Lawrence R. Rabiner},
   journal =      IEEE_J_ASSP,
   title =        {Optimum {FIR} digital filter implementations for decimation,
                   interpolation, and narrow-band filtering},
@@ -599,6 +651,60 @@
   volume =       23,
   number =       5,
   pages =        {444--456}
+}
+
+@Article{Hogenauer:1981,
+  author =       {Eugene B. Hogenauer},
+  journal =      IEEE_J_ASSP,
+  title =        {An economical class of digital filters for decimation and
+                  interpolation},
+  year =         1981,
+  volume =       29,
+  number =       2,
+  pages =        {155-162}
+}
+
+@Article{Oetken:1975,
+  author =       {Geerd Oetken and Thomas W. Parks and Hans W. Sch{\"u}ssler}},
+  journal =      IEEE_J_ASSP,
+  title =        {New results in the design of digital interpolators},
+  year =         1975,
+  volume =       23,
+  number =       3,
+  pages =        {301-309}
+}
+
+@Article{Bellanger:1976,
+  author =       {M. Bellanger and G. Bonnerot and M. Coudreuse},
+  journal =      IEEE_J_ASSP,
+  title =        {Digital filtering by polyphase network: Application to
+                  sample-rate alteration and filter banks},
+  year =         1976,
+  volume =       24,
+  number =       2,
+  pages =        {109-114}
+}
+
+@Article{Renfors_Saramaki:1987I,
+  author =       {Markku Renfors and Tapio Saram{\"a}ki},
+  journal =      IEEE_J_CAS,
+  title =        {Recursive Nth-band digital filters --- Part I: Design
+                  and properties},
+  year =         1987,
+  volume =       34,
+  number =       1,
+  pages =        {24-39}
+}
+
+@Article{Renfors_Saramaki:1987II,
+  author =       {Markku Renfors and Tapio Saram{\"a}ki},
+  journal =      IEEE_J_CAS,
+  title =        {Recursive Nth-band digital filters --- Part II: Design of
+                  of multistage decimators and interpolators},
+  year =         1987,
+  volume =       34,
+  number =       1,
+  pages =        {40-51}
 }
 
 @Article{Saal_Ulbrich:1958,
@@ -725,7 +831,7 @@
   journal =      IRE_J_PROC,
   year =         {1949},
   volume =       {37},
-  pages =        {10--21},
+  pages =        {10--21}
 }
 
 @Article{Shannon:1948,
@@ -737,21 +843,22 @@
   pages =        {379--423}
 }
 
+@Article{Unser:2000,
+  author =       {M. Unser},
+  journal =      IEEE_J_PROC,
+  title =        {Sampling-50 years after Shannon},
+  year =         2000,
+  volume =       88,
+  number =       4,
+  pages =        {569-587}
+}
+
 @Book{Proakis:2002,
   author =       {John G. Proakis and Charles M. Rader and Fuyun Ling and Chrysostomos
                   L. Nikias and Marc Moonen and Ian K. Proudler},
   title =        {Algorithms for Statistical Signal Processing},
   publisher =    {Prentice Hall},
   year =         {2002},
-  annote =       {library}
-}
-
-@Book{Lyons:2011,
-  author =       {Richard G. Lyons},
-  title =        {Understanding Digital Signal Processing},
-  publisher =    {Pearson Education},
-  year =         {2011},
-  edition =      {3.},
   annote =       {library}
 }
 
